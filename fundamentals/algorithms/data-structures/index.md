@@ -14,6 +14,18 @@
 - Set
 - Map
 
+## Linear
+
+- Array
+- List
+- Stack
+- Queue
+
+## Non-linear
+
+- Tree
+- Graph
+
 ## Links
 
 - https://practicum.yandex.ru/blog/10-osnovnyh-struktur-dannyh/
