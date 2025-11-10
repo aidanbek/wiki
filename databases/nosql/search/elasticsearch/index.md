@@ -1,0 +1,1 @@
+Distributed search/analytics на Lucene. RESTful JSON API, schema-free. Real-time indexing, horizontal scaling. ELK stack (Elasticsearch, Logstash, Kibana) для logging. Used в observability, e-commerce search, analytics.

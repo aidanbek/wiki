@@ -1,0 +1,1 @@
+Alternative behavior при service failure. Static response, cached data, degraded functionality. Better user experience чем error pages. Circuit breaker often triggers fallback. Example: show cached product list if search unavailable. Requires design for degradation.

@@ -1,0 +1,1 @@
+Isolation pattern: partition resources для containing failures. Thread pools per dependency, separate connection pools. One failing service doesn't exhaust entire system resources. Inspired by ship compartments. Reduces blast radius. Trade-off: resource overhead от separate pools.

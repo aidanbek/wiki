@@ -1,0 +1,1 @@
+Structured logs (JSON) easier для parsing чем plain text. Centralized aggregation (ELK, Splunk). Log levels: DEBUG, INFO, WARN, ERROR. Correlation IDs tie related logs. Sensitive data scrubbing. Retention policies balance storage cost с compliance. Fast search critical для incident response.

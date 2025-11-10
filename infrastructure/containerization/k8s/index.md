@@ -1,0 +1,1 @@
+Kubernetes - orchestration platform для container deployments. Declarative config (YAML), self-healing, auto-scaling, rolling updates. Pods (groups контейнеров), Services (networking), Deployments (lifecycle). StatefulSets для stateful apps, DaemonSets для per-node tasks. Steep learning curve, но industry standard для cloud-native apps.

@@ -1,0 +1,1 @@
+Reuse DB connections вместо creating/closing для каждого request. Connection setup expensive (auth, handshake). Pool размер: balance между connection overhead и concurrency needs. Избегает exhausting DB max_connections. Implementations: PgBouncer, HikariCP, built-in в frameworks.

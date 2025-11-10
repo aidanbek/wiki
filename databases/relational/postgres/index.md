@@ -1,0 +1,1 @@
+Open-source ORDBMS с ACID compliance, extensibility, standards compliance. Поддерживает JSON, full-text search, GIS (PostGIS). MVCC для concurrency, powerful indexing (GiST, GIN, BRIN). Rich ecosystem, active development. Enterprise features без licensing costs.

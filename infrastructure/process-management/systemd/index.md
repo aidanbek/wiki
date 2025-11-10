@@ -1,0 +1,1 @@
+Modern Linux init system и service manager. Unit files описывают services, dependencies, restart policies. systemctl для control (start/stop/status). Socket activation, resource limiting (CPU/memory), logging (journald). Dependency-based boot, parallel startup. Стандарт в большинстве Linux distros.

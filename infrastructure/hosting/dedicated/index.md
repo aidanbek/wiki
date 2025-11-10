@@ -1,0 +1,1 @@
+Физический сервер выделенный одному клиенту. Полный контроль над hardware, no noisy neighbors. Максимальная производительность и security isolation. Expensive, долгий provisioning (часы/дни), manual scaling. Use case: compliance требования, sustained high load, legacy applications.

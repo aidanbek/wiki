@@ -1,0 +1,1 @@
+Множество сайтов на одном сервере, shared ресурсы. Cheapest option, managed by provider (updates, security). Ограниченный контроль, performance непредсказуем. No root access, restricted software. Подходит только для simple static sites, small WordPress blogs.

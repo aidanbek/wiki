@@ -1,0 +1,1 @@
+AWS managed queue service. Standard queues (at-least-once, best-effort ordering) vs FIFO (exactly-once, strict ordering). Dead-letter queues для failed messages. Visibility timeout (in-flight concealment). Simple, scalable, но eventual delivery only. Tight AWS ecosystem integration.

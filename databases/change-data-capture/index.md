@@ -1,0 +1,1 @@
+Отслеживание изменений в БД (INSERT/UPDATE/DELETE) для реакции в realtime. Подходы: triggers (overhead), polling (latency), transaction log reading (efficient). Use cases: replication, cache invalidation, event sourcing, ETL.

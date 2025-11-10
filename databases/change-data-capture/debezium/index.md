@@ -1,0 +1,1 @@
+Open-source CDC platform поверх Kafka Connect. Читает transaction logs (PostgreSQL WAL, MySQL binlog) → publish в Kafka. Гарантирует at-least-once delivery, preserves order. Поддерживает schema evolution, filtering, transformations.

@@ -1,0 +1,1 @@
+Switching to standby system при primary failure. Automatic (HA clusters) vs manual. Failback returns to primary. Challenges: split-brain (both think they're primary), data sync. Health checks trigger failover. DNS/load balancer redirect traffic. Stateful applications harder (session transfer).

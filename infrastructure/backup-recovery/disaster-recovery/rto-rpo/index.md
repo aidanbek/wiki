@@ -1,0 +1,1 @@
+RTO (Recovery Time Objective): maximum acceptable downtime. RPO (Recovery Point Objective): maximum acceptable data loss. Trade-off: lower RTO/RPO = higher cost (hot standby, sync replication). DR planning targets business requirements. Testing DR procedures validates RTO/RPO achievability.

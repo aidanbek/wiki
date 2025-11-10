@@ -1,0 +1,1 @@
+Popular document DB. BSON format, rich query language, aggregation pipeline. Replica sets для HA, sharding для scale. Secondary indexes. Transactions поддержка (с версии 4.0). Used в modern web/mobile apps.

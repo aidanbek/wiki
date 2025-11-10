@@ -1,0 +1,1 @@
+Application Performance Monitoring tracks application-level metrics: response times, error rates, throughput. Transaction tracing, code-level visibility. Tools: New Relic, Datadog, Dynatrace. Identifies slow queries, memory leaks, exceptions. Proactive alerting на performance degradation. Helps prioritize optimization efforts.

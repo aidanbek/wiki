@@ -1,0 +1,1 @@
+Covering indexes включают все SELECT колонки → избегают table lookup. Partial indexes на subset rows (WHERE condition в CREATE INDEX). Function-based indexes на computed values. Monitoring: unused indexes - waste, missing indexes - slow queries.

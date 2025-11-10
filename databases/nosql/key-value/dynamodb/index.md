@@ -1,0 +1,1 @@
+AWS managed key-value/document store. Single-digit millisecond latency, автоматический scaling. Partition key + sort key design. Eventually/strongly consistent reads. Pay-per-request или provisioned capacity. DynamoDB Streams для CDC.

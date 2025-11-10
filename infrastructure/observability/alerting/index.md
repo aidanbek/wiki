@@ -1,0 +1,1 @@
+Notifications при threshold breaches. Alert fatigue risk (too many false positives). Severity levels: critical (page), warning (ticket). Runbooks document response procedures. On-call rotations. Escalation policies. Good alerts: actionable, context-rich, appropriate urgency. Silence during maintenance windows.

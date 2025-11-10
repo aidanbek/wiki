@@ -1,0 +1,1 @@
+Все reads видят последний write немедленно. Linearizability - strongest форма. Требует coordination → latency, availability impact. CP в CAP. Используется когда correctness критична: banking, inventory systems. Реализация через consensus (Raft, Paxos).

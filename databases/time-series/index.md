@@ -1,0 +1,1 @@
+Специализированные БД для данных с временными метками: metrics, IoT sensors, financial ticks. Оптимизированы для append-only writes, time-range queries, downsampling. Используют compression (delta encoding, gorilla), retention policies для автоматического удаления старых данных.

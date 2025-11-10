@@ -1,0 +1,1 @@
+Классификация storage по performance/cost: Hot (frequent access, SSD, expensive) → Warm (occasional, HDD) → Cold (archive, tape/glacier, cheap). Lifecycle policies автоматически перемещают данные между tiers. Balances cost с access requirements. Cloud providers (S3 tiers) автоматизируют это.

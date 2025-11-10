@@ -1,0 +1,1 @@
+Role-Based Access Control assigns permissions to roles, users assigned roles. Simplifies management (modify role vs individual users). Hierarchical roles (inheritance), role templates. Use cases: enterprise applications, multi-tenant systems. Limitations: role explosion (too many specific roles), difficulty modeling complex policies. Standards: NIST RBAC model levels 0-3.

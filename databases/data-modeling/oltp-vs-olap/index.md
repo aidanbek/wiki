@@ -1,0 +1,1 @@
+OLTP (Online Transaction Processing): normalized, row-oriented, transactional, много small writes/reads. OLAP (Online Analytical Processing): denormalized, column-oriented, read-heavy, complex aggregations. Разные workloads → разные БД оптимизации.

@@ -1,0 +1,1 @@
+Wide-column stores: rows с динамическим набором columns, сгруппированных в families. Schema-flexible, sparse data efficient. Compression, bloom filters. Horizontal scaling, eventual consistency обычно.

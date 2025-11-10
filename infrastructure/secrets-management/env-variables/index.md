@@ -1,0 +1,1 @@
+Storing config/secrets в environment variables. 12-factor app principle. Simple, widely supported. Risks: logged accidentally, visible в process lists, no encryption at rest. Better чем hardcoding, хуже dedicated secrets managers. OK для non-sensitive config, not for production secrets.
