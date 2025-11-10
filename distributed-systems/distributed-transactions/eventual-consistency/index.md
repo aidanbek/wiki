@@ -1,0 +1,1 @@
+Модель где система eventually converges к consistent state, но temporary inconsistency допустима. Позволяет высокую availability и partition tolerance. Requires conflict resolution (last-write-wins, CRDTs, application logic). Используется в Dynamo, Cassandra, DNS.

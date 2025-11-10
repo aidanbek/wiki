@@ -1,0 +1,1 @@
+Каждый узел хранит вектор счетчиков для всех узлов. При event инкрементируется свой счетчик, при message merge векторов. Позволяет определить causality, concurrency, conflicts. Используется в Riak, Dynamo для conflict resolution.

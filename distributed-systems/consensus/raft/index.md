@@ -1,0 +1,1 @@
+Consensus алгоритм, созданный как более понятная альтернатива Paxos. Использует leader election + log replication. Кворум (N/2 + 1) для commit. Проще в реализации и понимании, используется в etcd, Consul, CockroachDB.

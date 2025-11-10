@@ -1,0 +1,1 @@
+Классический consensus алгоритм от Leslie Lamport. Разделен на phases: prepare, promise, accept, learn. Сложен для понимания, но более гибкий чем Raft. Multi-Paxos оптимизирует для серий решений. Используется в Google Chubby, Spanner.

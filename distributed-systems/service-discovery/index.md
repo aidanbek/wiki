@@ -1,0 +1,1 @@
+Динамическое определение network locations сервисов. В microservices IP:port меняются при scaling/restarts. Service registry хранит актуальную топологию, health checks обнаруживают failures. Два паттерна: client-side (клиент query registry) и server-side (load balancer query registry).
