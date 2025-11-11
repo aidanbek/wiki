@@ -1,0 +1,3 @@
+Deadlock
+
+Ситуация когда два или более потока заблокированы навсегда, каждый ждёт ресурс удерживаемый другим - circular wait. Четыре условия (все должны выполняться): mutual exclusion, hold and wait, no preemption, circular wait. Классика: Thread A держит Lock1 ждёт Lock2, Thread B держит Lock2 ждёт Lock1. Предотвращение: lock ordering (всегда захватывать в одном порядке), timeout на lock attempts, lock-free algorithms, избегать nested locking. Обнаружение: deadlock detection алгоритмы, thread dumps анализ. Livelock похожа - потоки не заблокированы, но не прогрессируют (constantly changing state in response to each other).
