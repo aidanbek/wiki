@@ -1,0 +1,3 @@
+Modular Monolith
+
+Monolith со строгим внутренним модульным разделением - boundaries внутри процесса через packages/namespaces. Модули имеют чёткие interfaces, слабое coupling, высокую cohesion - логическое разделение как в микросервисах, но без распределённости. Позволяет команде ownership модулей, параллельную разработку, refactoring в границах модуля. При необходимости модуль легко extract'ится в отдельный сервис. Преимущества monolith (простота, транзакции) + преимущества modularity (масштабируемость команд, чистота). Requires дисциплины для enforcement boundaries - automated architecture tests критичны.

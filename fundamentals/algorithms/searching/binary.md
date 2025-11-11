@@ -1,2 +1,3 @@
-Сложность  O(log n)
-Только для отсортированного массива
+Binary Search (Бинарный поиск)
+
+Поиск в отсортированном массиве путём последовательного деления диапазона пополам - compare с средним элементом, отбрасывать половину. Сложность O(log n) - чрезвычайно эффективно, для миллиона элементов ~20 сравнений. Требует отсортированные данные и random access (array, не linked list). Алгоритм: low=0, high=n-1, mid=(low+high)/2, if target<mid then high=mid-1 else low=mid+1, repeat пока не найдём или low>high. Критичен корректный расчёт mid для избежания integer overflow: mid = low + (high - low) / 2. Вариации: lower_bound/upper_bound для диапазонов, exponential search для unbounded arrays, interpolation search для uniform distribution. Основа для более сложных структур - B-trees, binary search trees, database indexes.
