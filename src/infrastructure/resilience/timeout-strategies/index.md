@@ -1,1 +1,3 @@
-Setting maximum wait time для operations. Connection timeout vs read timeout. Prevents infinite hangs, conserves resources. Too short → false failures, too long → slow failure detection. Cascading timeouts: upstream timeout < downstream timeout. Context deadlines в modern systems (gRPC, Go context).
+Setting maximum wait time для operations. Connection timeout vs read timeout. Prevents infinite hangs, conserves
+resources. Too short → false failures, too long → slow failure detection. Cascading timeouts: upstream timeout <
+downstream timeout. Context deadlines в modern systems (gRPC, Go context).

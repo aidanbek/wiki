@@ -1,1 +1,3 @@
-Платформа для package applications в lightweight containers. Dockerfile описывает image build, image содержит app + dependencies. Container runtime изолирует процессы через namespaces/cgroups. Docker Hub для sharing images. Simplifies deployment (works on my machine → works everywhere), CI/CD integration.
+Платформа для package applications в lightweight containers. Dockerfile описывает image build, image содержит app +
+dependencies. Container runtime изолирует процессы через namespaces/cgroups. Docker Hub для sharing images. Simplifies
+deployment (works on my machine → works everywhere), CI/CD integration.

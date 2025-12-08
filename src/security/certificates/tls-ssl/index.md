@@ -1,1 +1,4 @@
-Transport Layer Security encrypts communication между client-server. SSL deprecated (vulnerable), TLS 1.2/1.3 current. Handshake: negotiate cipher suite, exchange certificates, establish session keys. Certificate validates server identity (signed by CA). Mutual TLS validates both parties. Perfect Forward Secrecy (ephemeral keys) prevents retroactive decryption. Configuration: strong ciphers only, disable weak protocols, HSTS headers.
+Transport Layer Security encrypts communication между client-server. SSL deprecated (vulnerable), TLS 1.2/1.3 current.
+Handshake: negotiate cipher suite, exchange certificates, establish session keys. Certificate validates server
+identity (signed by CA). Mutual TLS validates both parties. Perfect Forward Secrecy (ephemeral keys) prevents
+retroactive decryption. Configuration: strong ciphers only, disable weak protocols, HSTS headers.

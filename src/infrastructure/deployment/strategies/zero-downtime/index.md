@@ -1,1 +1,3 @@
-Deployment без service interruption. Techniques: blue-green, rolling, canary. Requirements: health checks, graceful shutdown, connection draining. Load balancer перенаправляет traffic. Database migrations должны быть backward compatible. Testing в staging критично.
+Deployment без service interruption. Techniques: blue-green, rolling, canary. Requirements: health checks, graceful
+shutdown, connection draining. Load balancer перенаправляет traffic. Database migrations должны быть backward
+compatible. Testing в staging критично.

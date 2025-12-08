@@ -1,1 +1,6 @@
-Distributed version control system. Core concepts: commits (snapshots), branches (parallel development), merges (combining changes), remotes (shared repositories). Workflows: feature branches, gitflow, trunk-based development. Key commands: clone, add, commit, push, pull, merge, rebase. Branching strategies: main/master (production), develop (integration), feature/* (work in progress). Merge vs rebase: rebase cleaner history, merge preserves context. Pull requests для code review. Git hooks для automation (pre-commit linting, pre-push tests). Large files: Git LFS. Submodules для dependencies.
+Distributed version control system. Core concepts: commits (snapshots), branches (parallel development), merges (
+combining changes), remotes (shared repositories). Workflows: feature branches, gitflow, trunk-based development. Key
+commands: clone, add, commit, push, pull, merge, rebase. Branching strategies: main/master (production), develop (
+integration), feature/* (work in progress). Merge vs rebase: rebase cleaner history, merge preserves context. Pull
+requests для code review. Git hooks для automation (pre-commit linting, pre-push tests). Large files: Git LFS.
+Submodules для dependencies.

@@ -1,1 +1,3 @@
-Fundamental Internet protocol suite. IP (addressing, routing), TCP (reliable ordered delivery), UDP (unreliable fast). Three-way handshake (SYN, SYN-ACK, ACK), flow control, congestion control. Understanding critical для debugging latency, packet loss, connection issues. OSI layers: TCP = Layer 4 (Transport), IP = Layer 3 (Network).
+Fundamental Internet protocol suite. IP (addressing, routing), TCP (reliable ordered delivery), UDP (unreliable fast).
+Three-way handshake (SYN, SYN-ACK, ACK), flow control, congestion control. Understanding critical для debugging latency,
+packet loss, connection issues. OSI layers: TCP = Layer 4 (Transport), IP = Layer 3 (Network).

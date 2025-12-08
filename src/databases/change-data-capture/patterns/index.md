@@ -1,1 +1,3 @@
-Outbox pattern: записывать events в outbox table в той же transaction, CDC читает и publish. Log-based CDC vs query-based (polling changes table). Snapshot + streaming для initial state + ongoing changes. Handling schema changes, deletes (tombstone events).
+Outbox pattern: записывать events в outbox table в той же transaction, CDC читает и publish. Log-based CDC vs
+query-based (polling changes table). Snapshot + streaming для initial state + ongoing changes. Handling schema changes,
+deletes (tombstone events).

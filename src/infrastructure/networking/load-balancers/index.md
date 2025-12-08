@@ -1,1 +1,3 @@
-Distribute traffic across backend servers. Algorithms: round-robin, least connections, IP hash, least response time. Layer 4 (TCP) vs Layer 7 (HTTP) load balancing. Health checks исключают unhealthy backends. Session affinity/sticky sessions для stateful apps. Hardware (F5) vs software (HAProxy, Nginx).
+Distribute traffic across backend servers. Algorithms: round-robin, least connections, IP hash, least response time.
+Layer 4 (TCP) vs Layer 7 (HTTP) load balancing. Health checks исключают unhealthy backends. Session affinity/sticky
+sessions для stateful apps. Hardware (F5) vs software (HAProxy, Nginx).

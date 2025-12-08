@@ -1,1 +1,3 @@
-Hierarchical organization файлов в directories. EXT4, XFS, NTFS - local filesystems. Distributed: NFS (network file system), GlusterFS, Ceph. Features: permissions, journaling, snapshots. Performance характеристики: IOPS, throughput, latency зависят от filesystem type и underlying storage.
+Hierarchical organization файлов в directories. EXT4, XFS, NTFS - local filesystems. Distributed: NFS (network file
+system), GlusterFS, Ceph. Features: permissions, journaling, snapshots. Performance характеристики: IOPS, throughput,
+latency зависят от filesystem type и underlying storage.

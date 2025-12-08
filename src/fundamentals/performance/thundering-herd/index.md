@@ -1,1 +1,6 @@
-Multiple processes/threads simultaneously wake and compete для same resource after event. Example: cache expires, 1000 requests all query database simultaneously (cache stampede). Results: resource exhaustion, cascading failures. Mitigations: request coalescing (first request locks, others wait), probabilistic early expiration (jitter prevents synchronized expiry), rate limiting, mutex/semaphore around expensive operations. Similar: accept() thundering herd (fixed by SO_REUSEPORT), connection pool exhaustion. Monitoring: spikes в database connections, latency after cache invalidation.
+Multiple processes/threads simultaneously wake and compete для same resource after event. Example: cache expires, 1000
+requests all query database simultaneously (cache stampede). Results: resource exhaustion, cascading failures.
+Mitigations: request coalescing (first request locks, others wait), probabilistic early expiration (jitter prevents
+synchronized expiry), rate limiting, mutex/semaphore around expensive operations. Similar: accept() thundering herd (
+fixed by SO_REUSEPORT), connection pool exhaustion. Monitoring: spikes в database connections, latency after cache
+invalidation.

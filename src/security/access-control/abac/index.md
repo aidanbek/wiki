@@ -1,1 +1,4 @@
-Attribute-Based Access Control evaluates attributes: user (department, clearance), resource (classification, owner), environment (time, location). Policy language (XACML) defines rules. More flexible чем RBAC - dynamic decisions. Example: "managers can approve expenses < $5000 during business hours". Complex policy management, performance overhead. Use cases: fine-grained authorization, compliance requirements (HIPAA, GDPR).
+Attribute-Based Access Control evaluates attributes: user (department, clearance), resource (classification, owner),
+environment (time, location). Policy language (XACML) defines rules. More flexible чем RBAC - dynamic decisions.
+Example: "managers can approve expenses < $5000 during business hours". Complex policy management, performance overhead.
+Use cases: fine-grained authorization, compliance requirements (HIPAA, GDPR).

@@ -1,3 +1,8 @@
 Representation (Представление графов)
 
-Три основных способа хранения графа в памяти - trade-off между memory и query efficiency. Adjacency Matrix - 2D массив [V×V] где matrix[i][j]=1 если есть ребро i→j: O(1) проверка ребра, O(V²) память, неэффективно для sparse графов. Adjacency List - массив списков где list[i] содержит соседей вершины i: O(V+E) память, O(degree) проверка ребра, optimal для sparse графов (большинство real-world). Edge List - простой список всех рёбер [(u,v,weight)]: компактно, но O(E) для любой операции, используется для некоторых алгоритмов (Kruskal). Выбор зависит от плотности графа (E относительно V²) и типичных операций - matrix для dense и fast edge queries, list для sparse и traversals.
+Три основных способа хранения графа в памяти - trade-off между memory и query efficiency. Adjacency Matrix - 2D
+массив [V×V] где matrix[i][j]=1 если есть ребро i→j: O(1) проверка ребра, O(V²) память, неэффективно для sparse графов.
+Adjacency List - массив списков где list[i] содержит соседей вершины i: O(V+E) память, O(degree) проверка ребра, optimal
+для sparse графов (большинство real-world). Edge List - простой список всех рёбер [(u,v,weight)]: компактно, но O(E) для
+любой операции, используется для некоторых алгоритмов (Kruskal). Выбор зависит от плотности графа (E относительно V²) и
+типичных операций - matrix для dense и fast edge queries, list для sparse и traversals.

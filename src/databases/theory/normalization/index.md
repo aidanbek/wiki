@@ -1,1 +1,2 @@
-Организация схемы для elimination redundancy. 1NF: atomic values. 2NF: no partial dependencies. 3NF: no transitive dependencies. BCNF: stricter. Denormalization для performance (fewer JOINs) - trade-off с data integrity.
+Организация схемы для elimination redundancy. 1NF: atomic values. 2NF: no partial dependencies. 3NF: no transitive
+dependencies. BCNF: stricter. Denormalization для performance (fewer JOINs) - trade-off с data integrity.

@@ -1,1 +1,4 @@
-Абстракция, инкапсулирующая логику доступа к данным, представляя коллекцию доменных объектов в памяти. Интерфейс в domain layer, реализация в infrastructure. userRepository.findById(id) скрывает SQL/NoSQL детали от бизнес-логики. Обеспечивает testability (mock repositories), изоляцию persistence concerns, единую точку для queries. Часть Domain-Driven Design, работает с Aggregate Roots, не с произвольными сущностями.
+Абстракция, инкапсулирующая логику доступа к данным, представляя коллекцию доменных объектов в памяти. Интерфейс в
+domain layer, реализация в infrastructure. userRepository.findById(id) скрывает SQL/NoSQL детали от бизнес-логики.
+Обеспечивает testability (mock repositories), изоляцию persistence concerns, единую точку для queries. Часть
+Domain-Driven Design, работает с Aggregate Roots, не с произвольными сущностями.

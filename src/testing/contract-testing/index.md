@@ -1,1 +1,5 @@
-Verifying API contracts between consumer and provider. Consumer-driven: consumers define expectations, providers verify implementation. Pact pattern: consumer generates contract (expected requests/responses), provider validates against contract. Prevents breaking changes, enables independent deployments в microservices. Faster and more reliable чем integration/E2E tests. Tools: Pact, Spring Cloud Contract. Contract stored в repository, versioned. CI integration: consumer tests generate contracts, provider tests verify. Replaces extensive integration testing между teams.
+Verifying API contracts between consumer and provider. Consumer-driven: consumers define expectations, providers verify
+implementation. Pact pattern: consumer generates contract (expected requests/responses), provider validates against
+contract. Prevents breaking changes, enables independent deployments в microservices. Faster and more reliable чем
+integration/E2E tests. Tools: Pact, Spring Cloud Contract. Contract stored в repository, versioned. CI integration:
+consumer tests generate contracts, provider tests verify. Replaces extensive integration testing между teams.

@@ -1,1 +1,3 @@
-Протоколы peer-to-peer коммуникации, где узлы периодически обмениваются состоянием со случайными соседями. Eventually consistent распространение данных без single point of failure. Используется в Consul, Cassandra для membership и failure detection. Масштабируется до тысяч узлов без coordinator.
+Протоколы peer-to-peer коммуникации, где узлы периодически обмениваются состоянием со случайными соседями. Eventually
+consistent распространение данных без single point of failure. Используется в Consul, Cassandra для membership и failure
+detection. Масштабируется до тысяч узлов без coordinator.

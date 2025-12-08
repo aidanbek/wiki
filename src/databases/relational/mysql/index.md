@@ -1,1 +1,2 @@
-Popular open-source RDBMS. InnoDB engine: ACID, row-level locking. Historically easier setup чем Postgres, но менее feature-rich. Широко used в web (LAMP stack). Owned by Oracle, fork - MariaDB. Replication straightforward.
+Popular open-source RDBMS. InnoDB engine: ACID, row-level locking. Historically easier setup чем Postgres, но менее
+feature-rich. Широко used в web (LAMP stack). Owned by Oracle, fork - MariaDB. Replication straightforward.

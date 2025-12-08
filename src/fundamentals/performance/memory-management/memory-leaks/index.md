@@ -1,1 +1,6 @@
-Unreleased memory no longer accessible but not freed. Gradual memory consumption growth → OOM crashes. Common causes: circular references (pre-GC languages), event listeners not removed, caches без eviction, closures capturing large objects, native resources (file handles, sockets) not closed. Detection: heap dumps over time, memory profilers (Valgrind, Chrome DevTools), monitoring RSS growth. Languages: manual management (C/C++), garbage collected (Java, Python) still vulnerable. Prevention: RAII patterns, weak references, careful closure usage, automated testing with memory assertions.
+Unreleased memory no longer accessible but not freed. Gradual memory consumption growth → OOM crashes. Common causes:
+circular references (pre-GC languages), event listeners not removed, caches без eviction, closures capturing large
+objects, native resources (file handles, sockets) not closed. Detection: heap dumps over time, memory profilers (
+Valgrind, Chrome DevTools), monitoring RSS growth. Languages: manual management (C/C++), garbage collected (Java,
+Python) still vulnerable. Prevention: RAII patterns, weak references, careful closure usage, automated testing with
+memory assertions.

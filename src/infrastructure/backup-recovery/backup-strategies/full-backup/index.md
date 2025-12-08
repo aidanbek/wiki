@@ -1,1 +1,2 @@
-Complete copy всех данных. Largest, slowest, simplest restore. Foundation для incremental/differential. Scheduled periodically (weekly), incrementals/differentials between. Testing restores verifies integrity.
+Complete copy всех данных. Largest, slowest, simplest restore. Foundation для incremental/differential. Scheduled
+periodically (weekly), incrementals/differentials between. Testing restores verifies integrity.

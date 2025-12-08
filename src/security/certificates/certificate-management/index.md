@@ -1,1 +1,4 @@
-Lifecycle: generation (CSR), issuance (CA signing), deployment, renewal, revocation. Challenges: expiry monitoring, rotation without downtime, private key security. Certificate pinning prevents MITM. Automation: Let's Encrypt, cert-manager (K8s). Certificate chains: leaf → intermediate → root CA. Monitoring: expiry alerts (30/14/7 days), validity checks. Wildcard certs simplify management но broader impact при compromise.
+Lifecycle: generation (CSR), issuance (CA signing), deployment, renewal, revocation. Challenges: expiry monitoring,
+rotation without downtime, private key security. Certificate pinning prevents MITM. Automation: Let's Encrypt,
+cert-manager (K8s). Certificate chains: leaf → intermediate → root CA. Monitoring: expiry alerts (30/14/7 days),
+validity checks. Wildcard certs simplify management но broader impact при compromise.

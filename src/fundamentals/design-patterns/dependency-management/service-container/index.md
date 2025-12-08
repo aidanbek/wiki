@@ -1,1 +1,4 @@
-Фреймворк/библиотека автоматизирующий DI - регистрация зависимостей, разрешение графа, управление lifecycle. Конфигурация: container.Register<IRepository, SQLRepository>(), использование: container.Resolve<UserService>(). Контейнер рекурсивно создаёт все зависимости, управляет singleton/transient/scoped lifetime. Примеры: Autofac, Unity, Ninject (.NET), Spring (Java), InversifyJS (TS). Превращает ручной wiring в декларативную конфигурацию.
+Фреймворк/библиотека автоматизирующий DI - регистрация зависимостей, разрешение графа, управление lifecycle.
+Конфигурация: container.Register<IRepository, SQLRepository>(), использование: container.Resolve<UserService>().
+Контейнер рекурсивно создаёт все зависимости, управляет singleton/transient/scoped lifetime. Примеры: Autofac, Unity,
+Ninject (.NET), Spring (Java), InversifyJS (TS). Превращает ручной wiring в декларативную конфигурацию.

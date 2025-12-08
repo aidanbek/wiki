@@ -1,1 +1,2 @@
-Column-oriented OLAP БД для analytics. Extremely fast aggregations на billions rows. SQL support, compression, vectorized execution. Реальном времени data ingestion. Distributed queries. Used в observability, business analytics.
+Column-oriented OLAP БД для analytics. Extremely fast aggregations на billions rows. SQL support, compression,
+vectorized execution. Реальном времени data ingestion. Distributed queries. Used в observability, business analytics.

@@ -1,1 +1,6 @@
-Overall approach to testing: что test, как much, когда. Testing pyramid: many unit tests (base) → fewer integration tests (middle) → few E2E tests (top). Trade-offs: confidence vs speed vs maintenance. Shift-left: testing earlier в development cycle. Risk-based testing: prioritize high-risk areas. Test quadrants (Agile Testing): automated (unit, integration) vs manual (exploratory, usability), technology-facing vs business-facing. Continuous Testing в CI/CD pipeline. Metrics: code coverage, test execution time, flakiness rate, defect escape rate. Balance cost с value - not all code needs same coverage.
+Overall approach to testing: что test, как much, когда. Testing pyramid: many unit tests (base) → fewer integration
+tests (middle) → few E2E tests (top). Trade-offs: confidence vs speed vs maintenance. Shift-left: testing earlier в
+development cycle. Risk-based testing: prioritize high-risk areas. Test quadrants (Agile Testing): automated (unit,
+integration) vs manual (exploratory, usability), technology-facing vs business-facing. Continuous Testing в CI/CD
+pipeline. Metrics: code coverage, test execution time, flakiness rate, defect escape rate. Balance cost с value - not
+all code needs same coverage.

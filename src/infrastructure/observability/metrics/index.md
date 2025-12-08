@@ -1,1 +1,3 @@
-Numeric measurements: counters (requests), gauges (memory usage), histograms (latencies). Time-series data stored в TSDB. Dashboards visualize trends. Prometheus standard format. RED method (Rate, Errors, Duration) или USE (Utilization, Saturation, Errors) frameworks. Aggregation for analysis.
+Numeric measurements: counters (requests), gauges (memory usage), histograms (latencies). Time-series data stored в
+TSDB. Dashboards visualize trends. Prometheus standard format. RED method (Rate, Errors, Duration) или USE (Utilization,
+Saturation, Errors) frameworks. Aggregation for analysis.

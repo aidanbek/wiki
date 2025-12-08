@@ -1,1 +1,5 @@
-Separating configuration across environments (dev, staging, production). 12-factor app principle: config в environment variables, not code. Environment-specific: database URLs, API keys, feature toggles, resource limits. Prevents accidental production changes, enables consistent deployments. Tools: dotenv files (local), K8s ConfigMaps/Secrets, cloud parameter stores. Challenges: config drift between environments, secret management, documenting required variables.
+Separating configuration across environments (dev, staging, production). 12-factor app principle: config в environment
+variables, not code. Environment-specific: database URLs, API keys, feature toggles, resource limits. Prevents
+accidental production changes, enables consistent deployments. Tools: dotenv files (local), K8s ConfigMaps/Secrets,
+cloud parameter stores. Challenges: config drift between environments, secret management, documenting required
+variables.

@@ -1,1 +1,2 @@
-Увеличение ресурсов сервера: CPU, RAM, faster disks. Проще чем horizontal, no application changes. Limits: hardware max, single point of failure, expensive at scale. Используется до исчерпания, затем переход к horizontal.
+Увеличение ресурсов сервера: CPU, RAM, faster disks. Проще чем horizontal, no application changes. Limits: hardware max,
+single point of failure, expensive at scale. Используется до исчерпания, затем переход к horizontal.

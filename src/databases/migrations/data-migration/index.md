@@ -1,1 +1,2 @@
-Перенос данных при schema changes. ETL scripts, batch processing. Consistency challenges: live writes during migration. Strategies: dual-writes (old + new schema), shadow traffic, read-only periods. Validation: checksums, row counts.
+Перенос данных при schema changes. ETL scripts, batch processing. Consistency challenges: live writes during migration.
+Strategies: dual-writes (old + new schema), shadow traffic, read-only periods. Validation: checksums, row counts.

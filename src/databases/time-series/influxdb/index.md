@@ -1,1 +1,3 @@
-Purpose-built time-series DB с собственным query language (InfluxQL/Flux). Schemaless tags + fields модель. Встроенная retention и downsampling. High write throughput, но ограниченные JOIN capabilities. Популярен в monitoring/observability stack.
+Purpose-built time-series DB с собственным query language (InfluxQL/Flux). Schemaless tags + fields модель. Встроенная
+retention и downsampling. High write throughput, но ограниченные JOIN capabilities. Популярен в monitoring/observability
+stack.

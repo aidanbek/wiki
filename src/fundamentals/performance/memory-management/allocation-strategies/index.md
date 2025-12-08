@@ -1,1 +1,5 @@
-Methods для memory allocation. Stack allocation: automatic, fast (pointer bump), limited size, LIFO lifetime. Heap allocation: dynamic, flexible, slower (free list search), requires deallocation. Strategies: first-fit (first adequate block), best-fit (smallest adequate, fragmentation), worst-fit (largest block). Arena/region allocation: bulk allocate, bulk free (fast, useful для request-scoped). Object pools: pre-allocate, reuse (reduces GC pressure). Bump allocator: sequential pointer increment (extremely fast, needs periodic reset). Trade-offs: speed vs fragmentation vs flexibility.
+Methods для memory allocation. Stack allocation: automatic, fast (pointer bump), limited size, LIFO lifetime. Heap
+allocation: dynamic, flexible, slower (free list search), requires deallocation. Strategies: first-fit (first adequate
+block), best-fit (smallest adequate, fragmentation), worst-fit (largest block). Arena/region allocation: bulk allocate,
+bulk free (fast, useful для request-scoped). Object pools: pre-allocate, reuse (reduces GC pressure). Bump allocator:
+sequential pointer increment (extremely fast, needs periodic reset). Trade-offs: speed vs fragmentation vs flexibility.

@@ -1,1 +1,4 @@
-Tooling around OpenAPI specification. Swagger UI: renders interactive API documentation. Swagger Editor: design APIs. Swagger Codegen/OpenAPI Generator: generate client SDKs, server stubs. Swagger Hub: collaborative API design platform. Brand confusion: Swagger rebranded to OpenAPI (spec), Swagger remains tool suite. Popular для REST API documentation, reduces developer onboarding time.
+Tooling around OpenAPI specification. Swagger UI: renders interactive API documentation. Swagger Editor: design APIs.
+Swagger Codegen/OpenAPI Generator: generate client SDKs, server stubs. Swagger Hub: collaborative API design platform.
+Brand confusion: Swagger rebranded to OpenAPI (spec), Swagger remains tool suite. Popular для REST API documentation,
+reduces developer onboarding time.

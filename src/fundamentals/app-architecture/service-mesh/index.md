@@ -1,3 +1,8 @@
 Service Mesh
 
-Infrastructure layer для управления service-to-service коммуникацией в microservices через sidecars - networking abstraction. Sidecar proxy (Envoy) рядом с каждым сервисом перехватывает весь network traffic, реализует cross-cutting concerns: load balancing, retries, circuit breaking, metrics, tracing, mTLS. Control plane (Istio, Linkerd, Consul) управляет configuration всех proxies. Приложение не знает о mesh - прозрачно получает resilience, observability, security. Решает operational complexity микросервисов, но adds собственную (learning curve, resource overhead). Оправдан при >10-20 сервисов и требованиях к reliability/security.
+Infrastructure layer для управления service-to-service коммуникацией в microservices через sidecars - networking
+abstraction. Sidecar proxy (Envoy) рядом с каждым сервисом перехватывает весь network traffic, реализует cross-cutting
+concerns: load balancing, retries, circuit breaking, metrics, tracing, mTLS. Control plane (Istio, Linkerd, Consul)
+управляет configuration всех proxies. Приложение не знает о mesh - прозрачно получает resilience, observability,
+security. Решает operational complexity микросервисов, но adds собственную (learning curve, resource overhead). Оправдан
+при >10-20 сервисов и требованиях к reliability/security.

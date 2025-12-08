@@ -1,1 +1,2 @@
-Distributed key-value store с strong consistency (Raft). Основа service discovery в Kubernetes. Поддерживает watch для realtime уведомлений об изменениях, TTL для ephemeral keys. Критично для cluster coordination, leader election.
+Distributed key-value store с strong consistency (Raft). Основа service discovery в Kubernetes. Поддерживает watch для
+realtime уведомлений об изменениях, TTL для ephemeral keys. Критично для cluster coordination, leader election.

@@ -1,1 +1,3 @@
-Following requests across distributed services. Spans represent operations, traces connect related spans. Correlation IDs link logs/metrics. Identifies bottlenecks, visualizes call graphs. Tools: Jaeger, Zipkin, OpenTelemetry. Sampling reduces overhead (not every request traced). Critical для microservices debugging.
+Following requests across distributed services. Spans represent operations, traces connect related spans. Correlation
+IDs link logs/metrics. Identifies bottlenecks, visualizes call graphs. Tools: Jaeger, Zipkin, OpenTelemetry. Sampling
+reduces overhead (not every request traced). Critical для microservices debugging.

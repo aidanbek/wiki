@@ -1,1 +1,5 @@
-Replacing real dependencies с controlled test doubles. Types: mock (verify interactions), stub (return fixed responses), fake (simplified working implementation), spy (record calls). Use cases: isolate unit under test, simulate error conditions, avoid slow/expensive operations (API calls, DB queries). Frameworks: Mockito (Java), unittest.mock (Python), Sinon (JS). Over-mocking risks: tests coupled to implementation, не testing real integrations. Balance: mock external dependencies, use real objects internally.
+Replacing real dependencies с controlled test doubles. Types: mock (verify interactions), stub (return fixed responses),
+fake (simplified working implementation), spy (record calls). Use cases: isolate unit under test, simulate error
+conditions, avoid slow/expensive operations (API calls, DB queries). Frameworks: Mockito (Java), unittest.mock (Python),
+Sinon (JS). Over-mocking risks: tests coupled to implementation, не testing real integrations. Balance: mock external
+dependencies, use real objects internally.

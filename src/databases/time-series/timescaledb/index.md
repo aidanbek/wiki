@@ -1,1 +1,3 @@
-PostgreSQL extension для time-series данных. Автоматический partitioning по времени (hypertables), continuous aggregates для pre-computation. Сохраняет SQL совместимость и JOIN с relational данными. Хорош для hybrid workloads (time-series + relational).
+PostgreSQL extension для time-series данных. Автоматический partitioning по времени (hypertables), continuous aggregates
+для pre-computation. Сохраняет SQL совместимость и JOIN с relational данными. Хорош для hybrid workloads (time-series +
+relational).

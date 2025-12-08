@@ -1,1 +1,3 @@
-Restore database к specific timestamp. Requires: full backup + transaction logs (WAL, binlog). Useful for recovering from user errors (accidental DELETE). Cloud databases часто support continuous backups. RPO (Recovery Point Objective) determines log retention.
+Restore database к specific timestamp. Requires: full backup + transaction logs (WAL, binlog). Useful for recovering
+from user errors (accidental DELETE). Cloud databases часто support continuous backups. RPO (Recovery Point Objective)
+determines log retention.

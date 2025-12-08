@@ -1,1 +1,3 @@
-Replicas temporarily diverge, но eventually converge при отсутствии новых updates. Требует conflict resolution. Высокая availability, partition tolerance (AP в CAP). Используется в Dynamo-style БД, DNS, CDN. Application должен tolerate stale reads.
+Replicas temporarily diverge, но eventually converge при отсутствии новых updates. Требует conflict resolution. Высокая
+availability, partition tolerance (AP в CAP). Используется в Dynamo-style БД, DNS, CDN. Application должен tolerate
+stale reads.

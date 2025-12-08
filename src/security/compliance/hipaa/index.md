@@ -1,1 +1,4 @@
-Health Insurance Portability and Accountability Act (US healthcare data protection). Requirements: encryption (at-rest/in-transit), access controls, audit logs, breach notification, BAA (Business Associate Agreement) contracts. PHI (Protected Health Information) handling rules. Regular risk assessments, security training. Technical safeguards: MFA, automatic logoff, encryption key management. Penalties: $100-$50,000 per violation, criminal charges possible.
+Health Insurance Portability and Accountability Act (US healthcare data protection). Requirements: encryption (
+at-rest/in-transit), access controls, audit logs, breach notification, BAA (Business Associate Agreement) contracts.
+PHI (Protected Health Information) handling rules. Regular risk assessments, security training. Technical safeguards:
+MFA, automatic logoff, encryption key management. Penalties: $100-$50,000 per violation, criminal charges possible.

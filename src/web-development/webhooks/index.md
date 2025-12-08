@@ -1,1 +1,4 @@
-HTTP callbacks для event-driven notifications. Provider POST data к consumer URL когда event occurs. Push model (inverse API): consumer receives data без polling. Use cases: payment confirmations (Stripe), git pushes (GitHub), form submissions. Signature verification ensures authenticity (HMAC). Challenges: consumer must be publicly accessible, handle failures gracefully. Async processing recommended (acknowledge immediately, process later).
+HTTP callbacks для event-driven notifications. Provider POST data к consumer URL когда event occurs. Push model (inverse
+API): consumer receives data без polling. Use cases: payment confirmations (Stripe), git pushes (GitHub), form
+submissions. Signature verification ensures authenticity (HMAC). Challenges: consumer must be publicly accessible,
+handle failures gracefully. Async processing recommended (acknowledge immediately, process later).

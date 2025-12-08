@@ -1,1 +1,5 @@
-Site Reliability Engineering principles от Google. Treats operations as software problem. Key concepts: SLIs (Service Level Indicators - metrics), SLOs (Service Level Objectives - targets), error budgets (acceptable downtime). 50/50 rule: max 50% time on ops, rest on engineering. Blameless post-mortems, reducing toil (manual repetitive work), chaos engineering. Automation preferred over manual intervention. Metrics: toil percentage, MTTR, MTTF, change success rate. Culture: reliability через engineering rigor.
+Site Reliability Engineering principles от Google. Treats operations as software problem. Key concepts: SLIs (Service
+Level Indicators - metrics), SLOs (Service Level Objectives - targets), error budgets (acceptable downtime). 50/50 rule:
+max 50% time on ops, rest on engineering. Blameless post-mortems, reducing toil (manual repetitive work), chaos
+engineering. Automation preferred over manual intervention. Metrics: toil percentage, MTTR, MTTF, change success rate.
+Culture: reliability через engineering rigor.

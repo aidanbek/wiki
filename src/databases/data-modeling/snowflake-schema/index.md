@@ -1,1 +1,2 @@
-Normalized версия star schema. Dimensions разбиты на sub-dimensions (normalization). Меньше redundancy, больше JOINs. Сложнее queries, но меньше storage. Используется когда dimension data велика или часто меняется.
+Normalized версия star schema. Dimensions разбиты на sub-dimensions (normalization). Меньше redundancy, больше JOINs.
+Сложнее queries, но меньше storage. Используется когда dimension data велика или часто меняется.

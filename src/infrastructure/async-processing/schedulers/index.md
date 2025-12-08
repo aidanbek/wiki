@@ -1,1 +1,3 @@
-Execute tasks по schedule (cron-like). Tools: cron, systemd timers, Airflow. Distributed schedulers для HA (no single point failure). Task dependencies (DAGs), retry logic, alerting. Use cases: batch jobs, cleanup tasks, report generation. Idempotent tasks preferred (safe re-runs).
+Execute tasks по schedule (cron-like). Tools: cron, systemd timers, Airflow. Distributed schedulers для HA (no single
+point failure). Task dependencies (DAGs), retry logic, alerting. Use cases: batch jobs, cleanup tasks, report
+generation. Idempotent tasks preferred (safe re-runs).

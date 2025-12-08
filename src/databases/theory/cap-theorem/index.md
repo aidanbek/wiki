@@ -1,1 +1,3 @@
-Distributed система может гарантировать только 2 из 3: Consistency, Availability, Partition tolerance. Network partitions неизбежны → выбор между CP (consistent, unavailable during partition) или AP (available, potentially inconsistent). Практически - spectrum, не binary choice.
+Distributed система может гарантировать только 2 из 3: Consistency, Availability, Partition tolerance. Network
+partitions неизбежны → выбор между CP (consistent, unavailable during partition) или AP (available, potentially
+inconsistent). Практически - spectrum, не binary choice.

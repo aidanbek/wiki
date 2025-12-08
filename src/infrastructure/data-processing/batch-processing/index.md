@@ -1,1 +1,3 @@
-Processing large volumes данных в scheduled intervals (hourly, daily). Jobs operate на bounded datasets. High throughput, high latency acceptable. Frameworks: Hadoop MapReduce, Spark batch. Use cases: reports, aggregations, ML training. Trade-off: stale data vs processing efficiency.
+Processing large volumes данных в scheduled intervals (hourly, daily). Jobs operate на bounded datasets. High
+throughput, high latency acceptable. Frameworks: Hadoop MapReduce, Spark batch. Use cases: reports, aggregations, ML
+training. Trade-off: stale data vs processing efficiency.

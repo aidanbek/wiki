@@ -1,1 +1,4 @@
-Step-by-step procedures для handling common incidents и operational tasks. Includes: symptoms, diagnosis steps, resolution actions, rollback procedures. Living documents - updated after incidents. Reduces mean time to resolution (MTTR), enables junior engineers to handle incidents. Format: decision trees, checklists. Automated runbooks (self-healing scripts) где возможно. Stored в accessible location (wiki, git).
+Step-by-step procedures для handling common incidents и operational tasks. Includes: symptoms, diagnosis steps,
+resolution actions, rollback procedures. Living documents - updated after incidents. Reduces mean time to resolution (
+MTTR), enables junior engineers to handle incidents. Format: decision trees, checklists. Automated runbooks (
+self-healing scripts) где возможно. Stored в accessible location (wiki, git).

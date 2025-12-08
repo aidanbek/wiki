@@ -1,1 +1,2 @@
-HashiCorp решение для service discovery + health checking + KV store. Использует gossip (Serf) для membership, Raft для consistency. Multi-datacenter support из коробки. Встроенный DNS interface, service mesh capabilities (Consul Connect).
+HashiCorp решение для service discovery + health checking + KV store. Использует gossip (Serf) для membership, Raft для
+consistency. Multi-datacenter support из коробки. Встроенный DNS interface, service mesh capabilities (Consul Connect).

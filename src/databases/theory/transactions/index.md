@@ -1,1 +1,2 @@
-Группировка операций в atomic unit: all succeed or all fail. Обеспечивает data integrity при failures, concurrency. ACID properties vs BASE (eventual consistency). BEGIN/COMMIT/ROLLBACK semantics. Distributed transactions сложнее и дороже.
+Группировка операций в atomic unit: all succeed or all fail. Обеспечивает data integrity при failures, concurrency. ACID
+properties vs BASE (eventual consistency). BEGIN/COMMIT/ROLLBACK semantics. Distributed transactions сложнее и дороже.

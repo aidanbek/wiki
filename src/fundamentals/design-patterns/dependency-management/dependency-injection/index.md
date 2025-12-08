@@ -1,1 +1,5 @@
-Паттерн передачи зависимостей извне вместо создания внутри - через constructor, setter, interface injection. UserService(IUserRepository repository) вместо repository = new UserRepository() внутри. Явные зависимости в сигнатуре, класс не знает о конкретных реализациях. Обеспечивает testability (mock зависимости), flexibility (замена имплементации), соблюдение DIP. Три формы: constructor (предпочтительно), property (опционально), method injection (редко).
+Паттерн передачи зависимостей извне вместо создания внутри - через constructor, setter, interface injection.
+UserService(IUserRepository repository) вместо repository = new UserRepository() внутри. Явные зависимости в сигнатуре,
+класс не знает о конкретных реализациях. Обеспечивает testability (mock зависимости), flexibility (замена
+имплементации), соблюдение DIP. Три формы: constructor (предпочтительно), property (опционально), method injection (
+редко).

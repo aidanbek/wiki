@@ -1,1 +1,5 @@
-GitHub's CI/CD integrated with repositories. Workflows triggered по events (push, PR, schedule, manual). YAML syntax, reusable actions from marketplace. Matrix builds (multiple OS/language versions). Secrets management, environments with protection rules. Self-hosted runners для private infrastructure. Tight GitHub integration (status checks, deployments). Free tier generous для public repos. Growing ecosystem, displacing Travis CI/CircleCI. Simpler чем Jenkins, comparable to GitLab CI. Native support для container builds, releases, GitHub Pages.
+GitHub's CI/CD integrated with repositories. Workflows triggered по events (push, PR, schedule, manual). YAML syntax,
+reusable actions from marketplace. Matrix builds (multiple OS/language versions). Secrets management, environments with
+protection rules. Self-hosted runners для private infrastructure. Tight GitHub integration (status checks, deployments).
+Free tier generous для public repos. Growing ecosystem, displacing Travis CI/CircleCI. Simpler чем Jenkins, comparable
+to GitLab CI. Native support для container builds, releases, GitHub Pages.

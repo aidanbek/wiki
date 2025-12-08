@@ -1,1 +1,5 @@
-Случайный выбор записи для удаления - нет предположений о паттернах доступа. Удивительно неплохая производительность для many workloads, особенно uniform access. Минимальный overhead - нет maintenance структур, просто random pick. Используется как baseline или fallback. Redis использует approximated LRU через random sampling (выбирает N случайных, evicts least recent из них) - компромисс между эффективностью и overhead. Простота и предсказуемость performance (нет worst case).
+Случайный выбор записи для удаления - нет предположений о паттернах доступа. Удивительно неплохая производительность для
+many workloads, особенно uniform access. Минимальный overhead - нет maintenance структур, просто random pick.
+Используется как baseline или fallback. Redis использует approximated LRU через random sampling (выбирает N случайных,
+evicts least recent из них) - компромисс между эффективностью и overhead. Простота и предсказуемость performance (нет
+worst case).

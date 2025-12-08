@@ -1,1 +1,3 @@
-Balanced tree структура, стандарт в большинстве RDBMS. O(log n) search/insert/delete. Хранит sorted keys, поддерживает range queries эффективно. Self-balancing при modifications. Высокий fanout (сотни children) → малая глубина даже для миллионов records.
+Balanced tree структура, стандарт в большинстве RDBMS. O(log n) search/insert/delete. Хранит sorted keys, поддерживает
+range queries эффективно. Self-balancing при modifications. Высокий fanout (сотни children) → малая глубина даже для
+миллионов records.

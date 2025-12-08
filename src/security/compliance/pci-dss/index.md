@@ -1,1 +1,4 @@
-Payment Card Industry Data Security Standard для organizations handling card data. 12 requirements across 6 goals: secure network, protect cardholder data, vulnerability management, access control, monitoring, security policy. Key: never store CVV, tokenization preferred, quarterly vulnerability scans, annual penetration testing. SAQ (Self-Assessment Questionnaire) levels based on transaction volume. Non-compliance = fines, loss of card processing ability.
+Payment Card Industry Data Security Standard для organizations handling card data. 12 requirements across 6 goals:
+secure network, protect cardholder data, vulnerability management, access control, monitoring, security policy. Key:
+never store CVV, tokenization preferred, quarterly vulnerability scans, annual penetration testing. SAQ (Self-Assessment
+Questionnaire) levels based on transaction volume. Non-compliance = fines, loss of card processing ability.
