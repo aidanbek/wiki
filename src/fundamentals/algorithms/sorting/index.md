@@ -1,9 +1,9 @@
-Sorting (Общее)
+# Сортировка
 
-Фундаментальная операция упорядочивания элементов коллекции по определённому критерию - базовый примитив для оптимизации
-поиска, анализа данных, визуализации. Классификация по сложности: comparison-based (O(n log n) theoretical lower bound)
-и non-comparison (counting, radix могут быть O(n)). Ключевые характеристики: time complexity (worst/average/best), space
-complexity (in-place или требует дополнительной памяти), stability (сохраняет относительный порядок равных элементов),
-adaptivity (эффективность на частично отсортированных данных). Выбор зависит от размера данных, memory constraints,
-требований к stability, характера входных данных (random, nearly sorted, reverse sorted). Практически все языки имеют
-built-in sort оптимизированный для general case - используй его, custom реализация только для specialized needs.
+## Сравнение
+
+![img.png](media/comparison.png)
+
+## Links
+
+- https://habr.com/ru/articles/188010/

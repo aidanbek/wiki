@@ -102,7 +102,6 @@
                 - [Suffix-Tree](fundamentals/algorithms/data-structures/advanced/suffix-tree.md)
             - [Arrays](fundamentals/algorithms/data-structures/arrays/index.md)
                 - [Dynamic-Array](fundamentals/algorithms/data-structures/arrays/dynamic-array.md)
-            - [Comparison](fundamentals/algorithms/data-structures/comparison/index.md)
             - [Graphs](fundamentals/algorithms/data-structures/graphs/index.md)
                 - [Basics](fundamentals/algorithms/data-structures/graphs/basics.md)
                 - [Minimum-Spaning-Tree](fundamentals/algorithms/data-structures/graphs/minimum-spaning-tree.md)

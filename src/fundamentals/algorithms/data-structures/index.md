@@ -9,26 +9,30 @@
 
 Другими словами, АТД описывает что можно делать с данными, а не как именно это делается.
 
-- Stack
-- Queue
-- List
-- Set
-- Map
+- [Stack](stacks/index.md)
+- [Queue](queue/index.md)
+- [List](lists/index.md)
+- [Set](sets/index.md)
+- [Map](map/index.md)
 
-## Linear
+### Linear
 
-- Array
-- List
-- Stack
-- Queue
+- [Array](arrays/index.md)
+- [List](lists/index.md)
+- [Stack](stacks/index.md)
+- [Queue](queue/index.md)
 
-## Non-linear
+### Non-linear
 
-- Tree
-- Graph
+- [Tree](trees/index.md)
+- [Graph](graphs/index.md)
+
+## Сравнение
+
+![img.png](media/comparison.png)
 
 ## Links
 
 - https://practicum.yandex.ru/blog/10-osnovnyh-struktur-dannyh/
 - https://www.geeksforgeeks.org/dsa/difference-between-binary-tree-and-binary-search-tree/
-
+- https://habr.com/ru/articles/188010/
