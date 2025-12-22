@@ -84,6 +84,10 @@ low contention, higher throughput без блокировок. Pessimistic бл�
 Databases: pessimistic locking (SELECT FOR UPDATE), optimistic (version column, CAS). Optimistic может иметь livelock
 если continuous conflicts.
 
+### Links
+
+- https://habr.com/ru/articles/957954/
+
 ### Blocking vs Non-Blocking Algorithms
 
 Blocking - thread может быть suspended пока ждёт (mutex, semaphore). Non-blocking - progress guarantee без suspension (
