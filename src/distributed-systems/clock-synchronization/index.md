@@ -15,10 +15,10 @@
 - **Physical clocks** — приближают реальное wall-clock время (NTP, PTP). Удобны для людей и логов, но не дают строгой
   гарантии порядка.
 - **Logical clocks** — не привязаны к реальному времени, но точно отражают причинно-следственный порядок событий (
-  см. [[logical-clock]], [[vector-clocks]]).
+  см. [logical-clock](logical-clock/index.md), [vector-clocks](vector-clocks/index.md)).
 
 ## Когда что использовать
 
-- Логи, мониторинг, метрики — достаточно [[ntp]] с точностью в миллисекунды.
+- Логи, мониторинг, метрики — достаточно [ntp](ntp/index.md) с точностью в миллисекунды.
 - Causality и conflict resolution — нужны logical/vector clocks.
 - Строгая линеаризация по времени в БД — требуются специальные решения (TrueTime в Spanner с GPS/атомными часами).

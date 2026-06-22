@@ -18,7 +18,7 @@
 
 ## Реализации
 
-- [[etcd]] — strong-consistency KV-стор, основа discovery в Kubernetes.
-- [[consul]] — discovery + health checks + KV + service mesh из коробки.
-- [[zookeeper]] — старый, battle-tested вариант из Hadoop-экосистемы.
-- Под капотом этих систем — [[consensus]] (Raft/ZAB) для согласованности registry.
+- [etcd](etcd/index.md) — strong-consistency KV-стор, основа discovery в Kubernetes.
+- [consul](consul/index.md) — discovery + health checks + KV + service mesh из коробки.
+- [zookeeper](zookeeper/index.md) — старый, battle-tested вариант из Hadoop-экосистемы.
+- Под капотом этих систем — [consensus](../consensus/index.md) (Raft/ZAB) для согласованности registry.

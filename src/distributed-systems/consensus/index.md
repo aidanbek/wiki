@@ -19,7 +19,7 @@
 
 ## Алгоритмы и применение
 
-- [[paxos]] — классика, гибкий, но трудный для понимания и реализации.
-- [[raft]] — спроектирован как понятная альтернатива: leader election + log replication.
+- [paxos](paxos/index.md) — классика, гибкий, но трудный для понимания и реализации.
+- [raft](raft/index.md) — спроектирован как понятная альтернатива: leader election + log replication.
 - Поверх консенсуса строятся linearizable-хранилища: etcd, Consul, ZooKeeper, Spanner, CockroachDB (
-  см. [[service-discovery]]).
+  см. [service-discovery](../service-discovery/index.md)).

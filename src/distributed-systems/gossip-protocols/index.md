@@ -21,5 +21,5 @@ point of failure.
 
 - **Membership и failure detection** — кто в кластере жив (протокол SWIM).
 - Распространение метаданных и конфигурации.
-- Используется в Cassandra, [[consul]] (библиотека Serf), Riak.
-- Важно: gossip даёт eventual consistency, а не консенсус — для строгих решений нужен [[consensus]].
+- Используется в Cassandra, [consul](../service-discovery/consul/index.md) (библиотека Serf), Riak.
+- Важно: gossip даёт eventual consistency, а не консенсус — для строгих решений нужен [consensus](../consensus/index.md).

@@ -1,7 +1,7 @@
 # 2PC / 3PC (Two-/Three-Phase Commit)
 
 Протоколы атомарной фиксации транзакции на нескольких участниках: либо изменения применяют все, либо никто. Дают сильную
-согласованность, но дорого платят за неё блокировками и latency (см. [[distributed-transactions]]).
+согласованность, но дорого платят за неё блокировками и latency (см. [distributed-transactions](../index.md)).
 
 ## Two-Phase Commit
 
@@ -20,4 +20,4 @@
 - 3PC добавляет промежуточную фазу **pre-commit**, чтобы участники могли завершить транзакцию по таймауту без
   координатора (non-blocking).
 - На практике 3PC почти не используют: он не выдерживает сетевых разделений и добавляет ещё один round-trip.
-- Из-за latency и coordination overhead в микросервисах чаще выбирают [[saga-pattern]] или [[eventual-consistency]].
+- Из-за latency и coordination overhead в микросервисах чаще выбирают [saga-pattern](../saga-pattern/index.md) или [eventual-consistency](../eventual-consistency/index.md).

@@ -19,6 +19,6 @@
 
 ## Ограничения и развитие
 
-- Lamport clock не умеет отличать «причинно связаны» от «параллельны» — для этого нужны [[vector-clocks]].
-- Не отражает wall-clock time, поэтому бесполезен для TTL и человекочитаемых timestamp (см. [[ntp]]).
+- Lamport clock не умеет отличать «причинно связаны» от «параллельны» — для этого нужны [vector-clocks](../vector-clocks/index.md).
+- Не отражает wall-clock time, поэтому бесполезен для TTL и человекочитаемых timestamp (см. [ntp](../ntp/index.md)).
 - Используется для detecting causality violations и как основа для total order через тай-брейк по id узла.

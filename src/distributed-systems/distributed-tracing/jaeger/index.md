@@ -1,7 +1,7 @@
 # Jaeger
 
 Open-source бэкенд для distributed tracing, изначально созданный в Uber и принятый в CNCF. Собирает span'ы, хранит их и
-даёт UI для разбора latency и зависимостей между сервисами (см. [[distributed-tracing]]).
+даёт UI для разбора latency и зависимостей между сервисами (см. [distributed-tracing](../index.md)).
 
 ## Архитектура
 
@@ -19,5 +19,5 @@ Open-source бэкенд для distributed tracing, изначально соз
 ## Когда выбирать
 
 - Нужен зрелый, масштабируемый бэкенд под большой объём трейсов в Kubernetes-окружении.
-- Инструментирование лучше делать через [[opentelmetry]], а Jaeger использовать как backend; альтернатива со схожей
-  нишей — [[zipkin]].
+- Инструментирование лучше делать через [opentelmetry](../opentelmetry/index.md), а Jaeger использовать как backend; альтернатива со схожей
+  нишей — [zipkin](../zipkin/index.md).
