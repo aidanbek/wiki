@@ -11,10 +11,10 @@
 
 ## Разделы
 
-- Task-Queues — очереди задач и воркеры (Celery, Sidekiq, Bull).
-- Background-Jobs — долгие задачи вне запроса и хранение их результатов.
-- Schedulers — запуск задач по расписанию (cron, systemd timers, Airflow).
-- Patterns — паттерны надёжности: idempotency, retry, dead-letter queue.
+- [Task-Queues](task-queues/index.md) — очереди задач и воркеры (Celery, Sidekiq, Bull).
+- [Background-Jobs](background-jobs/index.md) — долгие задачи вне запроса и хранение их результатов.
+- [Schedulers](schedulers/index.md) — запуск задач по расписанию (cron, systemd timers, Airflow).
+- [Patterns](patterns/index.md) — паттерны надёжности: idempotency, retry, dead-letter queue.
 
 ## Подводные камни
 

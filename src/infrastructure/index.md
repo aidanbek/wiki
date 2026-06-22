@@ -5,20 +5,20 @@
 
 ## Разделы
 
-- Hosting — где крутится приложение: shared, VPS, dedicated, cloud.
-- Containerization — упаковка и оркестрация: Docker, Kubernetes.
-- Web-Servers — приём HTTP-трафика и reverse proxy: Nginx, Apache.
-- Networking — связность и доставка трафика: DNS, TCP/IP, балансировка, firewalls.
-- Message-Queues — асинхронный обмен сообщениями между сервисами: Kafka, RabbitMQ, SQS.
-- Async-Processing — фоновая обработка задач: очереди, воркеры, шедулеры, паттерны надёжности.
-- Data-Processing — batch, stream и ETL обработка данных.
-- Storage — хранение данных: файловые системы, блочное и объектное хранилище, tiering.
-- Deployment — доставка новых версий без простоя: стратегии и откаты.
-- Process-Management — запуск и присмотр за процессами: systemd, supervisor.
-- Observability — понимание состояния системы: логи, метрики, трейсы, алерты.
-- Resilience — устойчивость к сбоям: circuit breaker, retry, rate limiting, bulkhead.
-- Backup-Recovery — резервные копии и восстановление после катастроф.
-- Secrets-Management — безопасное хранение и ротация секретов.
+- [Hosting](hosting/index.md) — где крутится приложение: shared, VPS, dedicated, cloud.
+- [Containerization](containerization/index.md) — упаковка и оркестрация: Docker, Kubernetes.
+- [Web-Servers](web-servers/index.md) — приём HTTP-трафика и reverse proxy: Nginx, Apache.
+- [Networking](networking/index.md) — связность и доставка трафика: DNS, TCP/IP, балансировка, firewalls.
+- [Message-Queues](message-queues/index.md) — асинхронный обмен сообщениями между сервисами: Kafka, RabbitMQ, SQS.
+- [Async-Processing](async-processing/index.md) — фоновая обработка задач: очереди, воркеры, шедулеры, паттерны надёжности.
+- [Data-Processing](data-processing/index.md) — batch, stream и ETL обработка данных.
+- [Storage](storage/index.md) — хранение данных: файловые системы, блочное и объектное хранилище, tiering.
+- [Deployment](deployment/index.md) — доставка новых версий без простоя: стратегии и откаты.
+- [Process-Management](process-management/index.md) — запуск и присмотр за процессами: systemd, supervisor.
+- [Observability](observability/index.md) — понимание состояния системы: логи, метрики, трейсы, алерты.
+- [Resilience](resilience/index.md) — устойчивость к сбоям: circuit breaker, retry, rate limiting, bulkhead.
+- [Backup-Recovery](backup-recovery/index.md) — резервные копии и восстановление после катастроф.
+- [Secrets-Management](secrets-management/index.md) — безопасное хранение и ротация секретов.
 
 ## Сквозные принципы
 

@@ -5,9 +5,9 @@
 
 ## Разделы
 
-- Backup-Strategies — типы резервных копий: full, incremental, differential.
-- Point-In-Time-Recovery — восстановление на конкретный момент времени по логам транзакций.
-- Disaster-Recovery — возврат сервиса после катастрофы: failover, RTO/RPO.
+- [Backup-Strategies](backup-strategies/index.md) — типы резервных копий: full, incremental, differential.
+- [Point-In-Time-Recovery](point-in-time-recovery/index.md) — восстановление на конкретный момент времени по логам транзакций.
+- [Disaster-Recovery](disaster-recovery/index.md) — возврат сервиса после катастрофы: failover, RTO/RPO.
 
 ## Ключевые величины
 

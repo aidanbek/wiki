@@ -5,8 +5,8 @@
 
 ## Разделы
 
-- Strategies — стратегии выката: blue-green, canary, rolling, zero-downtime.
-- Rollback — быстрый возврат к предыдущей версии при проблемах.
+- [Strategies](strategies/index.md) — стратегии выката: blue-green, canary, rolling, zero-downtime.
+- [Rollback](rollback/index.md) — быстрый возврат к предыдущей версии при проблемах.
 
 ## Базовые требования
 

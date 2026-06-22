@@ -5,12 +5,12 @@
 
 ## Темы
 
-- ACID — атомарность, согласованность, изоляция, durability.
-- Transactions — атомарные единицы работы, ACID vs BASE, распределённые транзакции.
+- [ACID](acid/index.md) — атомарность, согласованность, изоляция, durability.
+- [Transactions](transactions/index.md) — атомарные единицы работы, ACID vs BASE, распределённые транзакции.
 - Isolation Levels — уровни изоляции и аномалии (dirty/non-repeatable/phantom reads).
-- CAP Theorem — выбор между consistency и availability при сетевых разделах.
-- Consistency Model — спектр гарантий от linearizable до eventual.
-- Normalization — нормальные формы и денормализация.
+- [CAP Theorem](cap-theorem/index.md) — выбор между consistency и availability при сетевых разделах.
+- [Consistency Model](consistency-model/index.md) — спектр гарантий от linearizable до eventual.
+- [Normalization](normalization/index.md) — нормальные формы и денормализация.
 
 ## Зачем это знать
 

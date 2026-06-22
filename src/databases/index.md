@@ -7,16 +7,16 @@
 
 ## Разделы
 
-- Theory — ACID, транзакции, isolation levels, CAP, модели консистентности, нормализация.
-- Relational — реляционные СУБД (PostgreSQL, MySQL) и основы SQL.
-- NoSQL — key-value, document, column-family, graph, search.
-- Time-Series — БД для метрик/IoT/телеметрии.
-- Data-Modeling — OLTP vs OLAP, star/snowflake схемы.
-- Performance — индексы, оптимизация запросов, кэширование, connection pooling, N+1.
-- Scaling — вертикальное/горизонтальное масштабирование, репликация, партиционирование, шардирование.
-- Migrations — версионирование схемы, zero-downtime, откаты, перенос данных.
-- Consistency-Patterns — strong/eventual/causal consistency.
-- Change-Data-Capture — отслеживание изменений (Debezium, outbox).
+- [Theory](theory/index.md) — ACID, транзакции, isolation levels, CAP, модели консистентности, нормализация.
+- [Relational](relational/index.md) — реляционные СУБД (PostgreSQL, MySQL) и основы SQL.
+- [NoSQL](nosql/index.md) — key-value, document, column-family, graph, search.
+- [Time-Series](time-series/index.md) — БД для метрик/IoT/телеметрии.
+- [Data-Modeling](data-modeling/index.md) — OLTP vs OLAP, star/snowflake схемы.
+- [Performance](performance/index.md) — индексы, оптимизация запросов, кэширование, connection pooling, N+1.
+- [Scaling](scaling/index.md) — вертикальное/горизонтальное масштабирование, репликация, партиционирование, шардирование.
+- [Migrations](migrations/index.md) — версионирование схемы, zero-downtime, откаты, перенос данных.
+- [Consistency-Patterns](consistency-patterns/index.md) — strong/eventual/causal consistency.
+- [Change-Data-Capture](change-data-capture/index.md) — отслеживание изменений (Debezium, outbox).
 
 ## Как выбирать БД
 

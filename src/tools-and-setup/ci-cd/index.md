@@ -18,9 +18,9 @@ Continuous Integration / Continuous Delivery — автоматизация сб
 
 ## Разделы
 
-- GitHub Actions — CI/CD внутри GitHub, экосистема готовых actions.
-- GitLab CI — встроенный в GitLab pipeline через `.gitlab-ci.yml`.
-- Jenkins — гибкий self-hosted сервер-ветеран с плагинами.
+- [GitHub Actions](github-actions/index.md) — CI/CD внутри GitHub, экосистема готовых actions.
+- [GitLab CI](gitlab-ci/index.md) — встроенный в GitLab pipeline через `.gitlab-ci.yml`.
+- [Jenkins](jenkins/index.md) — гибкий self-hosted сервер-ветеран с плагинами.
 
 ## Подводные камни
 

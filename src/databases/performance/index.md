@@ -5,11 +5,11 @@
 
 ## Темы
 
-- Indexing — структуры для быстрого поиска (B-tree, hash, составные, стратегии).
-- Query-Optimization — анализ и ускорение запросов (EXPLAIN, slow log).
-- Caching — материализованные представления и кэш результатов запросов.
-- Connection-Pooling — переиспользование соединений.
-- N-Plus-One — устранение лавины мелких запросов из ORM.
+- [Indexing](indexing/index.md) — структуры для быстрого поиска (B-tree, hash, составные, стратегии).
+- [Query-Optimization](query-optimization/index.md) — анализ и ускорение запросов (EXPLAIN, slow log).
+- [Caching](caching/index.md) — материализованные представления и кэш результатов запросов.
+- [Connection-Pooling](connection-pooling/index.md) — переиспользование соединений.
+- [N-Plus-One](n-plus-one/index.md) — устранение лавины мелких запросов из ORM.
 
 ## Подход к оптимизации
 

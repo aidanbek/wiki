@@ -5,9 +5,9 @@
 
 ## Темы
 
-- SQL-Fundamentals — базовый язык запросов и команд (DDL/DML/DCL).
+- [SQL-Fundamentals](sql-fundamentals/index.md) — базовый язык запросов и команд (DDL/DML/DCL).
 - PostgreSQL — расширяемая ORDBMS, частый выбор по умолчанию.
-- MySQL — популярная СУБД, основа LAMP-стека.
+- [MySQL](mysql/index.md) — популярная СУБД, основа LAMP-стека.
 
 ## Сильные стороны
 

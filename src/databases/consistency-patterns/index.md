@@ -5,9 +5,9 @@
 
 ## Темы
 
-- Strong Consistency — все чтения видят последнюю запись (CP в CAP); дорого, но корректно.
-- Eventual Consistency — реплики сходятся со временем (AP в CAP); доступно и быстро, но возможны stale reads.
-- Causal Consistency — сохраняется причинно-следственный порядок; промежуточный вариант.
+- [Strong Consistency](strong-consistency/index.md) — все чтения видят последнюю запись (CP в CAP); дорого, но корректно.
+- [Eventual Consistency](eventual-consistency/index.md) — реплики сходятся со временем (AP в CAP); доступно и быстро, но возможны stale reads.
+- [Causal Consistency](causal-consistency/index.md) — сохраняется причинно-следственный порядок; промежуточный вариант.
 
 ## Как выбирать
 

@@ -6,10 +6,10 @@ tiers).
 
 ## Разделы
 
-- File-Systems — иерархическое хранение файлов (локальные и распределённые ФС).
-- Blob-Storage — блочное хранилище больших бинарных объектов.
-- Object-Storage — плоское хранилище объектов с доступом по HTTP (S3-стиль).
-- Storage-Tiers — распределение данных по уровням hot/warm/cold ради экономии.
+- [File-Systems](file-systems/index.md) — иерархическое хранение файлов (локальные и распределённые ФС).
+- [Blob-Storage](blob-storage/index.md) — блочное хранилище больших бинарных объектов.
+- [Object-Storage](object-storage/index.md) — плоское хранилище объектов с доступом по HTTP (S3-стиль).
+- [Storage-Tiers](storage-tiers/index.md) — распределение данных по уровням hot/warm/cold ради экономии.
 
 ## Как выбирать
 

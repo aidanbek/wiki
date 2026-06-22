@@ -6,10 +6,10 @@
 
 ## Разделы
 
-- Env-Variables — простейший способ передачи конфигурации и секретов через окружение.
-- Encryption — шифрование данных at-rest и in-transit.
-- Vault — централизованное хранилище секретов (HashiCorp Vault).
-- Rotation — периодическая смена учётных данных.
+- [Env-Variables](env-variables/index.md) — простейший способ передачи конфигурации и секретов через окружение.
+- [Encryption](encryption/index.md) — шифрование данных at-rest и in-transit.
+- [Vault](vault/index.md) — централизованное хранилище секретов (HashiCorp Vault).
+- [Rotation](rotation/index.md) — периодическая смена учётных данных.
 
 ## Принципы
 

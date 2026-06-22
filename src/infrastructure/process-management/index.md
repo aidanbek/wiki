@@ -5,8 +5,8 @@
 
 ## Разделы
 
-- Systemd — штатный init и менеджер сервисов в большинстве Linux-дистрибутивов.
-- Supervisor — простой process manager уровня пользователя для приложений.
+- [Systemd](systemd/index.md) — штатный init и менеджер сервисов в большинстве Linux-дистрибутивов.
+- [Supervisor](supervisor/index.md) — простой process manager уровня пользователя для приложений.
 
 ## Зачем
 

@@ -4,8 +4,8 @@
 
 ## Темы
 
-- Execution-Plan — как читать план выполнения (EXPLAIN/EXPLAIN ANALYZE), типы сканов и JOIN-ов.
-- Query-Analysis — как находить проблемные запросы (slow log, pg_stat_statements) и что искать.
+- [Execution-Plan](execution-plan/index.md) — как читать план выполнения (EXPLAIN/EXPLAIN ANALYZE), типы сканов и JOIN-ов.
+- [Query-Analysis](query-analysis/index.md) — как находить проблемные запросы (slow log, pg_stat_statements) и что искать.
 
 ## Типичные причины медленных запросов
 

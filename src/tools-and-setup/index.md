@@ -6,12 +6,12 @@
 
 ## Разделы
 
-- Git — распределённый контроль версий, ветвления и workflow.
-- CI/CD — автоматизация сборки, тестов и доставки (GitHub Actions, GitLab CI, Jenkins).
-- Configuration Management — конфиг отдельно от кода: окружения, config servers, feature flags.
-- Environments — разделение dev/staging/production и их parity.
-- Editors — редакторы и IDE, LSP, удалённая разработка.
-- CLI Tools — утилиты командной строки и автоматизация рутины.
+- [Git](git/index.md) — распределённый контроль версий, ветвления и workflow.
+- [CI/CD](ci-cd/index.md) — автоматизация сборки, тестов и доставки (GitHub Actions, GitLab CI, Jenkins).
+- [Configuration Management](configuration-management/index.md) — конфиг отдельно от кода: окружения, config servers, feature flags.
+- [Environments](environments/index.md) — разделение dev/staging/production и их parity.
+- [Editors](editors/index.md) — редакторы и IDE, LSP, удалённая разработка.
+- [CLI Tools](cli-tools/index.md) — утилиты командной строки и автоматизация рутины.
 
 ## Сквозные принципы
 

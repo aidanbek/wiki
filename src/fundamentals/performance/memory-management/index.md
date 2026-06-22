@@ -4,6 +4,6 @@
 
 ## Темы
 
-- **Allocation strategies** — stack vs heap, arena, object pools.
-- **Garbage collection** — автоматическое освобождение и его паузы.
-- **Memory leaks** — утечки и их диагностика.
+- [**Allocation strategies**](allocation-strategies/index.md) — stack vs heap, arena, object pools.
+- [**Garbage collection**](garbage-collection/index.md) — автоматическое освобождение и его паузы.
+- [**Memory leaks**](memory-leaks/index.md) — утечки и их диагностика.

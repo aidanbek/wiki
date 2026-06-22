@@ -11,9 +11,9 @@
 
 ## Разделы
 
-- Environment Management — разделение конфига по окружениям (dev/staging/prod).
-- Config Servers — централизованное хранилище конфигов с hot reload.
-- Feature Flags — runtime-тоглы для управления функциональностью без деплоя.
+- [Environment Management](environment-management/index.md) — разделение конфига по окружениям (dev/staging/prod).
+- [Config Servers](config-servers/index.md) — централизованное хранилище конфигов с hot reload.
+- [Feature Flags](feature-flags/index.md) — runtime-тоглы для управления функциональностью без деплоя.
 
 ## Подводные камни
 

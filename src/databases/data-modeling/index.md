@@ -5,9 +5,9 @@
 
 ## Темы
 
-- OLTP vs OLAP — транзакционная vs аналитическая нагрузка и их разные оптимизации.
-- Star Schema — денормализованная модель для аналитики (fact + dimensions).
-- Snowflake Schema — нормализованный вариант star schema.
+- [OLTP vs OLAP](oltp-vs-olap/index.md) — транзакционная vs аналитическая нагрузка и их разные оптимизации.
+- [Star Schema](star-schema/index.md) — денормализованная модель для аналитики (fact + dimensions).
+- [Snowflake Schema](snowflake-schema/index.md) — нормализованный вариант star schema.
 
 ## Принципы
 

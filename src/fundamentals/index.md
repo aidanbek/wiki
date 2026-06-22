@@ -4,11 +4,11 @@
 
 ## Разделы
 
-- **Algorithms** — алгоритмы и структуры данных.
-- **Design principles** — SOLID, GRASP, DRY/KISS/YAGNI.
-- **Design patterns** — GoF, архитектурные, управление зависимостями.
-- **App architecture** — монолит, микросервисы, DDD, event-driven и др.
-- **Concurrency** — потоки, синхронизация, паттерны параллелизма.
-- **Caching** — стратегии, инвалидация, вытеснение, system-level.
-- **Performance** — измерение, нагрузка, память, профилирование.
-- **Development methodology** — Agile/Scrum/Kanban, TDD/BDD.
+- [**Algorithms**](algorithms/index.md) — алгоритмы и структуры данных.
+- [**Design principles**](design-principles/index.md) — SOLID, GRASP, DRY/KISS/YAGNI.
+- [**Design patterns**](design-patterns/index.md) — GoF, архитектурные, управление зависимостями.
+- [**App architecture**](app-architecture/index.md) — монолит, микросервисы, DDD, event-driven и др.
+- [**Concurrency**](concurrency/index.md) — потоки, синхронизация, паттерны параллелизма.
+- [**Caching**](caching/index.md) — стратегии, инвалидация, вытеснение, system-level.
+- [**Performance**](performance/index.md) — измерение, нагрузка, память, профилирование.
+- [**Development methodology**](development-methodology/index.md) — Agile/Scrum/Kanban, TDD/BDD.

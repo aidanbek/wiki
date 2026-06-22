@@ -5,10 +5,10 @@
 
 ## Темы
 
-- Schema-Versioning — миграции как упорядоченная история (Flyway/Liquibase/Alembic).
-- Zero-Downtime — expand-contract, обратная совместимость, online DDL.
-- Rollback-Strategies — reversible vs forward-only, feature flags, бэкапы.
-- Data-Migration — перенос/преобразование данных при живом трафике.
+- [Schema-Versioning](schema-versioning/index.md) — миграции как упорядоченная история (Flyway/Liquibase/Alembic).
+- [Zero-Downtime](zero-downtime/index.md) — expand-contract, обратная совместимость, online DDL.
+- [Rollback-Strategies](rollback-strategies/index.md) — reversible vs forward-only, feature flags, бэкапы.
+- [Data-Migration](data-migration/index.md) — перенос/преобразование данных при живом трафике.
 
 ## Принципы
 
