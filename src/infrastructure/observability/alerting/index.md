@@ -1,3 +1,18 @@
-Notifications при threshold breaches. Alert fatigue risk (too many false positives). Severity levels: critical (page),
-warning (ticket). Runbooks document response procedures. On-call rotations. Escalation policies. Good alerts:
-actionable, context-rich, appropriate urgency. Silence during maintenance windows.
+Alerting
+
+Уведомления при выходе показателей за пороги. Превращает пассивный мониторинг в активную реакцию: система сама зовёт
+человека, когда что-то ломается. Главная опасность — alert fatigue: поток ложных срабатываний, на который перестают
+реагировать.
+
+## Как устроено
+
+- Алерт срабатывает при нарушении порога (error rate, latency, насыщение ресурса).
+- Уровни серьёзности: critical (звонок/пейдж, будит ночью) против warning (тикет, разберут днём).
+- Escalation policies и on-call ротации определяют, кого и когда дёргать.
+- Runbook'и описывают, что делать при конкретном алерте.
+
+## Хорошие алерты
+
+- Actionable: алерт должен требовать действия, иначе это шум — удаляй или понижай.
+- Симптом-ориентированы: алертить лучше на то, что чувствует пользователь (рост ошибок/latency), а не на каждую метрику.
+- Заглушаются на время плановых работ (maintenance windows), чтобы не плодить ложные пейджи.

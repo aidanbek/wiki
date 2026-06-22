@@ -1,3 +1,16 @@
-Two identical environments: Blue (current), Green (new). Deploy к Green, test, switch traffic (load balancer/DNS).
-Instant rollback (switch back). Doubles infrastructure cost temporarily. Database synchronization challenges. Clean
-separation, minimal risk, но expensive.
+Blue-Green Deployment
+
+Два идентичных окружения: Blue (текущее, под нагрузкой) и Green (новое). Новую версию разворачивают и тестируют на Green,
+затем разом переключают на него трафик. Откат — это просто переключение обратно на Blue.
+
+## Как работает
+
+- Green поднимается и прогревается параллельно работающему Blue.
+- После проверки трафик переключается на Green сменой настройки load balancer'а или DNS.
+- Blue остаётся в резерве как мгновенный путь отката, пока Green не подтвердит стабильность.
+
+## Когда использовать / подводные камни
+
+- Плюсы: мгновенное переключение, мгновенный откат, чистое разделение версий, минимальный риск.
+- Минус: на время выката нужно вдвое больше инфраструктуры — дорого.
+- Сложность с БД: схема и данные должны быть совместимы с обоими окружениями во время переключения.

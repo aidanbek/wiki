@@ -1,3 +1,16 @@
-On-demand infrastructure от провайдеров (AWS, GCP, Azure). Pay-per-use, elastic scaling, global regions. Managed
-services (databases, load balancers) снижают operational overhead. API-driven provisioning, IaC friendly. Trade-off:
-vendor lock-in, потенциально дороже на predictable loads, shared responsibility model.
+Cloud Hosting
+
+Инфраструктура по требованию от провайдеров (AWS, GCP, Azure). Платишь за использование, масштабируешься эластично,
+разворачиваешься в регионах по всему миру. Управляемые сервисы снимают значительную часть операционной рутины.
+
+## Свойства
+
+- Pay-per-use и эластичное масштабирование вверх/вниз под реальную нагрузку.
+- Managed-сервисы (БД, очереди, балансировщики) снижают операционные затраты.
+- Provisioning через API, дружелюбен к Infrastructure as Code.
+
+## Когда подходит / подводные камни
+
+- Идеален для переменной нагрузки, быстрых экспериментов и глобального присутствия.
+- Минусы: vendor lock-in, потенциально дороже на стабильной предсказуемой нагрузке.
+- Shared responsibility model: провайдер отвечает за «облако», ты — за безопасность «в облаке» (конфиги, доступы, данные).

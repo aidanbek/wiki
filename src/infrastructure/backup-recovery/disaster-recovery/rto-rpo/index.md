@@ -1,3 +1,15 @@
-RTO (Recovery Time Objective): maximum acceptable downtime. RPO (Recovery Point Objective): maximum acceptable data
-loss. Trade-off: lower RTO/RPO = higher cost (hot standby, sync replication). DR planning targets business requirements.
-Testing DR procedures validates RTO/RPO achievability.
+RTO & RPO
+
+Две величины, задающие требования к восстановлению. RTO (Recovery Time Objective) — максимально допустимое время
+простоя. RPO (Recovery Point Objective) — максимально допустимый объём потерянных данных, измеряемый во времени.
+
+## Как читать
+
+- RPO = 5 минут означает: после сбоя можно потерять не более 5 минут последних изменений → бэкап/репликация не реже.
+- RTO = 1 час означает: сервис должен подняться за час → нужна заранее готовая процедура (а часто и hot standby).
+- Это требования бизнеса, а не технический выбор: их формулируют исходя из цены простоя и потери данных.
+
+## Подводные камни
+
+- Чем ниже RTO/RPO, тем дороже: синхронная репликация и горячий резерв стоят кратно дороже ночных бэкапов.
+- Заявленные RTO/RPO надо подтверждать учениями — на бумаге они почти всегда оптимистичнее реальности.

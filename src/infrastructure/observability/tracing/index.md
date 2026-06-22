@@ -1,3 +1,17 @@
-Following requests across distributed services. Spans represent operations, traces connect related spans. Correlation
-IDs link logs/metrics. Identifies bottlenecks, visualizes call graphs. Tools: Jaeger, Zipkin, OpenTelemetry. Sampling
-reduces overhead (not every request traced). Critical для microservices debugging.
+Distributed Tracing
+
+Отслеживание пути одного запроса через множество сервисов. Показывает, где запрос провёл время и какой именно вызов стал
+узким местом — то, что невозможно увидеть по логам и метрикам отдельных сервисов.
+
+## Как работает
+
+- Trace — весь путь запроса; span — отдельная операция внутри него (вызов сервиса, запрос к БД).
+- Спаны связаны в дерево и несут общий trace ID, который пробрасывается между сервисами.
+- Sampling: трассируется не каждый запрос, а часть — иначе overhead и объём данных неподъёмны.
+- Инструменты: OpenTelemetry (стандарт инструментирования), Jaeger, Zipkin.
+
+## Когда использовать / подводные камни
+
+- Незаменим для отладки микросервисов: визуализирует граф вызовов и находит bottleneck'и.
+- Trace ID стоит класть и в логи — это сшивает три источника наблюдаемости воедино.
+- Sampling-стратегия влияет на то, попадёт ли редкая ошибка в трейсы; хвостовой sampling ловит аномалии лучше.

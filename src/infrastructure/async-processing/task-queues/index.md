@@ -1,3 +1,18 @@
-Asynchronous job processing: producer enqueues, workers consume. Decouples request/response (improves API latency).
-Priority queues for urgent tasks. Worker scaling based on queue depth. Tools: Celery, Sidekiq, Bull. Persistent queues
-survive crashes. Monitoring: queue length, processing time, failure rate.
+Task Queues
+
+Асинхронная обработка задач: producer кладёт задачу в очередь, пул воркеров разбирает её в фоне. Развязывает приём
+запроса и его выполнение — API отвечает быстро, а тяжёлая работа уходит из горячего пути.
+
+## Как работает
+
+- Producer сериализует задачу (имя + аргументы) и публикует в брокер.
+- Воркеры конкурентно вычитывают задачи и выполняют их; масштабируются по глубине очереди.
+- Приоритетные очереди пропускают срочные задачи вперёд обычных.
+- Persistent-очереди переживают рестарт брокера и воркеров — задачи не теряются.
+
+## Когда использовать / подводные камни
+
+- Инструменты: Celery (Python), Sidekiq (Ruby), Bull (Node), брокеры Redis/RabbitMQ.
+- Мониторить длину очереди, время обработки и долю ошибок — это индикаторы здоровья системы.
+- Задачи должны быть идемпотентны: при at-least-once доставке возможны повторы.
+- Растущая очередь = воркеры не успевают; нужен autoscaling или backpressure.

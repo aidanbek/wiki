@@ -1,3 +1,16 @@
-Switching to standby system при primary failure. Automatic (HA clusters) vs manual. Failback returns to primary.
-Challenges: split-brain (both think they're primary), data sync. Health checks trigger failover. DNS/load balancer
-redirect traffic. Stateful applications harder (session transfer).
+Failover
+
+Переключение нагрузки на резервную систему при отказе основной. Автоматическое (в HA-кластерах) или ручное. Обратный
+переход на восстановленный primary называется failback.
+
+## Как работает
+
+- Health checks отслеживают живость primary и триггерят переключение при отказе.
+- Трафик перенаправляется на standby через смену DNS-записи или конфигурации load balancer'а.
+- После починки primary выполняется failback — желательно контролируемо, а не автоматически в пик нагрузки.
+
+## Подводные камни
+
+- Split-brain: оба узла считают себя primary и расходятся в данных — нужен кворум/fencing.
+- Данные на standby должны быть синхронизированы, иначе после переключения часть изменений теряется.
+- Stateful-приложения переключать сложнее: сессии и незавершённые транзакции не переносятся бесплатно.

@@ -1,3 +1,16 @@
-Periodic changing credentials для limiting exposure window. Automated rotation reduces risk forgotten manual updates.
-Challenges: coordinating across services, zero-downtime rotation, audit trail. Cloud providers часто support automatic
-rotation (RDS passwords). Grace periods allow old+new credentials overlap.
+Secret Rotation
+
+Периодическая смена учётных данных, чтобы ограничить окно эксплуатации утёкшего секрета. Чем чаще ротация, тем меньше
+ценность украденного ключа — он быстро протухает. Ручная ротация ненадёжна, поэтому стремятся к автоматической.
+
+## Как работает
+
+- Автоматическая ротация по расписанию убирает риск забытого ручного обновления.
+- Grace period: старый и новый секреты какое-то время действуют одновременно, чтобы не уронить сервисы при смене.
+- Облачные провайдеры часто умеют ротировать сами (например, пароли RDS, ключи в KMS).
+
+## Подводные камни
+
+- Главная сложность — координация: все потребители должны подхватить новый секрет до отзыва старого (отсюда grace period).
+- Нужен audit trail: кто, когда и какой секрет менял.
+- Особенно важна немедленная ротация после инцидента или ухода человека с доступом.

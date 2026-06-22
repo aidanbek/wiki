@@ -1,3 +1,16 @@
-Domain Name System translates hostnames → IP addresses. Hierarchical (root → TLD → authoritative servers). Recursive
-resolvers cache responses (TTL). Records: A (IPv4), AAAA (IPv6), CNAME (alias), MX (mail), TXT (metadata). Slow
-propagation при changes (TTL + caching). Critical для service discovery, load balancing (DNS round-robin).
+DNS (Domain Name System)
+
+Распределённая система, переводящая доменные имена в IP-адреса. Иерархична: запрос идёт от корневых серверов к TLD и
+далее к authoritative-серверам зоны. Ответы кэшируются по TTL, поэтому изменения распространяются не мгновенно.
+
+## Как работает
+
+- Recursive resolver проходит цепочку root → TLD → authoritative и кэширует ответ на время TTL.
+- Основные записи: A (IPv4), AAAA (IPv6), CNAME (алиас), MX (почта), TXT (метаданные, верификация).
+- Используется для service discovery и простой балансировки (DNS round-robin).
+
+## Подводные камни
+
+- Из-за TTL и кэширования изменения записей «доезжают» с задержкой (propagation) — это надо учитывать при миграциях.
+- Низкий TTL ускоряет изменения, но увеличивает нагрузку запросами; высокий — наоборот.
+- DNS round-robin не учитывает здоровье и нагрузку бэкендов — для серьёзной балансировки нужен load balancer.

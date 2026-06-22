@@ -1,3 +1,16 @@
-Automatic retry failed operations. Exponential backoff (increasing delays) prevents thundering herd. Max retries limit
-для avoiding infinite loops. Idempotency required (retries don't cause duplicates). Jitter добавляет randomness to
-delays. Distinguish transient (retry) vs permanent (fail) errors.
+Retry Patterns
+
+Автоматический повтор неуспешных операций. Спасает от транзиентных сбоев (моргнула сеть, кратковременная недоступность),
+но при наивной реализации легко превращается в самоусиливающуюся перегрузку.
+
+## Как работает
+
+- Exponential backoff: задержка между попытками растёт (1с, 2с, 4с…) — не добивает уже перегруженный сервис.
+- Jitter: случайная добавка к задержке, чтобы клиенты не ретраили синхронно (thundering herd).
+- Max retries: лимит попыток, чтобы не уйти в бесконечный цикл.
+
+## Подводные камни
+
+- Повторять можно только идемпотентные операции, иначе повтор задвоит эффект (двойное списание).
+- Различай транзиентные ошибки (повторять) и постоянные, например 400/404 (повторять бессмысленно).
+- Без circuit breaker массовые повторы при долгом сбое downstream только усугубляют его — комбинируй их.

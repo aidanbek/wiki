@@ -1,3 +1,17 @@
-Modern Linux init system и service manager. Unit files описывают services, dependencies, restart policies. systemctl для
-control (start/stop/status). Socket activation, resource limiting (CPU/memory), logging (journald). Dependency-based
-boot, parallel startup. Стандарт в большинстве Linux distros.
+systemd
+
+Современная система инициализации и менеджер сервисов в большинстве Linux-дистрибутивов. Управляет жизненным циклом
+сервисов: запуск при загрузке, перезапуск при падении, зависимости, лимиты ресурсов и сбор логов.
+
+## Как работает
+
+- Unit-файлы декларативно описывают сервис: команду запуска, пользователя, зависимости, политику рестарта.
+- `systemctl` управляет сервисами (start/stop/status/enable), `journalctl` — чтение логов из journald.
+- Зависимостный, параллельный запуск при загрузке ускоряет boot.
+- Socket activation, ограничение ресурсов через cgroups (CPU/память), автоперезапуск.
+
+## Когда использовать / подводные камни
+
+- Стандарт для системных сервисов на Linux — то, чем стоит запускать большинство демонов.
+- Синтаксис unit-файлов многословен; политики рестарта (`Restart=`, `RestartSec=`) надо настраивать осознанно.
+- Для контейнеризованных приложений роль init обычно берёт на себя оркестратор (Kubernetes), а не systemd.

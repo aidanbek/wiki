@@ -1,3 +1,16 @@
-Mature HTTP server с модульной архитектурой. .htaccess для per-directory config, mod_rewrite для URL manipulation.
-Process/thread-based concurrency (prefork, worker MPMs). Rich ecosystem modules. Configuration verbose, но flexible.
-Less efficient под high concurrency чем Nginx.
+Apache HTTP Server
+
+Зрелый HTTP-сервер с модульной архитектурой и богатой экосистемой. Главная отличительная черта — гибкая конфигурация, в
+том числе per-directory через `.htaccess`, и огромный набор модулей на все случаи.
+
+## Как работает
+
+- Модульность: функциональность подключается модулями (mod_rewrite для URL, mod_ssl и т.д.).
+- `.htaccess` позволяет менять конфигурацию на уровне отдельной директории без правки основного конфига.
+- Конкурентность через MPM: prefork (процессы), worker/event (потоки).
+
+## Когда использовать / подводные камни
+
+- Хорош, когда нужны .htaccess, зрелые модули и максимальная гибкость конфигурации.
+- Под очень высокой конкуренцией процесс/поток-на-соединение проигрывает событийной модели Nginx по памяти.
+- Частая связка: Nginx как фронтенд-прокси/раздача статики + Apache (или app-сервер) за ним.

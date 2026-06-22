@@ -1,3 +1,16 @@
-Application Performance Monitoring tracks application-level metrics: response times, error rates, throughput.
-Transaction tracing, code-level visibility. Tools: New Relic, Datadog, Dynatrace. Identifies slow queries, memory leaks,
-exceptions. Proactive alerting на performance degradation. Helps prioritize optimization efforts.
+APM (Application Performance Monitoring)
+
+Мониторинг производительности на уровне приложения: время ответа, доля ошибок, throughput, а также видимость до уровня
+кода. Связывает метрики, трассировку и профилирование, чтобы показать не только «медленно», но и «где именно медленно».
+
+## Что даёт
+
+- Транзакционная трассировка с детализацией до конкретных методов и запросов.
+- Поиск медленных SQL-запросов, утечек памяти, частых исключений.
+- Проактивные алерты на деградацию производительности до жалоб пользователей.
+- Инструменты: New Relic, Datadog, Dynatrace, Elastic APM.
+
+## Зачем
+
+- Помогает приоритизировать оптимизацию: видно, что именно тормозит и насколько часто.
+- По сути — прикладная надстройка над тремя столпами наблюдаемости, заточенная под производительность приложения.

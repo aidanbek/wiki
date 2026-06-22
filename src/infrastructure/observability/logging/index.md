@@ -1,3 +1,17 @@
-Structured logs (JSON) easier для parsing чем plain text. Centralized aggregation (ELK, Splunk). Log levels: DEBUG,
-INFO, WARN, ERROR. Correlation IDs tie related logs. Sensitive data scrubbing. Retention policies balance storage cost с
-compliance. Fast search critical для incident response.
+Logging
+
+Записи о произошедших событиях с контекстом. Отвечают на вопрос «что именно случилось» там, где метрики лишь сигналят
+«что-то не так». Структурированные логи (JSON) машиночитаемы и потому несравнимо удобнее plain text для поиска и анализа.
+
+## Как делать правильно
+
+- Структурированный формат (JSON) с полями вместо склеенных строк — легко парсить и фильтровать.
+- Уровни: DEBUG, INFO, WARN, ERROR — позволяют отделять шум от важного.
+- Correlation/trace ID в каждой записи связывают логи одного запроса между сервисами.
+- Централизованная агрегация (ELK, Loki, Splunk) собирает логи со всех узлов в одно место.
+
+## Подводные камни
+
+- Чувствительные данные (пароли, токены, PII) нужно вычищать до записи — лог утекает легко.
+- Retention — компромисс между стоимостью хранения и требованиями compliance/расследований.
+- Быстрый поиск критичен для разбора инцидентов; логи без индексации бесполезны под давлением.

@@ -1,3 +1,17 @@
-Distribute traffic across backend servers. Algorithms: round-robin, least connections, IP hash, least response time.
-Layer 4 (TCP) vs Layer 7 (HTTP) load balancing. Health checks исключают unhealthy backends. Session affinity/sticky
-sessions для stateful apps. Hardware (F5) vs software (HAProxy, Nginx).
+Load Balancers
+
+Распределяют входящий трафик между несколькими бэкенд-серверами. Дают горизонтальное масштабирование и отказоустойчивость:
+нагрузка делится, а упавшие инстансы исключаются из ротации по health check'ам.
+
+## Как работает
+
+- Алгоритмы распределения: round-robin, least connections, IP hash, least response time.
+- Layer 4 (TCP/UDP) балансирует по адресам/портам; Layer 7 (HTTP) — по содержимому запроса (путь, заголовки).
+- Health checks убирают нездоровые бэкенды из пула, пока те не восстановятся.
+- Session affinity (sticky sessions) направляет одного клиента на тот же бэкенд для stateful-приложений.
+
+## Когда использовать / подводные камни
+
+- Реализации: аппаратные (F5), программные (HAProxy, Nginx, Envoy), облачные (ALB/NLB).
+- Sticky sessions упрощают stateful-приложения, но мешают равномерности и усложняют выкатки — лучше выносить состояние наружу.
+- Сам балансировщик не должен быть единой точкой отказа — его тоже резервируют.

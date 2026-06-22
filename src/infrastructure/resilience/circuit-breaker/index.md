@@ -1,3 +1,16 @@
-Automatically stops calling failing service. States: Closed (normal) → Open (failing, reject immediately) → Half-Open (
-test recovery). Fail fast reduces latency, prevents cascading failures. Thresholds: error rate, consecutive failures.
-Timeout before attempting recovery. Libraries: Hystrix, Resilience4j.
+Circuit Breaker
+
+Автоматически прекращает вызовы к сбойному сервису, чтобы не тратить время на заведомо провальные запросы и не усиливать
+его перегрузку. Аналогия с электрическим предохранителем: при превышении порога ошибок цепь размыкается.
+
+## Состояния
+
+- Closed (норма) — запросы проходят, ошибки считаются.
+- Open (сбой) — порог превышен, запросы немедленно отклоняются без обращения к сервису.
+- Half-Open (проверка) — спустя таймаут пропускается пробный запрос; успех → Closed, провал → снова Open.
+
+## Когда использовать / подводные камни
+
+- Fail fast снижает latency и предотвращает каскадные сбои, давая сбойному сервису время восстановиться.
+- Пороги (доля ошибок, число подряд неудач) и таймаут восстановления нужно подбирать под сервис.
+- Часто работает в паре с fallback: при открытой цепи отдаётся запасной ответ. Библиотеки: Resilience4j, Hystrix (legacy).

@@ -1,3 +1,17 @@
-Proactively injecting failures для testing system resilience. Chaos Monkey (random instance termination), latency
-injection, network partitions. Uncovers weaknesses before real incidents. Start small (non-prod), gradually increase
-scope. Requires monitoring, automated recovery. Culture shift: embracing failure as learning.
+Chaos Engineering
+
+Намеренное внесение сбоев в систему, чтобы проверить её устойчивость до того, как тот же сбой случится сам в худший
+момент. Проверяет на практике, что все паттерны устойчивости (retry, circuit breaker, failover) реально работают, а не
+только описаны.
+
+## Как работает
+
+- Контролируемые эксперименты: завершение случайных инстансов (Chaos Monkey), инъекция latency, сетевые разрывы.
+- Формулируется гипотеза («система переживёт падение узла»), затем проверяется на практике.
+- Начинают с малого в non-prod, постепенно расширяя scope и приближаясь к продакшену.
+
+## Требования / подводные камни
+
+- Нужны хороший мониторинг и автоматическое восстановление — иначе эксперимент превращается в реальный инцидент.
+- Эксперименты должны иметь «рубильник» для немедленной остановки.
+- Это в том числе культурный сдвиг: принять отказ как источник знаний, а не как ЧП, которого избегают.

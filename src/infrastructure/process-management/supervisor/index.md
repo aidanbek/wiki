@@ -1,3 +1,16 @@
-Python-based process manager для Unix. Config файлы для каждого процесса: command, user, auto-restart. Web UI для
-monitoring/control. Не требует root (user-level supervision). Простой альтернатива systemd для application processes.
-Популярен в legacy deployments, менее feature-rich чем systemd.
+Supervisor
+
+Process manager на Python для Unix-систем. Запускает процессы приложения, следит за ними и перезапускает при падении.
+Проще systemd и не требует root — удобен для управления именно прикладными процессами на уровне пользователя.
+
+## Как работает
+
+- Конфиг на каждый процесс: команда, пользователь, политика автоперезапуска, обработка логов.
+- Работает на уровне пользователя — не нужны права root.
+- Веб-UI и CLI (`supervisorctl`) для мониторинга и управления процессами.
+
+## Когда использовать / подводные камни
+
+- Удобен в legacy-деплоях и там, где не хочется возиться с unit-файлами systemd.
+- Менее функционален, чем systemd: нет socket activation, слабее интеграция с системой и cgroups.
+- Для новых системных сервисов на современном Linux обычно предпочитают systemd.

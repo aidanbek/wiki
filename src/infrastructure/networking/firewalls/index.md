@@ -1,3 +1,17 @@
-Network security filtering на packet/connection level. Stateful (track connections) vs stateless. Rules define
-allow/deny по IP, port, protocol. Host-based (iptables) vs network-based (perimeter). Modern: application layer
-firewalls (WAF) inspect HTTP traffic. Defense в depth: multiple firewall layers.
+Firewalls
+
+Фильтрация сетевого трафика по правилам безопасности на уровне пакетов и соединений. Решают, какой трафик пропустить, а
+какой отбросить, по IP, порту и протоколу. Базовый кирпич сетевой защиты.
+
+## Как работает
+
+- Stateful firewall отслеживает состояние соединений (и пропускает ответный трафик); stateless смотрит каждый пакет отдельно.
+- Правила задают allow/deny по source/destination IP, порту и протоколу.
+- Host-based (iptables/nftables на машине) против network-based (на периметре сети).
+- WAF (application-layer firewall) инспектирует HTTP-трафик и ловит атаки уровня приложения (SQLi, XSS).
+
+## Принципы
+
+- Defense in depth: несколько слоёв фильтрации, а не одна стена по периметру.
+- Default deny: запрещено всё, что явно не разрешено — белый список безопаснее чёрного.
+- Минимизация открытых портов и регулярный аудит правил — забытое правило становится дырой.

@@ -1,2 +1,16 @@
-Explained earlier в resilience section. Additional: retry budgets (limit total retries across system), circuit breakers
-integration. Metrics: retry rate indicates system health. Backpressure if downstream can't handle retry load.
+Retry Mechanisms
+
+Автоматические повторы неуспешных операций. Базовые приёмы (exponential backoff, jitter, лимит попыток) описаны в
+разделе resilience/retry-patterns; здесь — специфика повторов в асинхронной обработке.
+
+## Особенности в очередях
+
+- Retry budget — лимит на суммарное число повторов по системе, чтобы повторы не съели всю ёмкость.
+- Интеграция с circuit breaker: когда downstream явно лежит, повторы приостанавливаются.
+- Доля повторов (retry rate) — хороший индикатор здоровья: всплеск сигнализирует о проблеме ниже по стеку.
+
+## Подводные камни
+
+- Backpressure: если downstream не справляется, агрессивные повторы только усугубляют перегрузку.
+- После исчерпания попыток сообщение должно уходить в dead-letter queue, а не крутиться вечно.
+- Повторы безопасны только при идемпотентных обработчиках (см. соседний раздел idempotency).

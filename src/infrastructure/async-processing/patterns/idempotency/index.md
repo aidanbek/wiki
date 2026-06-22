@@ -1,3 +1,16 @@
-Multiple identical requests same effect as single request. Critical для safe retries. Implementation: unique request
-IDs, database constraints. HTTP: GET, PUT, DELETE idempotent by standard; POST not. Payment processing must be
-idempotent (no double charges). State machines help track.
+Idempotency
+
+Свойство операции, при котором повторный её вызов с теми же входными данными даёт тот же результат, что и однократный.
+Критично для безопасных повторов: при at-least-once доставке сообщение почти наверняка когда-нибудь придёт дважды.
+
+## Как добиться
+
+- Уникальный idempotency key на запрос/сообщение; результат по этому ключу запоминается.
+- Уникальные ограничения в БД (unique index) отсекают дубликаты на уровне хранилища.
+- State machine отслеживает, в каком состоянии уже находится сущность, и игнорирует повторный переход.
+
+## Подводные камни
+
+- В HTTP по семантике идемпотентны GET, PUT, DELETE; POST — нет, его повтор нужно защищать явно.
+- Платежи обязаны быть идемпотентными — иначе двойное списание.
+- Ключ дедупликации надо хранить достаточно долго, чтобы перекрыть окно возможных повторов.

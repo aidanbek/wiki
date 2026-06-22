@@ -1,3 +1,17 @@
-Extract-Transform-Load: pulling data из источников, transforming, loading в destination. Batch-oriented, scheduled jobs.
-Tools: Airflow, Luigi, AWS Glue. Stages: validation, cleansing, enrichment, aggregation. Error handling, retry logic,
-idempotency критичны. Monitoring: data quality, pipeline latency, failure rates.
+ETL Pipelines
+
+Extract-Transform-Load: извлечь данные из источников, преобразовать (очистить, обогатить, агрегировать) и загрузить в
+целевое хранилище — обычно data warehouse. Как правило, batch-ориентированы и запускаются по расписанию.
+
+## Этапы
+
+- Extract — вытягивание данных из источников (БД, API, файлы).
+- Transform — валидация, очистка, обогащение, агрегация под формат назначения.
+- Load — запись в целевое хранилище (DWH, data lake).
+- Оркестрация: Airflow, Luigi, AWS Glue — управляют порядком шагов и зависимостями.
+
+## Когда использовать / подводные камни
+
+- Обработка ошибок, повторы и идемпотентность критичны: упавший шаг не должен задваивать или терять данные.
+- Мониторить качество данных, latency пайплайна и долю ошибок — иначе мусор тихо доедет до отчётов.
+- Вариант ELT (Load до Transform) переносит преобразования внутрь мощного хранилища — частый выбор в современных DWH.

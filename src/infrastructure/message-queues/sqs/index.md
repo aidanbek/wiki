@@ -1,3 +1,16 @@
-AWS managed queue service. Standard queues (at-least-once, best-effort ordering) vs FIFO (exactly-once, strict
-ordering). Dead-letter queues для failed messages. Visibility timeout (in-flight concealment). Simple, scalable, но
-eventual delivery only. Tight AWS ecosystem integration.
+Amazon SQS
+
+Полностью управляемая очередь сообщений в AWS. Не нужно разворачивать и обслуживать брокер — масштабирование и
+доступность обеспечивает провайдер. Цена удобства — привязка к экосистеме AWS и более простая модель, чем у RabbitMQ.
+
+## Как работает
+
+- Два типа: Standard (at-least-once, порядок best-effort, максимальный throughput) и FIFO (exactly-once, строгий порядок).
+- Visibility timeout: взятое consumer'ом сообщение временно скрыто от других, пока не обработано или не вернётся в очередь.
+- Встроенные dead-letter queues для сообщений, не обработанных после заданного числа попыток.
+
+## Когда использовать / подводные камни
+
+- Идеален, когда вы уже в AWS и не хотите управлять инфраструктурой очереди.
+- Standard-очереди — eventual delivery: возможны повторы и нарушение порядка, нужна идемпотентность.
+- Маршрутизация примитивна по сравнению с RabbitMQ; сложную логику придётся строить поверх.

@@ -1,3 +1,16 @@
-Restricting request rate для preventing abuse/overload. Algorithms: token bucket, leaky bucket, fixed/sliding window.
-Per-user, per-IP, global limits. 429 status code response. Protects backend от spikes, DOS attacks. Distributed rate
-limiting нуждается в shared state (Redis).
+Rate Limiting
+
+Ограничение частоты запросов для защиты от перегрузки и злоупотреблений. Отсекает избыточный трафик на входе, не давая
+ему дойти до бэкенда — будь то DoS-атака, взбесившийся клиент или просто всплеск нагрузки.
+
+## Алгоритмы
+
+- Token bucket — копит «токены» с фиксированной скоростью, допускает короткие всплески.
+- Leaky bucket — выпускает запросы с постоянной скоростью, сглаживает поток.
+- Fixed/sliding window — счётчик запросов за окно времени; sliding точнее на границах окна.
+
+## Когда использовать / подводные камни
+
+- Лимиты задаются per-user, per-IP или глобально; при превышении возвращается HTTP 429.
+- Защищает бэкенд от спайков и абьюза, дополняет circuit breaker и bulkhead.
+- В распределённой системе нужен общий счётчик (Redis), иначе каждый инстанс лимитирует независимо и суммарный лимит плывёт.

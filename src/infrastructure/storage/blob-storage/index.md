@@ -1,2 +1,16 @@
-Binary Large Object storage для unstructured data: images, videos, backups. Block-based access, часть SAN/NAS. Optimized
-для large sequential I/O. Used в БД для storing LOB fields. Azure Blob Storage - managed service пример.
+Blob Storage
+
+Хранение крупных бинарных объектов (Binary Large Object) — изображений, видео, бэкапов. Блочный доступ, оптимизированный
+под большой последовательный I/O. Термин используют двояко: как блочное хранилище и как имя облачных сервисов вроде Azure
+Blob Storage.
+
+## Свойства
+
+- Заточено под крупные объекты и последовательное чтение/запись.
+- Блочный доступ; часть SAN/NAS-инфраструктуры в on-prem варианте.
+- Применяется в том числе внутри БД для хранения LOB-полей.
+
+## Контекст
+
+- Azure Blob Storage — пример managed-сервиса; по модели близок к object storage (доступ по ключу/URL).
+- Для веб-раздачи статики и масштабируемого хранения чаще выбирают именно объектное хранилище (см. object-storage).

@@ -1,2 +1,15 @@
-Backs up changed data since last full backup. Larger чем incremental, но restore simpler (full + latest differential).
-No chain dependency beyond full. Balance между incremental (small, complex restore) и full (large, simple restore).
+Differential Backup
+
+Бэкап всех данных, изменившихся с момента последнего full. Компромисс между incremental и full: копия крупнее, чем у
+incremental, но восстановление проще — нужны только full и самый свежий differential.
+
+## Свойства
+
+- Отсчитывает изменения от последнего full, а не от предыдущего бэкапа.
+- Восстановление из двух частей: full + последний differential. Промежуточные копии не нужны.
+- Нет длинной цепочки зависимостей, как у incremental.
+
+## Подводные камни
+
+- Со временем растёт: чем дальше от full, тем больше накопленных изменений.
+- Золотая середина: меньше риска цепочки, чем у incremental, и меньше объёма, чем при частых full.

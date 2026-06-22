@@ -1,3 +1,16 @@
-Setting maximum wait time для operations. Connection timeout vs read timeout. Prevents infinite hangs, conserves
-resources. Too short → false failures, too long → slow failure detection. Cascading timeouts: upstream timeout <
-downstream timeout. Context deadlines в modern systems (gRPC, Go context).
+Timeout Strategies
+
+Ограничение максимального времени ожидания операции. Без таймаута зависший вызов держит поток и ресурсы бесконечно — и
+одна медленная зависимость постепенно исчерпывает всю систему. Таймаут превращает «вечное зависание» в быстрый отказ.
+
+## Как работает
+
+- Разделяй connection timeout (установка соединения) и read timeout (ожидание ответа) — это разные сбои.
+- Cascading timeouts: вышестоящий таймаут должен быть больше нижестоящего, иначе клиент отвалится раньше, чем сервер успеет.
+- В современных системах используют deadline/context (gRPC, Go context): срок жизни запроса пробрасывается по всей цепочке.
+
+## Подводные камни
+
+- Слишком короткий таймаут → ложные отказы на нормально работающих, но небыстрых операциях.
+- Слишком длинный → медленное обнаружение сбоя и долгое удержание ресурсов.
+- Таймаут — фундамент для retry и circuit breaker: без него повторы и размыкание просто не на что навесить.

@@ -1,3 +1,16 @@
-Event-driven async HTTP server/reverse proxy. Non-blocking I/O, low memory footprint. High concurrency (C10K problem
-solver). Simple config, efficient static file serving. Load balancing, caching, SSL termination. Популярен как frontend
-для application servers (PHP-FPM, uWSGI). Commercial Nginx Plus добавляет features.
+Nginx
+
+Событийный (event-driven) HTTP-сервер и reverse proxy с неблокирующим I/O. Благодаря асинхронной модели держит десятки
+тысяч одновременных соединений при малом потреблении памяти — это и есть ответ на проблему C10K.
+
+## Как работает
+
+- Неблокирующий event loop: один воркер обслуживает множество соединений, не выделяя поток на каждое.
+- Низкое потребление памяти и высокая конкуренция, эффективная раздача статики.
+- Умеет load balancing, кэширование, терминацию SSL, сжатие.
+
+## Когда использовать / подводные камни
+
+- Популярен как фронтенд перед application-серверами (PHP-FPM, uWSGI, Node, gunicorn).
+- Конфигурация декларативная и централизованная; нет per-directory .htaccess, как у Apache (что чаще плюс).
+- Базовых возможностей хватает почти всем; коммерческий Nginx Plus добавляет расширенную балансировку и мониторинг.

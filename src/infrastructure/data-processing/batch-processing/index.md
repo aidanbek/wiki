@@ -1,3 +1,16 @@
-Processing large volumes данных в scheduled intervals (hourly, daily). Jobs operate на bounded datasets. High
-throughput, high latency acceptable. Frameworks: Hadoop MapReduce, Spark batch. Use cases: reports, aggregations, ML
-training. Trade-off: stale data vs processing efficiency.
+Batch Processing
+
+Обработка больших объёмов данных пачками по расписанию (раз в час, раз в сутки). Работает с ограниченным, известным
+заранее набором данных. Оптимизирует пропускную способность, мирясь с высокой задержкой результата.
+
+## Как работает
+
+- Джоба запускается по расписанию на фиксированном (bounded) наборе данных.
+- Высокий throughput за счёт обработки данных большими блоками.
+- Фреймворки: Hadoop MapReduce (классика), Spark (быстрее за счёт работы в памяти).
+
+## Когда использовать / подводные камни
+
+- Use cases: отчёты, агрегации, обучение ML-моделей, ночные пересчёты.
+- Главный компромисс — свежесть данных против эффективности: результат всегда отстаёт на интервал запуска.
+- Если нужна реакция в реальном времени — это уже stream-processing, а не batch.

@@ -1,3 +1,17 @@
-HashiCorp tool для storing/accessing secrets. Dynamic secrets (generated on-demand), encryption as service, audit logs.
-Unsealing ceremony для startup security. Supports multiple backends (KV, databases, PKI). Centralized secret management,
-но adds infrastructure complexity. Enterprise features: namespaces, replication.
+HashiCorp Vault
+
+Централизованный инструмент для хранения секретов и управления доступом к ним. Помимо простого хранения «ключ-значение»
+умеет генерировать секреты по требованию, выступать как сервис шифрования и вести аудит каждого обращения.
+
+## Возможности
+
+- Dynamic secrets — учётные данные (например, к БД) создаются на лету с коротким TTL и автоматически отзываются.
+- Encryption as a service — приложение шифрует данные через Vault, не владея ключами само.
+- Подробный audit log всех обращений к секретам.
+- Бэкенды: KV-хранилище, БД, PKI (выпуск сертификатов) и другие.
+
+## Когда использовать / подводные камни
+
+- Даёт единый контроль над секретами и сильный аудит — стандарт для зрелой инфраструктуры.
+- Добавляет инфраструктурную сложность; Vault сам становится критичной зависимостью, которую нужно держать доступной.
+- Unsealing: после старта Vault запечатан и требует процедуры распечатывания ключами — это сознательная защита, но и операционная забота.

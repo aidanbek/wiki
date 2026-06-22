@@ -1,3 +1,16 @@
-Restore database к specific timestamp. Requires: full backup + transaction logs (WAL, binlog). Useful for recovering
-from user errors (accidental DELETE). Cloud databases часто support continuous backups. RPO (Recovery Point Objective)
-determines log retention.
+Point-in-Time Recovery (PITR)
+
+Восстановление БД на любой конкретный момент времени, а не только на момент последнего бэкапа. Спасает от логических
+ошибок: можно откатиться к состоянию за секунду до случайного `DELETE` без `WHERE`.
+
+## Как работает
+
+- Берётся базовый full-бэкап, к нему «накатываются» логи транзакций (WAL в Postgres, binlog в MySQL) до нужной точки.
+- Точкой может быть timestamp или конкретная позиция в логе (LSN).
+- Облачные БД часто поддерживают continuous backup и восстановление на любой момент в окне retention.
+
+## Когда использовать / подводные камни
+
+- Use case: откат после человеческой ошибки или сбойной миграции, потерявшей часть данных.
+- Глубина отката ограничена retention логов — это и есть фактический RPO.
+- Логи транзакций надо непрерывно архивировать; пропуск в них делает PITR на этот промежуток невозможным.

@@ -1,3 +1,17 @@
-Real-time processing unbounded event streams. Low latency (milliseconds to seconds), continuous computation. Frameworks:
-Kafka Streams, Flink, Spark Streaming. Windowing для aggregations, watermarks для late data. Use cases: fraud detection,
-real-time analytics, alerting. More complex чем batch (state management, exactly-once semantics).
+Stream Processing
+
+Непрерывная обработка неограниченного (unbounded) потока событий в реальном времени. В отличие от batch, данные не
+заканчиваются — вычисление идёт постоянно, по мере поступления событий, с задержкой в миллисекунды-секунды.
+
+## Как работает
+
+- События обрабатываются по мере прихода; результат обновляется непрерывно.
+- Агрегации считаются в окнах (windows) — по времени или по числу событий.
+- Watermarks помечают, до какого момента данные считаются «прибывшими», чтобы корректно работать с опоздавшими событиями.
+- Фреймворки: Kafka Streams, Apache Flink, Spark Streaming.
+
+## Когда использовать / подводные камни
+
+- Use cases: фрод-детекция, real-time аналитика, алертинг, обновление лент.
+- Сложнее batch: нужно управлять состоянием и обеспечивать exactly-once семантику.
+- Опоздавшие и переупорядоченные события — норма; их обработка должна быть продумана заранее.

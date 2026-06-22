@@ -1,3 +1,16 @@
-Alternative behavior при service failure. Static response, cached data, degraded functionality. Better user experience
-чем error pages. Circuit breaker often triggers fallback. Example: show cached product list if search unavailable.
-Requires design for degradation.
+Fallback Patterns
+
+Запасное поведение, когда зависимость недоступна. Вместо страницы с ошибкой пользователь получает пусть деградированный,
+но рабочий ответ. Превращает жёсткий отказ в мягкую деградацию (graceful degradation).
+
+## Варианты fallback
+
+- Закэшированные/устаревшие данные вместо свежих из недоступного сервиса.
+- Статический ответ или значение по умолчанию.
+- Урезанная функциональность: например, показать список товаров без персональных рекомендаций.
+
+## Когда использовать / подводные камни
+
+- Часто триггерится circuit breaker'ом: цепь разомкнута → отдаём fallback.
+- Деградацию нужно проектировать заранее — что показать, если поиск/рекомендации/оплата недоступны.
+- Fallback на устаревшие данные должен быть осознанным: иногда лучше явная ошибка, чем тихо неверный результат.

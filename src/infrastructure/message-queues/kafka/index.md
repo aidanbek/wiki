@@ -1,3 +1,17 @@
-Distributed streaming platform, not traditional queue. Topic partitions для parallelism, offsets для consumer tracking.
-High throughput, persistent log (retention). Consumers pull messages, replay capability. Use cases: event streaming, log
-aggregation, CDC. More complex setup, но powerful для stream processing.
+Apache Kafka
+
+Распределённая платформа потоковой передачи, а не классическая очередь. По сути это durable-лог: сообщения не удаляются
+после прочтения, а хранятся (retention) и могут быть перечитаны. Заточена под очень высокий throughput.
+
+## Как работает
+
+- Топик делится на партиции — это даёт параллелизм и порядок в пределах партиции.
+- Каждый consumer отслеживает свой offset (позицию в логе) и может перечитать данные заново (replay).
+- Consumer'ы вычитывают сообщения сами (pull), в своём темпе.
+- Лог персистентный — данные живут заданное время независимо от того, прочитаны они или нет.
+
+## Когда использовать / подводные камни
+
+- Use cases: event streaming, агрегация логов, CDC, шина событий между сервисами.
+- Силён именно в потоковой обработке и реплее, но сложнее в настройке и эксплуатации, чем обычная очередь.
+- Если нужна простая очередь задач с подтверждениями и маршрутизацией — RabbitMQ/SQS подойдут лучше.

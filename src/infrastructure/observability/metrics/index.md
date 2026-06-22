@@ -1,3 +1,17 @@
-Numeric measurements: counters (requests), gauges (memory usage), histograms (latencies). Time-series data stored в
-TSDB. Dashboards visualize trends. Prometheus standard format. RED method (Rate, Errors, Duration) или USE (Utilization,
-Saturation, Errors) frameworks. Aggregation for analysis.
+Metrics
+
+Числовые измерения состояния системы, агрегированные во времени. Дёшевы в хранении и идеальны для дашбордов и алертов:
+показывают тренды и аномалии, но не объясняют их причину — для этого нужны логи и трейсы.
+
+## Типы и хранение
+
+- Counter — монотонно растёт (число запросов, ошибок).
+- Gauge — мгновенное значение, может расти и падать (использование памяти, длина очереди).
+- Histogram — распределение значений (перцентили latency).
+- Хранятся в time-series БД (TSDB); де-факто стандарт сбора — формат Prometheus.
+
+## Что измерять
+
+- RED (для сервисов): Rate, Errors, Duration — запросы, ошибки, длительность.
+- USE (для ресурсов): Utilization, Saturation, Errors — загрузка, насыщение, ошибки.
+- Следи за перцентилями (p95/p99), а не средним: среднее прячет «хвосты» медленных запросов.

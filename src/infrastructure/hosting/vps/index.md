@@ -1,3 +1,16 @@
-Virtual Private Server - VM на shared hardware с dedicated ресурсами (CPU, RAM). Дешевле dedicated, быстрый
-provisioning (минуты). Root access, полная OS control. Performance зависит от hypervisor overhead и noisy neighbors.
-Хорош для small-medium workloads, dev/test environments.
+VPS (Virtual Private Server)
+
+Виртуальная машина на общем физическом железе, но с выделенными ресурсами (CPU, RAM) и полным контролем над ОС. Золотая
+середина: дешевле dedicated, гибче shared, поднимается за минуты.
+
+## Свойства
+
+- Root-доступ и полный контроль над операционной системой и софтом.
+- Выделенные (а не общие, как в shared) ресурсы, но физический хост делится между несколькими VPS.
+- Быстрый provisioning — новая машина за минуты.
+
+## Когда подходит / подводные камни
+
+- Хорош для small-medium нагрузок, dev/test-окружений, pet-проектов.
+- Производительность зависит от overhead гипервизора и «шумных соседей» на том же хосте.
+- Масштабирование и обслуживание ОС — уже твоя ответственность, в отличие от shared.

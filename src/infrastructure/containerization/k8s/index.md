@@ -1,3 +1,18 @@
-Kubernetes - orchestration platform для container deployments. Declarative config (YAML), self-healing, auto-scaling,
-rolling updates. Pods (groups контейнеров), Services (networking), Deployments (lifecycle). StatefulSets для stateful
-apps, DaemonSets для per-node tasks. Steep learning curve, но industry standard для cloud-native apps.
+Kubernetes (K8s)
+
+Платформа оркестрации контейнеров на кластере машин. Ты декларативно описываешь желаемое состояние (сколько реплик,
+какие образы, какая сеть), а Kubernetes приводит реальность к нему и удерживает: перезапускает упавшее, масштабирует,
+выкатывает обновления.
+
+## Ключевые объекты
+
+- Pod — минимальная единица: один или несколько тесно связанных контейнеров.
+- Deployment — управляет жизненным циклом подов: реплики, rolling updates, откаты.
+- Service — стабильная сетевая точка входа к набору подов (внутренняя балансировка).
+- StatefulSet — для stateful-приложений (стабильные имена, хранилище); DaemonSet — по одному поду на узел.
+
+## Когда использовать / подводные камни
+
+- Самовосстановление, авто-масштабирование и rolling updates «из коробки» — индустриальный стандарт для cloud-native.
+- Высокий порог входа и операционная сложность: для одного маленького сервиса это overkill.
+- Декларативность требует дисциплины: конфигурация (YAML) — это и есть источник истины, правки руками разъезжаются.

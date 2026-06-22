@@ -1,3 +1,17 @@
-Fundamental Internet protocol suite. IP (addressing, routing), TCP (reliable ordered delivery), UDP (unreliable fast).
-Three-way handshake (SYN, SYN-ACK, ACK), flow control, congestion control. Understanding critical для debugging latency,
-packet loss, connection issues. OSI layers: TCP = Layer 4 (Transport), IP = Layer 3 (Network).
+TCP/IP
+
+Базовый стек протоколов интернета. IP отвечает за адресацию и маршрутизацию пакетов между узлами; поверх него TCP даёт
+надёжную упорядоченную доставку, а UDP — быструю, но без гарантий. Понимание стека критично для отладки сети.
+
+## Как работает
+
+- IP (Layer 3, сетевой) — адресация и маршрутизация; не гарантирует доставку.
+- TCP (Layer 4, транспортный) — надёжность, порядок, контроль потока и перегрузки; соединение устанавливается через
+  three-way handshake (SYN → SYN-ACK → ACK).
+- UDP (Layer 4) — без установления соединения и гарантий; быстрый, для стриминга/DNS/игр.
+
+## Зачем это знать
+
+- Отладка latency, потерь пакетов и зависших соединений начинается с понимания, что происходит на уровне TCP.
+- Выбор TCP vs UDP определяет компромисс «надёжность против скорости».
+- Понимание handshake и таймаутов помогает диагностировать «висящие» и медленно открывающиеся соединения.

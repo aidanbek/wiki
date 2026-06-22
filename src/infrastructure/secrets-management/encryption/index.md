@@ -1,3 +1,17 @@
-At-rest (stored data) vs in-transit (network). Symmetric (AES) vs asymmetric (RSA). Key management critical (HSMs, KMS).
-Envelope encryption: data encrypted с data key, data key encrypted с master key. Compliance often requires encryption (
-GDPR, HIPAA). Performance overhead minimal на modern hardware.
+Encryption
+
+Превращение данных в нечитаемый без ключа вид. Защищает данные в двух состояниях: at-rest (на диске/в БД) и in-transit
+(в сети). Без управления ключами шифрование бессмысленно — стойкость системы определяется защитой ключа, а не алгоритма.
+
+## Виды
+
+- At-rest vs in-transit — шифрование хранимых данных и шифрование передачи (TLS).
+- Symmetric (AES) — один ключ на шифрование и расшифровку; быстрое, для больших объёмов.
+- Asymmetric (RSA, ECC) — пара ключей (публичный/приватный); для обмена ключами и подписей.
+- Envelope encryption: данные шифруются data key, а сам data key — мастер-ключом в KMS.
+
+## Подводные камни
+
+- Ключи нужно хранить и ротировать в отдельной системе (HSM, KMS) — не рядом с данными.
+- Часть требований compliance (GDPR, HIPAA, PCI DSS) прямо предписывает шифрование.
+- Накладные расходы на современном железе минимальны — это почти никогда не повод отказываться от шифрования.
