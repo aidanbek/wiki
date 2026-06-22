@@ -1,5 +1,22 @@
-Replacing real dependencies с controlled test doubles. Types: mock (verify interactions), stub (return fixed responses),
-fake (simplified working implementation), spy (record calls). Use cases: isolate unit under test, simulate error
-conditions, avoid slow/expensive operations (API calls, DB queries). Frameworks: Mockito (Java), unittest.mock (Python),
-Sinon (JS). Over-mocking risks: tests coupled to implementation, не testing real integrations. Balance: mock external
-dependencies, use real objects internally.
+Mocking
+
+Замена реальных зависимостей управляемыми test doubles. Позволяет изолировать тестируемый код, воспроизвести ошибочные
+сценарии и не дёргать медленные/дорогие операции (API-вызовы, запросы к БД).
+
+## Виды test doubles
+
+- Mock — проверяет факт и параметры вызова (verify interactions).
+- Stub — возвращает заранее заданные ответы.
+- Fake — упрощённая, но рабочая реализация (например, in-memory БД).
+- Spy — записывает вызовы для последующей проверки.
+
+## Когда применять
+
+- Изоляция unit under test от внешнего мира.
+- Симуляция error conditions, которые трудно вызвать по-настоящему.
+
+## Баланс
+
+- Over-mocking привязывает тесты к реализации и перестаёт проверять реальные интеграции.
+- Правило: мокать внешние зависимости, внутри использовать реальные объекты.
+- Фреймворки: Mockito (Java), unittest.mock (Python), Sinon (JS).

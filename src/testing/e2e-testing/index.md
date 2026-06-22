@@ -1,5 +1,21 @@
-Testing complete user workflows через entire system. Simulates real user behavior: UI interactions, backend processing,
-database persistence. Most realistic tests, но slowest and flakiest. Browser automation (Selenium, Playwright, Cypress),
-API-based E2E для microservices. Challenges: test environment management, test data setup, flaky tests (timing issues,
-external dependencies). Run fewer E2E чем unit tests (testing pyramid). Focus on critical user journeys. Parallel
-execution speeds up. Run в staging environment before production deploy.
+E2E Testing
+
+Тестирование целых пользовательских сценариев через всю систему: UI-взаимодействия, обработка на бэкенде, запись в БД.
+Самые реалистичные тесты — и самые медленные и нестабильные (flaky), поэтому их держат на вершине testing pyramid.
+
+## Как делают
+
+- Browser automation: Selenium, Playwright, Cypress.
+- API-based E2E для микросервисов без UI.
+- Фокус на критичных user journeys, а не на каждой мелочи.
+
+## Сложности
+
+- Управление тестовым окружением и подготовка тестовых данных.
+- Flaky-тесты из-за таймингов и внешних зависимостей.
+
+## На практике
+
+- E2E-тестов мало (дороже и медленнее unit).
+- Parallel execution ускоряет прогон.
+- Запуск в staging перед production-деплоем.

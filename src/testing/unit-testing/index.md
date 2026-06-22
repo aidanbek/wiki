@@ -1,5 +1,23 @@
-Testing individual functions/methods/classes в isolation. Smallest testable parts, fast execution (milliseconds).
-Principles: one assertion per test, descriptive test names, AAA pattern (Arrange-Act-Assert). Coverage target: 70-80% (
-100% unrealistic). TDD approach: write test first, implement code, refactor. Benefits: early bug detection,
-documentation, refactoring confidence, design feedback. Frameworks: JUnit, pytest, Jest. Run locally + on every commit (
-pre-commit hooks, CI). Foundation of testing pyramid.
+Unit Testing
+
+Тестирование отдельных функций/методов/классов в изоляции — самых мелких проверяемых частей. Быстрые (миллисекунды),
+поэтому их пишут много: это фундамент testing pyramid.
+
+## Принципы
+
+- Один assertion (одна проверяемая мысль) на тест.
+- Описательные имена тестов — тест читается как спецификация.
+- AAA pattern: Arrange (подготовить) → Act (выполнить) → Assert (проверить).
+- TDD: сначала тест, потом код, затем рефакторинг.
+
+## Зачем
+
+- Раннее обнаружение багов и уверенность при рефакторинге.
+- Тесты как живая документация поведения.
+- Обратная связь по дизайну: трудно тестировать → плохой дизайн.
+
+## На практике
+
+- Coverage target 70–80% (100% нереалистично и не окупается).
+- Фреймворки: JUnit, pytest, Jest.
+- Запуск локально и на каждый commit (pre-commit hooks, CI).

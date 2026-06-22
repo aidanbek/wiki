@@ -1,5 +1,22 @@
-Simulating high user load для evaluating performance, stability, scalability. Metrics: throughput (requests/sec),
-response time (p50, p95, p99), error rate, resource utilization. Types: load (expected traffic), stress (breaking
-point), spike (sudden surge), soak (sustained load for hours/days). Tools: JMeter, Gatling, Locust, k6. Identifies
-bottlenecks (CPU, memory, database connections), capacity limits. Run regularly before releases, после infrastructure
-changes. Results inform scaling decisions, SLO targets.
+Load Testing
+
+Симуляция высокой нагрузки для оценки производительности, стабильности и масштабируемости. Цель — узнать, как система
+ведёт себя под нагрузкой, до того как это узнают пользователи в production.
+
+## Виды
+
+- Load — ожидаемый трафик.
+- Stress — поиск точки отказа (breaking point).
+- Spike — внезапный резкий всплеск.
+- Soak — длительная нагрузка часами/днями (ловит утечки памяти).
+
+## Метрики
+
+- Throughput (requests/sec), error rate, resource utilization.
+- Response time по перцентилям: p50, p95, p99 (хвост важнее среднего).
+
+## На практике
+
+- Инструменты: JMeter, Gatling, Locust, k6.
+- Находит bottlenecks (CPU, память, connection pool БД) и пределы capacity.
+- Запуск перед релизами и после изменений инфраструктуры; результаты питают решения по scaling и SLO.

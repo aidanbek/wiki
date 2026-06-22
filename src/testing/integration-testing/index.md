@@ -1,5 +1,22 @@
-Testing взаимодействий между components/modules/services. Verifies interfaces, data flow, communication protocols
-работают together. Scope: narrower чем E2E (subset системы), broader чем unit tests. Examples: API endpoints с database,
-service-to-service calls, message queue producers/consumers. Challenges: test environment setup (databases,
-dependencies), test data management, slower чем unit tests. Tools: TestContainers для dependencies, Postman/REST Assured
-для API testing. Run after unit tests в CI pipeline.
+Integration Testing
+
+Проверка взаимодействия между компонентами/модулями/сервисами: что интерфейсы, поток данных и протоколы общения
+работают вместе. По охвату — шире unit-тестов, но уже E2E (подмножество системы, а не весь путь пользователя).
+
+## Что проверяют
+
+- API endpoints вместе с базой данных.
+- Service-to-service вызовы.
+- Producers/consumers очередей сообщений.
+
+## Сложности
+
+- Подъём тестового окружения (БД, зависимости).
+- Управление тестовыми данными.
+- Медленнее unit-тестов.
+
+## Инструменты и запуск
+
+- TestContainers для поднятия зависимостей в контейнерах.
+- Postman / REST Assured для тестирования API.
+- В CI запускают после unit-тестов.
