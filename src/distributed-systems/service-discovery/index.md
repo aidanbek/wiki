@@ -1,3 +1,22 @@
-Динамическое определение network locations сервисов. В microservices IP:port меняются при scaling/restarts. Service
-registry хранит актуальную топологию, health checks обнаруживают failures. Два паттерна: client-side (клиент query
-registry) и server-side (load balancer query registry).
+Service Discovery
+
+Механизм, который позволяет сервисам находить друг друга в сети динамически. В микросервисах адреса (IP:port) постоянно
+меняются при масштабировании, рестартах и переезде подов — хардкодить их нельзя.
+
+## Как устроено
+
+- **Service registry** — хранит актуальную карту: какой сервис на каких адресах сейчас доступен.
+- При старте инстанс **регистрируется**, при остановке — снимается с регистрации.
+- **Health checks** выявляют упавшие инстансы и убирают их из выдачи.
+
+## Два паттерна обнаружения
+
+- **Client-side discovery** — клиент сам запрашивает registry и выбирает инстанс (балансировка на клиенте). Гибко, но логика размазана по клиентам.
+- **Server-side discovery** — клиент идёт на load balancer / DNS, а тот сам ходит в registry. Клиент проще, но появляется ещё один компонент на пути.
+
+## Реализации
+
+- [[etcd]] — strong-consistency KV-стор, основа discovery в Kubernetes.
+- [[consul]] — discovery + health checks + KV + service mesh из коробки.
+- [[zookeeper]] — старый, battle-tested вариант из Hadoop-экосистемы.
+- Под капотом этих систем — [[consensus]] (Raft/ZAB) для согласованности registry.

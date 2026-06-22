@@ -1,3 +1,24 @@
-Apache проект, изначально для Hadoop ecosystem. Hierarchical namespace (как filesystem), watchers для notifications.
-Используется для distributed locking, configuration management, leader election. Более старый и complex чем etcd, но
-battle-tested в enterprise.
+ZooKeeper
+
+Apache-проект для координации распределённых систем, выросший из экосистемы Hadoop. Старше и тяжелее [[etcd]], но
+проверен временем в enterprise (см. [[service-discovery]]).
+
+## Модель данных
+
+- Иерархическое пространство имён из **znode**-ов — как файловая система.
+- Znode хранит небольшие данные и может быть **ephemeral** (исчезает с сессией клиента) или **sequential** (с авто-номером).
+- **Watchers** — одноразовые уведомления об изменении znode.
+- Согласованность обеспечивает протокол ZAB (близкий по духу к [[consensus]]/Raft).
+
+## Типичные применения
+
+- **Distributed locking** и leader election (ephemeral + sequential znodes — классический рецепт).
+- Configuration management и хранение метаданных кластера.
+- Membership: живые узлы держат ephemeral-znode, исчезновение = отказ.
+- Исторически — координатор для Kafka, HBase, Hadoop.
+
+## Плюсы и минусы
+
+- **Плюс** — зрелость, стабильность, проверенные рецепты координации.
+- **Минус** — сложнее в эксплуатации, более многословный API, одноразовые watchers требуют аккуратной перерегистрации.
+- В новых системах его часто заменяют на [[etcd]] или [[consul]] (Kafka, например, ушёл от ZooKeeper к KRaft).

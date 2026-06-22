@@ -1,3 +1,21 @@
-Two-Phase Commit: coordinator запрашивает prepare, затем commit/abort. Blocking protocol - если coordinator fails во
-время commit, участники ждут. Three-Phase Commit добавляет pre-commit phase для non-blocking. Редко используется из-за
-latency и coordination overhead. XA transactions в databases - пример 2PC.
+2PC / 3PC (Two-/Three-Phase Commit)
+
+Протоколы атомарной фиксации транзакции на нескольких участниках: либо изменения применяют все, либо никто. Дают сильную
+согласованность, но дорого платят за неё блокировками и latency (см. [[distributed-transactions]]).
+
+## Two-Phase Commit
+
+- **Phase 1 (prepare)** — координатор спрашивает всех участников «готовы зафиксировать?»; каждый голосует yes/no и блокирует ресурсы.
+- **Phase 2 (commit/abort)** — если все ответили yes, координатор рассылает commit, иначе abort.
+- Пример из жизни — XA-транзакции между БД и брокером сообщений.
+
+## Главная проблема 2PC — блокировка
+
+- Если координатор падает между фазами, участники остаются с залоченными ресурсами и **ждут** его возвращения.
+- На время неопределённости данные недоступны — страдает availability.
+
+## Three-Phase Commit и реальность
+
+- 3PC добавляет промежуточную фазу **pre-commit**, чтобы участники могли завершить транзакцию по таймауту без координатора (non-blocking).
+- На практике 3PC почти не используют: он не выдерживает сетевых разделений и добавляет ещё один round-trip.
+- Из-за latency и coordination overhead в микросервисах чаще выбирают [[saga-pattern]] или [[eventual-consistency]].
