@@ -6,7 +6,8 @@ CORS (Cross-Origin Resource Sharing)
 ## Как работает
 
 - Preflight (OPTIONS-запрос) для непростых запросов.
-- Заголовки: `Access-Control-Allow-Origin` (whitelist доменов), `Access-Control-Allow-Methods`, `Access-Control-Allow-Credentials` (cookies).
+- Заголовки: `Access-Control-Allow-Origin` (whitelist доменов), `Access-Control-Allow-Methods`,
+  `Access-Control-Allow-Credentials` (cookies).
 
 ## Безопасность
 

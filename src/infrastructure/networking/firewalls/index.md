@@ -5,7 +5,8 @@ Firewalls
 
 ## Как работает
 
-- Stateful firewall отслеживает состояние соединений (и пропускает ответный трафик); stateless смотрит каждый пакет отдельно.
+- Stateful firewall отслеживает состояние соединений (и пропускает ответный трафик); stateless смотрит каждый пакет
+  отдельно.
 - Правила задают allow/deny по source/destination IP, порту и протоколу.
 - Host-based (iptables/nftables на машине) против network-based (на периметре сети).
 - WAF (application-layer firewall) инспектирует HTTP-трафик и ловит атаки уровня приложения (SQLi, XSS).

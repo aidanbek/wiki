@@ -9,4 +9,5 @@ System-Level Caching
 ## Зачем
 
 - Снижает нагрузку на backend, уменьшает latency для пользователей, экономит bandwidth.
-- Требует правильных cache headers (Cache-Control, ETag, Expires) для баланса freshness и hit rate (см. system-level/http-caching).
+- Требует правильных cache headers (Cache-Control, ETag, Expires) для баланса freshness и hit rate (см.
+  system-level/http-caching).

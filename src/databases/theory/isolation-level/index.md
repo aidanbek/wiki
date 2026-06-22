@@ -16,4 +16,5 @@ Isolation Levels
 ## Практика
 
 - Default часто Read Committed (Postgres) или Repeatable Read (MySQL InnoDB).
-- Serializable самый строгий, но дороже (сериализационные конфликты, retry); реализация — MVCC (snapshot) или locking (см. acid, transactions).
+- Serializable самый строгий, но дороже (сериализационные конфликты, retry); реализация — MVCC (snapshot) или locking (
+  см. acid, transactions).

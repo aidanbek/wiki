@@ -7,7 +7,8 @@ Site Reliability Engineering — подход Google к эксплуатации
 
 - SLI (Service Level Indicator) — метрика поведения сервиса (latency, error rate, availability).
 - SLO (Service Level Objective) — целевое значение SLI (например, 99.9% доступности).
-- Error budget — допустимая доля сбоев в рамках SLO; пока бюджет есть, можно катить фичи, кончился — фокус на надёжность.
+- Error budget — допустимая доля сбоев в рамках SLO; пока бюджет есть, можно катить фичи, кончился — фокус на
+  надёжность.
 
 ## Принципы работы
 

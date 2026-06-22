@@ -4,7 +4,8 @@ Template Method
 
 ## Структура
 
-- `AbstractClass.templateMethod()` задаёт порядок и вызывает `primitiveOperation1/2()`, которые переопределяет `ConcreteClass`.
+- `AbstractClass.templateMethod()` задаёт порядок и вызывает `primitiveOperation1/2()`, которые переопределяет
+  `ConcreteClass`.
 - Hollywood Principle: «не звоните нам, мы позвоним вам».
 
 ## Когда использовать

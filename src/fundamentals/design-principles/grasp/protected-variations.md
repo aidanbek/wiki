@@ -9,4 +9,5 @@ Protected Variations
 
 ## Зачем
 
-- Обобщение Open/Closed и Information Hiding — универсальный механизм управления изменениями (см. solid/open-closed, grasp/indirection).
+- Обобщение Open/Closed и Information Hiding — универсальный механизм управления изменениями (см. solid/open-closed,
+  grasp/indirection).

@@ -5,7 +5,8 @@ Abstract Factory
 
 ## Структура
 
-- `GUIFactory` с методами `createButton()`, `createCheckbox()`; `WindowsFactory` создаёт Windows-UI, `MacFactory` — Mac-UI.
+- `GUIFactory` с методами `createButton()`, `createCheckbox()`; `WindowsFactory` создаёт Windows-UI, `MacFactory` —
+  Mac-UI.
 - Клиент работает с абстрактной фабрикой и абстрактными продуктами, не зная конкретных классов.
 
 ## Когда использовать

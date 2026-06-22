@@ -10,4 +10,5 @@ Dependency Inversion Principle (DIP)
 
 ## Зачем
 
-- Реализуется через dependency injection; ключ к testability и замене имплементаций (см. design-patterns/dependency-management/dependency-injection, grasp/indirection).
+- Реализуется через dependency injection; ключ к testability и замене имплементаций (см.
+  design-patterns/dependency-management/dependency-injection, grasp/indirection).

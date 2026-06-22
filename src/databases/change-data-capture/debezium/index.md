@@ -17,7 +17,8 @@ Open-source CDC платформа поверх Kafka Connect. Читает tran
 
 ## Когда использовать / подводные камни
 
-- Replication, cache invalidation, event sourcing, ETL, синхронизация микросервисов (см. outbox pattern в соседнем разделе patterns).
+- Replication, cache invalidation, event sourcing, ETL, синхронизация микросервисов (см. outbox pattern в соседнем
+  разделе patterns).
 - Требует управления replication slots — забытый slot копит WAL и переполняет диск.
 - Tombstone-события для DELETE; нужно корректно обрабатывать на стороне consumer.
 - Завязка на Kafka/Kafka Connect — операционная сложность (можно через Debezium Server без Kafka).

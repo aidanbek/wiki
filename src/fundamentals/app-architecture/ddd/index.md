@@ -18,4 +18,5 @@ Evans).
 
 ## Когда оправдан
 
-- Сложные домены с богатой бизнес-логикой; overkill для CRUD-приложений (см. bounded-contexts, aggregates, fundamentals/design-patterns/architectural/repository).
+- Сложные домены с богатой бизнес-логикой; overkill для CRUD-приложений (см. bounded-contexts, aggregates,
+  fundamentals/design-patterns/architectural/repository).

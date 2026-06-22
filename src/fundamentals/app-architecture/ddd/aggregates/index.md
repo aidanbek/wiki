@@ -17,4 +17,5 @@ boundary.
 ## Определение границ
 
 - Слишком большие → contention и блокировки; слишком маленькие → сложная координация и много транзакций.
-- Правило большого пальца: меняй один aggregate за транзакцию (см. fundamentals/app-architecture/ddd/domain-events, entities-value-objects).
+- Правило большого пальца: меняй один aggregate за транзакцию (см. fundamentals/app-architecture/ddd/domain-events,
+  entities-value-objects).

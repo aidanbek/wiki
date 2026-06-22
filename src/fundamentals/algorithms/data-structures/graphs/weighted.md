@@ -10,4 +10,5 @@ Weighted Graphs (Взвешенные графы)
 ## Чем отличаются алгоритмы
 
 - Shortest path требует Dijkstra/Bellman-Ford вместо BFS; MST использует веса для выбора рёбер.
-- Negative weights усложняют: negative cycle делает shortest path неопределённым, Dijkstra требует неотрицательных весов (см. shortest-path.md).
+- Negative weights усложняют: negative cycle делает shortest path неопределённым, Dijkstra требует неотрицательных
+  весов (см. shortest-path.md).

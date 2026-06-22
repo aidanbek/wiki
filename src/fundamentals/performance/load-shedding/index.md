@@ -4,7 +4,8 @@ Load Shedding
 
 ## Стратегии
 
-- Random drop (просто), priority-based (сохранить критичный трафик), adaptive (по latency/error rate), graceful degradation (урезать фичи, не доступность).
+- Random drop (просто), priority-based (сохранить критичный трафик), adaptive (по latency/error rate), graceful
+  degradation (урезать фичи, не доступность).
 - Реализация: rate limiting, circuit breakers, health checks балансировщика.
 
 ## Поведение

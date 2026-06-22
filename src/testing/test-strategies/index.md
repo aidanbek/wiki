@@ -12,7 +12,8 @@ Test Strategies
 
 - Shift-left — тестировать раньше в цикле разработки, ловить дешевле.
 - Risk-based testing — приоритет на высокорисковые области.
-- Test quadrants (Agile): automated (unit, integration) vs manual (exploratory, usability), technology- vs business-facing.
+- Test quadrants (Agile): automated (unit, integration) vs manual (exploratory, usability), technology- vs
+  business-facing.
 - Continuous Testing встроено в CI/CD.
 
 ## Метрики

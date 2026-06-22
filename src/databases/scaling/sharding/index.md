@@ -16,4 +16,5 @@ Sharding
 
 ## Реализация
 
-- Managed: MongoDB sharding, Vitess (MySQL), Citus (Postgres); либо ручная маршрутизация в приложении (см. partitioning, horizontal).
+- Managed: MongoDB sharding, Vitess (MySQL), Citus (Postgres); либо ручная маршрутизация в приложении (см. partitioning,
+  horizontal).

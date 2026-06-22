@@ -11,6 +11,7 @@ Encryption at Rest
 
 ## Что важно
 
-- Key management критичен — зашифрованные данные бесполезны без ключей (см. [key-management](../key-management/index.md)).
+- Key management критичен — зашифрованные данные бесполезны без ключей (
+  см. [key-management](../key-management/index.md)).
 - Performance overhead минимален на современных CPU (AES-NI).
 - Часто требуется compliance (PCI-DSS, HIPAA, GDPR).

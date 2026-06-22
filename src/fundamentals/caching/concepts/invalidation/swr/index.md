@@ -4,7 +4,8 @@ SWR (Stale-While-Revalidate)
 
 ## Как работает
 
-- `Cache-Control: max-age=300, stale-while-revalidate=3600`: 5 минут fresh, следующий час отдаётся stale + триггерит refresh.
+- `Cache-Control: max-age=300, stale-while-revalidate=3600`: 5 минут fresh, следующий час отдаётся stale + триггерит
+  refresh.
 - Пользователь не ждёт fetch; следующий запрос получит уже свежее.
 
 ## Когда использовать

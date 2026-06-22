@@ -6,7 +6,8 @@ Hexagonal Architecture (Ports & Adapters)
 ## Идея
 
 - Core domain в центре, не зависит от UI, БД, фреймворков.
-- Ports описывают, что нужно ядру (`IRepository`, `IEmailService`); adapters реализуют под конкретную технологию (`PostgresRepository`, `SendGridAdapter`).
+- Ports описывают, что нужно ядру (`IRepository`, `IEmailService`); adapters реализуют под конкретную технологию (
+  `PostgresRepository`, `SendGridAdapter`).
 - Dependency Inversion: ядро определяет интерфейсы, инфраструктура их реализует.
 
 ## Плюсы
@@ -16,4 +17,5 @@ Hexagonal Architecture (Ports & Adapters)
 ## Trade-offs
 
 - Больше кода (интерфейсы, адаптеры) ради долгосрочной maintainability.
-- Родственники: Clean Architecture, Onion Architecture (см. fundamentals/design-patterns/dependency-management/inversion-of-control).
+- Родственники: Clean Architecture, Onion Architecture (см.
+  fundamentals/design-patterns/dependency-management/inversion-of-control).

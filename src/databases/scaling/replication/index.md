@@ -16,4 +16,5 @@ Replication
 ## Реализация и нюансы
 
 - Statement-based vs row-based vs logical replication.
-- Failover на реплику при падении лидера (нужен механизм promotion); read-your-writes ломается из-за lag (см. load-balancing, scaling/sharding).
+- Failover на реплику при падении лидера (нужен механизм promotion); read-your-writes ломается из-за lag (см.
+  load-balancing, scaling/sharding).

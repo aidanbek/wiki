@@ -12,4 +12,5 @@ Consistency Patterns
 ## Как выбирать
 
 - От требований use case: банкинг/остатки → strong; ленты/счётчики/кэш → eventual; чаты/коллаборация → causal.
-- Часто в одной системе сочетают: strong для критичных сущностей, eventual для остального (см. cap-theorem, consistency-model).
+- Часто в одной системе сочетают: strong для критичных сущностей, eventual для остального (см. cap-theorem,
+  consistency-model).

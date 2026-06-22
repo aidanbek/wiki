@@ -11,4 +11,5 @@ Atomic Operations
 ## Зачем
 
 - Lock-free counters, flags, основа non-blocking структур данных.
-- Без блокировок при contention, но сложнее в корректном применении: ABA problem, memory ordering (см. concurrency/concepts/race-conditions).
+- Без блокировок при contention, но сложнее в корректном применении: ABA problem, memory ordering (см.
+  concurrency/concepts/race-conditions).

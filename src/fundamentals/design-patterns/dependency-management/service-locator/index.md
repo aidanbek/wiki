@@ -14,4 +14,5 @@ Service Locator
 
 ## Когда допустим
 
-- Legacy-код или статические контексты, где полноценный DI невозможен (предпочтительнее DI/container) (см. dependency-injection, service-container).
+- Legacy-код или статические контексты, где полноценный DI невозможен (предпочтительнее DI/container) (см.
+  dependency-injection, service-container).

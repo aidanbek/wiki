@@ -10,4 +10,5 @@ Race Condition
 ## Особенности и защита
 
 - Проявляются редко, плохо воспроизводятся (heisenbug — исчезают под отладчиком).
-- Защита: синхронизация критических секций, atomic operations, immutability, message passing вместо shared state (см. concurrency/synchronization/mutex, concurrency/concepts/deadlocks).
+- Защита: синхронизация критических секций, atomic operations, immutability, message passing вместо shared state (см.
+  concurrency/synchronization/mutex, concurrency/concepts/deadlocks).

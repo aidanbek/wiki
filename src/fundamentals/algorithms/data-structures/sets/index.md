@@ -7,4 +7,5 @@ Set (Множество)
 
 ## Реализации
 
-- HashSet — O(1) в среднем; TreeSet — упорядочен, O(log n); BitSet — компактен для плотных integer-множеств (см. set-operations.md).
+- HashSet — O(1) в среднем; TreeSet — упорядочен, O(log n); BitSet — компактен для плотных integer-множеств (см.
+  set-operations.md).

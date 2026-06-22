@@ -5,7 +5,8 @@ Service Mesh
 ## Как работает
 
 - Рядом с каждым сервисом — sidecar proxy (Envoy), перехватывающий весь сетевой трафик.
-- Data plane (прокси) реализует cross-cutting concerns: load balancing, retries, circuit breaking, metrics, tracing, mTLS.
+- Data plane (прокси) реализует cross-cutting concerns: load balancing, retries, circuit breaking, metrics, tracing,
+  mTLS.
 - Control plane (Istio, Linkerd, Consul) управляет конфигурацией всех прокси.
 
 ## Плюсы
@@ -15,4 +16,5 @@ Service Mesh
 ## Trade-offs
 
 - Своя сложность: learning curve, накладные расходы на ресурсы и latency.
-- Оправдан при большом числе сервисов (>10-20) и серьёзных требованиях к надёжности/безопасности (см. microservices, infrastructure/resilience).
+- Оправдан при большом числе сервисов (>10-20) и серьёзных требованиях к надёжности/безопасности (см. microservices,
+  infrastructure/resilience).

@@ -1,6 +1,6 @@
 Snowflake Schema
 
-Нормализованный вариант star schema: dimension-таблицы разбиты на под-измерения (например, product → category → 
+Нормализованный вариант star schema: dimension-таблицы разбиты на под-измерения (например, product → category →
 department). Форма напоминает снежинку.
 
 ## Отличие от star

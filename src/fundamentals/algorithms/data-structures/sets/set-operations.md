@@ -4,7 +4,8 @@ Set Operations (Операции над множествами)
 
 ## Операции
 
-- Union A∪B (всё из обоих), intersection A∩B (только общие), difference A\B (из A без B), symmetric difference, subset check.
+- Union A∪B (всё из обоих), intersection A∩B (только общие), difference A\B (из A без B), symmetric difference, subset
+  check.
 - Membership (contains): O(1) для HashSet, O(log n) для TreeSet.
 
 ## Выбор структуры

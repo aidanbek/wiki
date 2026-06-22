@@ -11,9 +11,11 @@ Immutable события, описывающие что-то значимое, �
 ## Зачем
 
 - Decoupling: другие aggregates/контексты подписываются и реагируют.
-- Eventual consistency между aggregates (`OrderPlaced` → уменьшить остаток), интеграция контекстов, audit trail, фундамент event sourcing.
+- Eventual consistency между aggregates (`OrderPlaced` → уменьшить остаток), интеграция контекстов, audit trail,
+  фундамент event sourcing.
 
 ## Эффект
 
 - Делают систему reactive и явной в бизнес-процессах, дают temporal decoupling.
-- Хранение в event store даёт полную историю (см. fundamentals/design-patterns/architectural/event-sourcing, aggregates).
+- Хранение в event store даёт полную историю (см. fundamentals/design-patterns/architectural/event-sourcing,
+  aggregates).

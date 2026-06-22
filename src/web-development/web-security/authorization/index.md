@@ -14,6 +14,7 @@ Authorization
 
 ## Принципы
 
-- Предотвращать privilege escalation: horizontal (доступ к данным другого пользователя) и vertical (доступ к admin-функциям).
+- Предотвращать privilege escalation: horizontal (доступ к данным другого пользователя) и vertical (доступ к
+  admin-функциям).
 - Каждый endpoint требует проверки авторизации, не только аутентификации.
 - Fail closed — по умолчанию запрещать.

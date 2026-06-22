@@ -5,8 +5,10 @@ Amazon SQS
 
 ## Как работает
 
-- Два типа: Standard (at-least-once, порядок best-effort, максимальный throughput) и FIFO (exactly-once, строгий порядок).
-- Visibility timeout: взятое consumer'ом сообщение временно скрыто от других, пока не обработано или не вернётся в очередь.
+- Два типа: Standard (at-least-once, порядок best-effort, максимальный throughput) и FIFO (exactly-once, строгий
+  порядок).
+- Visibility timeout: взятое consumer'ом сообщение временно скрыто от других, пока не обработано или не вернётся в
+  очередь.
 - Встроенные dead-letter queues для сообщений, не обработанных после заданного числа попыток.
 
 ## Когда использовать / подводные камни

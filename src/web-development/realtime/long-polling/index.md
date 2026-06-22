@@ -12,4 +12,5 @@ Long Polling
 
 - Выше latency, чем у WebSockets (накладные на новое соединение).
 - Расход ресурсов сервера на удерживаемые соединения.
-- Вытеснен современными [SSE](../server-sent-events/index.md)/[WebSockets](../websockets/index.md), но полезен в ограниченных средах.
+- Вытеснен современными [SSE](../server-sent-events/index.md)/[WebSockets](../websockets/index.md), но полезен в
+  ограниченных средах.

@@ -15,5 +15,7 @@ Microservices
 
 ## Цена
 
-- Огромный overhead: распределённые транзакции (saga), сетевые задержки/отказы, observability (логи/трейсы/метрики), сложный деплой и отладка.
-- Оправдан для крупных организаций с многими командами; overkill для стартапов — часто лучше начать с modular monolith (см. modular-monolith, service-mesh, fundamentals/app-architecture/ddd/bounded-contexts).
+- Огромный overhead: распределённые транзакции (saga), сетевые задержки/отказы, observability (логи/трейсы/метрики),
+  сложный деплой и отладка.
+- Оправдан для крупных организаций с многими командами; overkill для стартапов — часто лучше начать с modular monolith (
+  см. modular-monolith, service-mesh, fundamentals/app-architecture/ddd/bounded-contexts).

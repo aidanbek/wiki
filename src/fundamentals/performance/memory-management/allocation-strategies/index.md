@@ -10,4 +10,5 @@ Allocation Strategies
 ## Стратегии
 
 - first-fit / best-fit / worst-fit — разный баланс скорости и фрагментации.
-- Arena/region — bulk allocate + bulk free (удобно для request-scoped); object pools — переиспользование (меньше GC pressure); bump allocator — последовательный инкремент (очень быстро, нужен periodic reset).
+- Arena/region — bulk allocate + bulk free (удобно для request-scoped); object pools — переиспользование (меньше GC
+  pressure); bump allocator — последовательный инкремент (очень быстро, нужен periodic reset).

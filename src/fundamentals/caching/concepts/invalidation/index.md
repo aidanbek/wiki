@@ -4,7 +4,8 @@ Invalidation
 
 ## Главный trade-off
 
-- Freshness ↔ performance: частая инвалидация = актуальность, но ниже hit rate; редкая = высокий hit rate, но риск stale.
+- Freshness ↔ performance: частая инвалидация = актуальность, но ниже hit rate; редкая = высокий hit rate, но риск
+  stale.
 
 ## Стратегии
 

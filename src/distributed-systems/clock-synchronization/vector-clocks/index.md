@@ -18,5 +18,6 @@ Vector Clocks
 
 ## Где применяется и цена
 
-- Conflict resolution в Dynamo, Riak, Cassandra — при параллельных записях система видит конфликт и решает его (merge, last-write-wins, прикладная логика).
+- Conflict resolution в Dynamo, Riak, Cassandra — при параллельных записях система видит конфликт и решает его (merge,
+  last-write-wins, прикладная логика).
 - Минус — размер вектора растёт с числом узлов; для динамичных кластеров используют dotted version vectors и усечения.

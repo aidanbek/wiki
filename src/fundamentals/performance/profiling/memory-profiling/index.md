@@ -9,5 +9,7 @@ Memory Profiling
 
 ## Инструменты и сигналы
 
-- Valgrind massif, jemalloc profiling, Go pprof, Python memory_profiler; sample-based в проде, heap dumps для post-mortem.
-- Ищи: растущие коллекции, неправильный кэш, крупные промежуточные объекты, конкатенацию строк в циклах (см. fundamentals/performance/memory-management/memory-leaks).
+- Valgrind massif, jemalloc profiling, Go pprof, Python memory_profiler; sample-based в проде, heap dumps для
+  post-mortem.
+- Ищи: растущие коллекции, неправильный кэш, крупные промежуточные объекты, конкатенацию строк в циклах (см.
+  fundamentals/performance/memory-management/memory-leaks).

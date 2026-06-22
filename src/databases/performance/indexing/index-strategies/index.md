@@ -5,7 +5,8 @@ Index Strategies
 ## Виды специализированных индексов
 
 - Covering index: включает все колонки SELECT (INCLUDE) → результат целиком из индекса, без table lookup.
-- Partial index: только подмножество строк (`WHERE` в `CREATE INDEX`) — меньше и быстрее (например, только активные записи).
+- Partial index: только подмножество строк (`WHERE` в `CREATE INDEX`) — меньше и быстрее (например, только активные
+  записи).
 - Function-based/expression index: на вычисленном значении (`lower(email)`, выражения, JSON-поля).
 
 ## Мониторинг

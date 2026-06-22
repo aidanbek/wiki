@@ -17,4 +17,5 @@ Cassandra
 ## Ограничения / подводные камни
 
 - Нет JOIN-ов и произвольных WHERE; денормализация и дублирование под каждый паттерн запроса.
-- Tombstones при удалениях бьют по производительности; QUORUM+QUORUM нужен для strong-чтений. Use cases: time-series, IoT, messaging.
+- Tombstones при удалениях бьют по производительности; QUORUM+QUORUM нужен для strong-чтений. Use cases: time-series,
+  IoT, messaging.

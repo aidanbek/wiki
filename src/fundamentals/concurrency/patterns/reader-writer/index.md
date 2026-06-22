@@ -11,4 +11,5 @@ Reader-Writer Lock
 ## Когда использовать
 
 - Read-heavy workloads: кэши, конфигурация, lookup-таблицы.
-- Сложнее mutex; overhead оправдан только при высоком read/write ratio; риск writer starvation (см. concurrency/synchronization/mutex).
+- Сложнее mutex; overhead оправдан только при высоком read/write ratio; риск writer starvation (см.
+  concurrency/synchronization/mutex).

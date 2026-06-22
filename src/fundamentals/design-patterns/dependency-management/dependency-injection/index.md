@@ -15,4 +15,5 @@ Dependency Injection (DI)
 
 ## Связь с IoC
 
-- DI — конкретная техника реализации Inversion of Control; обычно автоматизируется DI-контейнером (см. inversion-of-control, service-container).
+- DI — конкретная техника реализации Inversion of Control; обычно автоматизируется DI-контейнером (см.
+  inversion-of-control, service-container).

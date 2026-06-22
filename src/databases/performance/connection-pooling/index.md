@@ -16,4 +16,5 @@ Connection Pooling
 ## Реализации и режимы
 
 - PgBouncer (session/transaction/statement pooling), ProxySQL, HikariCP, пулы в фреймворках/ORM.
-- Подводные камни: prepared statements и сессионные настройки ломаются в transaction-pooling; слишком большой пул вредит БД.
+- Подводные камни: prepared statements и сессионные настройки ломаются в transaction-pooling; слишком большой пул вредит
+  БД.

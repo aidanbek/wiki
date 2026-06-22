@@ -9,5 +9,6 @@ LFU (Least Frequently Used)
 ## Trade-offs
 
 - Лучше LRU для skewed нагрузок со стабильным hot-set.
-- Проблема: старые записи накапливают высокий count и душат новых популярных → Window-LFU, TinyLFU (time windows / sketch).
+- Проблема: старые записи накапливают высокий count и душат новых популярных → Window-LFU, TinyLFU (time windows /
+  sketch).
 - Сложнее в реализации, больше метаданных.
