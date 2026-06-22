@@ -10,6 +10,22 @@ mathjax-support = true
 site-url = "/book/"
 git-repository-url = "https://github.com/aidanbek/wiki"
 
+# Сворачиваемое дерево в боковой панели.
+# enable — включить сворачивание разделов; level — сколько уровней раскрыто по умолчанию
+# (0 = все разделы свёрнуты, видны только верхнеуровневые категории).
+[output.html.fold]
+enable = true
+level = 0
+
+# Полнотекстовый поиск по книге (иконка-лупа в шапке / горячая клавиша «S»).
+[output.html.search]
+enable = true
+limit-results = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+expand = true
+
 [output.linkcheck]
 # Проверяем только внутренние ссылки — внешние URL отключены, чтобы сборка
 # не падала из-за временной недоступности сторонних сайтов.
