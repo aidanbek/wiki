@@ -57,9 +57,12 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./book
+          # С backend'ом linkcheck mdBook кладёт HTML в подкаталог book/html,
+          # поэтому публикуем именно его, а не корень book/.
+          path: ./book/html
 
   # Deployment job
+
   deploy:
     environment:
       name: github-pages
