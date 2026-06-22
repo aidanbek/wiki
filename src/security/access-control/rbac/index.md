@@ -1,4 +1,20 @@
-Role-Based Access Control assigns permissions to roles, users assigned roles. Simplifies management (modify role vs
-individual users). Hierarchical roles (inheritance), role templates. Use cases: enterprise applications, multi-tenant
-systems. Limitations: role explosion (too many specific roles), difficulty modeling complex policies. Standards: NIST
-RBAC model levels 0-3.
+RBAC (Role-Based Access Control)
+
+Доступ выдаётся не пользователю напрямую, а роли; пользователю назначаются роли. «Бухгалтер», «админ», «читатель» —
+права привязаны к роли, и достаточно поменять роль, а не править каждого пользователя.
+
+## Как устроено
+
+- Permissions привязаны к ролям, роли — к пользователям.
+- Hierarchical roles — наследование прав (senior включает права junior).
+- Role templates — заготовки ролей под типовые позиции.
+
+## Когда использовать
+
+- Enterprise-приложения и multi-tenant системы с понятным набором позиций.
+- Стандарт: NIST RBAC model, уровни 0–3 (от плоского к иерархическому с ограничениями).
+
+## Ограничения
+
+- Role explosion — слишком много узких ролей под частные случаи.
+- Тяжело моделировать сложные политики, зависящие от контекста (тут лучше [ABAC](../abac/index.md)).

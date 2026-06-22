@@ -1,4 +1,19 @@
-Payment Card Industry Data Security Standard для organizations handling card data. 12 requirements across 6 goals:
-secure network, protect cardholder data, vulnerability management, access control, monitoring, security policy. Key:
-never store CVV, tokenization preferred, quarterly vulnerability scans, annual penetration testing. SAQ (Self-Assessment
-Questionnaire) levels based on transaction volume. Non-compliance = fines, loss of card processing ability.
+PCI-DSS
+
+Payment Card Industry Data Security Standard — стандарт для всех, кто работает с данными платёжных карт. 12 требований,
+сгруппированных в 6 целей: защищённая сеть, защита данных держателя карты, vulnerability management, контроль доступа,
+мониторинг, политика безопасности.
+
+## Ключевые правила
+
+- Никогда не хранить CVV.
+- Tokenization предпочтительнее хранения номеров карт.
+- Quarterly vulnerability scans и ежегодный penetration testing.
+
+## Уровни соответствия
+
+- SAQ (Self-Assessment Questionnaire) — уровень зависит от объёма транзакций.
+
+## Последствия нарушения
+
+- Штрафы и потеря права обрабатывать карточные платежи.

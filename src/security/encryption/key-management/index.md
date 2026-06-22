@@ -1,4 +1,21 @@
-Securing cryptographic keys through lifecycle: generation (strong randomness), storage (HSMs, KMS), distribution,
-rotation, destruction. Key hierarchy: master key encrypts data keys (envelope encryption). Separation of duties: no
-single person accesses keys. AWS KMS, Azure Key Vault, HashiCorp Vault automate management. Regular rotation limits
-exposure window. Backup keys encrypted, stored separately. Audit all key operations.
+Key Management
+
+Защита криптографических ключей на всём жизненном цикле. Самое слабое звено любого шифрования: украденный ключ
+обнуляет всю защиту, поэтому ключи берегут отдельно и строже самих данных.
+
+## Жизненный цикл ключа
+
+- Generation — генерация на сильной случайности (strong randomness).
+- Storage — хранение в HSM или KMS, не в коде/конфиге.
+- Distribution → Rotation → Destruction — раздача, ротация, уничтожение.
+
+## Ключевые практики
+
+- Envelope encryption — master key шифрует data keys (иерархия ключей).
+- Separation of duties — ни один человек не имеет полного доступа к ключам.
+- Регулярная rotation сокращает окно компрометации; backup-ключи хранятся зашифрованными и отдельно.
+
+## Инструменты
+
+- AWS KMS, Azure Key Vault, HashiCorp Vault автоматизируют управление.
+- Audit всех операций с ключами.

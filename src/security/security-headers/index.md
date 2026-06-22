@@ -1,14 +1,17 @@
-HTTP response headers improving browser security. Key headers:
+Security Headers
 
-- Strict-Transport-Security (HSTS): force HTTPS
+HTTP-заголовки ответа, повышающие безопасность на стороне браузера. Дешёвые wins: добавляются на уровне reverse
+proxy/CDN, без правок приложения.
 
-- Content-Security-Policy (CSP): prevent XSS (whitelist resources)
+## Ключевые заголовки
 
-- X-Frame-Options: prevent clickjacking
+- `Strict-Transport-Security` (HSTS) — принудительный HTTPS.
+- `Content-Security-Policy` (CSP) — защита от XSS через whitelist ресурсов.
+- `X-Frame-Options` — защита от clickjacking.
+- `X-Content-Type-Options` — запрет MIME sniffing.
+- `Referrer-Policy` — контроль передачи referrer.
 
-- X-Content-Type-Options: prevent MIME sniffing
+## Практика
 
-- Referrer-Policy: control referrer information
-
-Easy wins - add at reverse proxy/CDN level. Testing: securityheaders.com. CSP most complex (report-only mode for
-testing).
+- Проверка конфигурации: securityheaders.com.
+- CSP — самый сложный заголовок; начинать в report-only режиме, чтобы не сломать сайт.

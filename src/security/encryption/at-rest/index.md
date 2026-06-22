@@ -1,4 +1,16 @@
-Encrypting stored data: databases, filesystems, backups, archives. Protects if physical media stolen/compromised. Full
-disk encryption (LUKS, BitLocker) vs application-level. Transparent Data Encryption (TDE) в databases. Key management
-critical - encrypted data worthless без keys. Performance overhead minimal на modern CPUs (AES-NI). Compliance often
-mandates (PCI-DSS, HIPAA, GDPR).
+Encryption at Rest
+
+Шифрование хранимых данных: БД, файловых систем, бэкапов, архивов. Защищает на случай, если физический носитель украли
+или утилизировали неправильно — без ключа данные бесполезны.
+
+## Уровни
+
+- Full disk encryption (LUKS, BitLocker) — шифруется весь диск целиком.
+- Application-level — приложение шифрует конкретные поля до записи.
+- TDE (Transparent Data Encryption) — прозрачное шифрование внутри СУБД.
+
+## Что важно
+
+- Key management критичен — зашифрованные данные бесполезны без ключей (см. [key-management](../key-management/index.md)).
+- Performance overhead минимален на современных CPU (AES-NI).
+- Часто требуется compliance (PCI-DSS, HIPAA, GDPR).

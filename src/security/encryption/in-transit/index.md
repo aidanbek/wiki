@@ -1,4 +1,16 @@
-Encrypting data during transmission: TLS/SSL for web, VPN tunnels, encrypted message queues. Protects against network
-eavesdropping, MITM attacks. End-to-end encryption best (sender → receiver, not just transport). Certificate validation
-prevents impersonation. Modern standards: TLS 1.3, strong cipher suites (AES-256-GCM). Disable weak protocols (SSLv3,
-TLS 1.0/1.1). Performance impact negligible with hardware acceleration.
+Encryption in Transit
+
+Шифрование данных во время передачи: TLS/SSL для web, VPN-туннели, шифрованные очереди сообщений. Защищает от
+прослушивания сети (eavesdropping) и MITM-атак.
+
+## Подходы
+
+- Transport-level — шифруется канал ([TLS/SSL](../../certificates/tls-ssl/index.md), VPN).
+- End-to-end — данные зашифрованы от отправителя до получателя, а не только на участке транспорта (надёжнее).
+- Валидация сертификата предотвращает подмену стороны (impersonation).
+
+## Конфигурация
+
+- Современные стандарты: TLS 1.3, сильные cipher suites (AES-256-GCM).
+- Отключить слабые протоколы (SSLv3, TLS 1.0/1.1).
+- Влияние на производительность ничтожно при аппаратном ускорении.

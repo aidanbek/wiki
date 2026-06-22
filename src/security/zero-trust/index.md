@@ -1,5 +1,21 @@
-Security model assuming breach: "never trust, always verify". No implicit trust based on network location (
-inside/outside perimeter). Every access request authenticated, authorized, encrypted regardless of origin. Principles:
-verify identity, least privilege access, assume breach, inspect/log all traffic. Implementation: strong authentication (
-MFA), micro-segmentation, continuous monitoring. Replaces castle-and-moat model. Reduces lateral movement after breach.
-Requires identity-aware proxies, policy enforcement points.
+Zero Trust
+
+Модель безопасности, исходящая из того, что сеть уже взломана: «never trust, always verify». Нет неявного доверия по
+сетевому расположению — нахождение «внутри периметра» больше ничего не гарантирует.
+
+## Принципы
+
+- Verify identity — каждый запрос аутентифицируется и авторизуется.
+- Least privilege — минимум прав на каждый доступ.
+- Assume breach — считать, что злоумышленник уже внутри.
+- Inspect/log all traffic — проверять и логировать весь трафик независимо от источника.
+
+## Реализация
+
+- Сильная аутентификация (MFA), micro-segmentation, continuous monitoring.
+- Identity-aware proxies и policy enforcement points как точки контроля.
+
+## Зачем
+
+- Заменяет модель castle-and-moat (защищённый периметр, доверенная середина).
+- Ограничивает lateral movement после пробоя — взлом одного узла не открывает всё.

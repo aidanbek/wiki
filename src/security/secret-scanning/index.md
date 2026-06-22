@@ -1,5 +1,22 @@
-Automated detection secrets committed to code repositories. Scans for: API keys, passwords, certificates, database
-credentials, OAuth tokens. Tools: GitGuardian, TruffleHog, GitHub secret scanning. Pre-commit hooks prevent secrets
-entering repo. Post-commit: scan history, alert on detections, rotate exposed secrets immediately. False positives
-common (test keys, placeholders). Secrets management tools (Vault, AWS Secrets Manager) preferred over env vars/config
-files.
+Secret Scanning
+
+Автоматическое обнаружение секретов, попавших в репозиторий с кодом. Раз закоммиченный секрет считается
+скомпрометированным — даже если его потом удалить, он остаётся в истории git.
+
+## Что ищут
+
+- API keys, пароли, сертификаты, credentials БД, OAuth-токены.
+
+## Инструменты
+
+- GitGuardian, TruffleHog, GitHub secret scanning.
+
+## Процесс
+
+- Pre-commit hooks не дают секрету попасть в репозиторий вообще.
+- Post-commit: скан истории, алерт при находке, немедленная ротация утёкшего секрета.
+- False positives часты (тестовые ключи, плейсхолдеры) — нужен triage.
+
+## Правильный подход
+
+- Хранить секреты в secrets manager (Vault, AWS Secrets Manager), а не в env vars или конфигах.

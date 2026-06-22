@@ -1,4 +1,20 @@
-Mutual TLS authenticates both client and server via certificates. Standard TLS only server authenticated. Use cases:
-service-to-service auth в microservices, API authentication, zero trust architectures. Certificate management
-complexity (issuance, rotation per service). Service mesh (Istio, Linkerd) automates mTLS. Benefits: strong
-authentication, encrypted communication, defense against MITM. Alternative to API keys/tokens для internal services.
+mTLS (Mutual TLS)
+
+Взаимный TLS: по сертификатам аутентифицируются обе стороны, а не только сервер как в обычном TLS. Клиент тоже
+доказывает, кто он, — поэтому подходит для доверия между сервисами.
+
+## Когда использовать
+
+- Service-to-service auth в микросервисах.
+- API authentication, zero trust архитектуры.
+- Альтернатива API keys/токенам для внутренних сервисов.
+
+## Плюсы
+
+- Сильная двусторонняя аутентификация + шифрование канала.
+- Защита от MITM.
+
+## Сложности
+
+- Управление сертификатами: выпуск и rotation на каждый сервис.
+- Service mesh (Istio, Linkerd) автоматизирует mTLS, снимая эту боль.

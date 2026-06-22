@@ -1,4 +1,20 @@
-Granting minimum permissions necessary для job function. Reduces blast radius при credential compromise. Implementation:
-default deny, explicit grants, regular access reviews. Time-bound access (just-in-time) для admin operations. Principle
-of separation of duties (no single person has end-to-end control). Challenge: balancing security с productivity. Audit
-logs track privilege usage.
+Least Privilege
+
+Выдавать ровно столько прав, сколько нужно для задачи, и не больше. Если учётку взломают, blast radius ограничен тем
+малым, к чему она имела доступ.
+
+## Как реализуют
+
+- Default deny — по умолчанию запрещено, права выдаются явными грантами.
+- Just-in-time access — временный доступ под конкретную операцию вместо постоянных прав admin.
+- Time-bound access — права с истекающим сроком.
+
+## Поддержание
+
+- Регулярные access reviews — отзывать накопившиеся лишние права.
+- Separation of duties — ни один человек не имеет end-to-end контроля.
+- Audit logs фиксируют использование привилегий.
+
+## Trade-off
+
+- Баланс security vs productivity: слишком жёсткие ограничения мешают работать, слишком мягкие — расширяют поверхность атаки.
