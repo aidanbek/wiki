@@ -1,4 +1,23 @@
-Also known as ADR (Architecture Decision Records). Documents significant architectural choices: context (why decision
-needed), considered options, decision made, consequences. Lightweight format (markdown), version controlled. Immutable -
-new ADR supersedes old (shows evolution). Makes implicit knowledge explicit. Aids onboarding, prevents revisiting
-settled debates. Template: title, status, context, decision, consequences. Numbered sequentially.
+Architecture Decision Records (ADR)
+
+Короткие документы, фиксирующие значимое архитектурное решение: почему оно понадобилось, какие были альтернативы и
+к чему оно привело. Делают неявное знание явным — через полгода видно не только что выбрали, но и зачем.
+
+## Что внутри
+
+- Context — проблема и ограничения, из-за которых решение вообще понадобилось.
+- Decision — что именно выбрали и почему.
+- Consequences — последствия: что стало проще, что сложнее, какие появились trade-off'ы.
+- Status — proposed / accepted / superseded.
+
+## Как ведут
+
+- Markdown в репозитории рядом с кодом, под version control.
+- Нумеруются последовательно (`0001-...`, `0002-...`).
+- Immutable: решение не правят задним числом — новый ADR заменяет старый (`superseded by 0042`), история эволюции сохраняется.
+
+## Зачем
+
+- Ускоряет onboarding — новичок читает историю решений, а не реконструирует её по коду.
+- Прекращает повторные споры по уже закрытым вопросам.
+- Lightweight: барьер на создание низкий, поэтому записи реально появляются.

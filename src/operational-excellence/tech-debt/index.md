@@ -1,4 +1,21 @@
-Accumulated suboptimal technical decisions: quick fixes, outdated dependencies, missing tests, poor documentation. Слows
-development velocity over time, increases bug rate, makes onboarding harder. Quantification: estimate effort to fix,
-impact on productivity. Management: regular refactoring sprints, Boy Scout Rule (leave code better), debt register
-tracking. Trade-off: short-term speed vs long-term maintainability. Unmanaged debt eventually forces costly rewrites.
+Tech Debt
+
+Накопленные субоптимальные технические решения: костыли, устаревшие зависимости, нехватка тестов, плохая документация.
+Как финансовый долг — ускоряет «сейчас», но требует выплаты процентов в виде замедления разработки потом.
+
+## Откуда берётся и чем вредит
+
+- Quick fixes под дедлайн, отложенный рефакторинг, накопившиеся outdated dependencies.
+- Замедляет velocity, повышает bug rate, усложняет onboarding.
+- Неуправляемый долг в итоге вынуждает дорогостоящие rewrites.
+
+## Как управлять
+
+- Debt register — учёт долга, чтобы он был виден, а не жил только в головах.
+- Регулярные refactoring-спринты или выделенная доля времени каждого спринта.
+- Boy Scout Rule — оставляй код чуть лучше, чем нашёл.
+
+## Trade-off
+
+- Short-term speed vs long-term maintainability — иногда долг взять осознанно правильно.
+- Квантификация: оценить усилия на исправление и влияние на продуктивность, чтобы приоритизировать выплату.

@@ -1,4 +1,23 @@
-Step-by-step procedures для handling common incidents и operational tasks. Includes: symptoms, diagnosis steps,
-resolution actions, rollback procedures. Living documents - updated after incidents. Reduces mean time to resolution (
-MTTR), enables junior engineers to handle incidents. Format: decision trees, checklists. Automated runbooks (
-self-healing scripts) где возможно. Stored в accessible location (wiki, git).
+Runbooks
+
+Пошаговые инструкции для типовых инцидентов и рутинных операций. Когда сервис лежит в 3 ночи, дежурный читает runbook,
+а не выдумывает решение с нуля.
+
+## Что внутри
+
+- Symptoms — как распознать, что это именно эта проблема.
+- Diagnosis — шаги диагностики, чтобы подтвердить причину.
+- Resolution — действия по устранению.
+- Rollback — как откатиться, если фикс не помог.
+
+## Зачем
+
+- Снижают MTTR — решение известно заранее, не надо изобретать.
+- Позволяют junior-инженерам справляться с инцидентами без эскалации.
+- Формат: чек-листы и decision trees вместо сплошного текста.
+
+## Поддержание
+
+- Living documents — обновляются после каждого инцидента, иначе устаревают и вредят.
+- Хранятся в доступном месте (wiki, git), а не в голове у одного человека.
+- Automated runbooks (self-healing скрипты) там, где шаги можно выполнить без человека.

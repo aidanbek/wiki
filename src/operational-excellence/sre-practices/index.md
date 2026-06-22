@@ -1,5 +1,22 @@
-Site Reliability Engineering principles от Google. Treats operations as software problem. Key concepts: SLIs (Service
-Level Indicators - metrics), SLOs (Service Level Objectives - targets), error budgets (acceptable downtime). 50/50 rule:
-max 50% time on ops, rest on engineering. Blameless post-mortems, reducing toil (manual repetitive work), chaos
-engineering. Automation preferred over manual intervention. Metrics: toil percentage, MTTR, MTTF, change success rate.
-Culture: reliability через engineering rigor.
+SRE Practices
+
+Site Reliability Engineering — подход Google к эксплуатации: относиться к операциям как к software-задаче. Вместо
+ручного тушения пожаров надёжность достигается инженерией и автоматизацией.
+
+## Ключевые понятия
+
+- SLI (Service Level Indicator) — метрика поведения сервиса (latency, error rate, availability).
+- SLO (Service Level Objective) — целевое значение SLI (например, 99.9% доступности).
+- Error budget — допустимая доля сбоев в рамках SLO; пока бюджет есть, можно катить фичи, кончился — фокус на надёжность.
+
+## Принципы работы
+
+- 50/50 rule — не более 50% времени на ops, остальное на инженерию.
+- Сокращение toil — ручной повторяющейся рутины, которую стоит автоматизировать.
+- Blameless post-mortems и chaos engineering — учиться на сбоях и проверять устойчивость намеренно.
+
+## Метрики
+
+- Toil percentage — какая доля времени уходит на рутину.
+- MTTR / MTTF — время восстановления и время между отказами.
+- Change success rate — доля накаток без инцидентов.

@@ -1,4 +1,21 @@
-Blameless analysis after incidents для learning and improvement. Components: timeline, root cause analysis (5 Whys,
-Fishbone), action items. Focus на systemic issues, not individual mistakes. Shared publicly (transparency builds trust).
-Action items tracked to completion. Good post-mortems prevent recurrence. Culture: celebrating learning from failures.
-Template standardization ensures completeness.
+Post-Mortems
+
+Разбор инцидента после восстановления — ради обучения, а не наказания. Главный принцип blameless: ищем системную
+причину, а не виноватого, иначе люди начнут скрывать ошибки.
+
+## Что входит
+
+- Timeline — хронология: что произошло, когда заметили, что предпринимали.
+- Root cause analysis — поиск первопричины (5 Whys, Fishbone-диаграмма).
+- Action items — конкретные задачи, чтобы это не повторилось.
+
+## Что делает post-mortem хорошим
+
+- Action items доводятся до завершения и трекаются, а не остаются на бумаге.
+- Фокус на системных проблемах: «почему система это позволила», а не «кто нажал кнопку».
+- Стандартный шаблон — гарантирует полноту разбора.
+
+## Культура
+
+- Публичность: разбор открыт для команды, прозрачность строит доверие.
+- Учиться на сбоях считается нормой, а не поводом для стыда.

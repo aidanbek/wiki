@@ -1,4 +1,23 @@
-Rotation schedule где engineers responsible за responding to production incidents 24/7. Primary/secondary escalation.
-Pager duty (PagerDuty, Opsgenie) routes alerts. Compensation: time off, extra pay. Sustainable rotations prevent
-burnout (max 1 week shifts). Post-incident handoff notes. Metrics: alert volume, page frequency, incident distribution.
-Follow-the-sun rotations для global teams.
+On-Call
+
+График дежурств, при котором инженеры по очереди отвечают за реакцию на production-инциденты 24/7. Кто-то всегда «у
+пейджера», чтобы сбой ночью не ждал утра.
+
+## Как устроено
+
+- Rotation schedule — расписание дежурств по очереди внутри команды.
+- Primary/secondary — основной дежурный и резервный для эскалации, если первый не отвечает.
+- Pager (PagerDuty, Opsgenie) маршрутизирует алерты до нужного человека.
+- Follow-the-sun — передача дежурства между часовыми поясами для глобальных команд.
+
+## Устойчивость к выгоранию
+
+- Короткие смены (максимум неделя), чтобы дежурство не выматывало.
+- Компенсация: отгулы или доплата за дежурства.
+- Handoff notes — заметки при передаче смены, чтобы контекст не терялся.
+
+## Метрики
+
+- Alert volume и page frequency — сколько алертов и как часто будят дежурного.
+- Распределение инцидентов по времени и сервисам — где болит чаще всего.
+- Рост шума в алертах — сигнал чинить алертинг, а не терпеть.

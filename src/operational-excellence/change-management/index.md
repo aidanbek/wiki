@@ -1,4 +1,22 @@
-Process governing production changes для minimizing risk. Change Advisory Board (CAB) reviews high-risk changes.
-Categories: standard (pre-approved), normal (review required), emergency (expedited). Change windows reduce business
-impact. Peer review, testing requirements, rollback plans mandatory. Tracking: change calendar prevents conflicts, audit
-trail для compliance. Automation (CI/CD) speeds low-risk changes. Balance speed с stability.
+Change Management
+
+Процесс внесения изменений в production так, чтобы снизить риск, не убив скорость. Суть — соразмерять контроль риску
+изменения: рискованное проходит ревью, рутинное катится автоматически.
+
+## Категории изменений
+
+- Standard — предодобренные, низкорисковые, по шаблону (например, накатка через CI/CD).
+- Normal — требуют ревью; высокорисковые проходят через Change Advisory Board (CAB).
+- Emergency — ускоренная процедура для срочных фиксов, ревью постфактум.
+
+## Снижение риска
+
+- Peer review и обязательные требования к тестам перед накаткой.
+- Rollback plan для каждого изменения — как откатиться, если что-то пошло не так.
+- Change windows — окна накатки в моменты низкой нагрузки.
+
+## Контроль и баланс
+
+- Change calendar предотвращает конфликтующие накатки; audit trail нужен для compliance.
+- Автоматизация (CI/CD) разгоняет низкорисковые изменения, освобождая ревью для важного.
+- Цель — баланс speed vs stability: слишком много контроля убивает скорость, слишком мало — стабильность.
