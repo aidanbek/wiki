@@ -1,3 +1,14 @@
-?offset=20&limit=10 skips records, returns batch. Simple, allows jumping to page N. Drawbacks: performance degrades (
-database scans offset rows), inconsistent results (new items shift positions). Inefficient for large offsets (OFFSET
-1000000 slow). Use cases: small datasets, admin panels. Avoid для large-scale APIs, mobile apps.
+Offset-based Pagination
+
+`?offset=20&limit=10` — пропустить N записей и вернуть следующую порцию. Самый простой подход и позволяет прыгнуть на
+любую страницу, но плохо масштабируется.
+
+## Минусы
+
+- Производительность деградирует: БД сканирует все пропускаемые строки (`OFFSET 1000000` медленный).
+- Неконсистентность: новые записи сдвигают позиции, элементы дублируются или теряются между страницами.
+
+## Когда использовать
+
+- Небольшие наборы данных, админ-панели.
+- Избегать в больших API и мобильных приложениях — там лучше [cursor-based](../cursor-based/index.md).

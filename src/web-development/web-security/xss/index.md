@@ -1,5 +1,17 @@
-Cross-Site Scripting: injecting malicious scripts into trusted websites. Types: stored (persisted в database),
-reflected (URL parameters), DOM-based (client-side JS). Consequences: session hijacking, credential theft, defacement.
-Prevention: output encoding (HTML entities), Content Security Policy headers (whitelist script sources), input
-validation, sanitization libraries (DOMPurify), template engines auto-escape. Never insert untrusted data into
-JavaScript contexts, HTML attributes, CSS.
+XSS (Cross-Site Scripting)
+
+Внедрение вредоносных скриптов в доверенный сайт. Скрипт выполняется в браузере жертвы от имени сайта — отсюда кража
+сессий, учётных данных, дефейс.
+
+## Типы
+
+- Stored — скрипт сохранён в БД и отдаётся всем.
+- Reflected — приходит через параметры URL.
+- DOM-based — внедрение на стороне клиентского JS.
+
+## Защита
+
+- Output encoding (HTML entities) — главный приём.
+- Content Security Policy — whitelist источников скриптов.
+- Input validation и sanitization-библиотеки (DOMPurify); template engines с авто-экранированием.
+- Никогда не вставлять недоверенные данные в JavaScript-контексты, HTML-атрибуты, CSS.

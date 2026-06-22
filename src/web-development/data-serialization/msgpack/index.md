@@ -1,3 +1,14 @@
-MessagePack: efficient binary JSON-like format. Schemaless, compact. Simple API (serialize/deserialize). Faster and
-smaller чем JSON, но не widely supported. Use cases: caching (Redis), inter-process communication, APIs where JSON too
-verbose. Language support varies. Middle ground: easier чем Protobuf (no schema), more efficient чем JSON.
+MessagePack
+
+Эффективный бинарный формат, по структуре похожий на JSON, но компактнее. Без схемы (schemaless), простой API
+сериализации/десериализации. Занимает золотую середину между JSON и Protobuf.
+
+## Плюсы
+
+- Быстрее и меньше JSON.
+- Проще [Protobuf](../protobuf/index.md) — не нужна схема.
+
+## Минусы и применение
+
+- Не так широко поддерживается; уровень поддержки зависит от языка.
+- Use cases: кеширование (Redis), inter-process communication, API, где JSON слишком объёмен.

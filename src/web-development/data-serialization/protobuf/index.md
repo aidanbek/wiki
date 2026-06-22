@@ -1,5 +1,19 @@
-Protocol Buffers - Google's binary serialization format. Schema-defined (.proto files), strongly typed. Generated code
-для multiple languages. Smaller payload чем JSON (binary, no field names), faster parsing. Backward/forward
-compatibility via field numbers. Use cases: gRPC (default), inter-service communication, storage. Trade-off: not
-human-readable, requires schema coordination. Versioning: add new fields (old clients ignore), never change field
-numbers/types.
+Protocol Buffers (Protobuf)
+
+Бинарный формат сериализации от Google. Описывается схемой (`.proto`), строго типизирован, по схеме генерируется код для
+разных языков. Меньше и быстрее JSON, но не человекочитаем.
+
+## Плюсы
+
+- Компактный payload (бинарный, без имён полей) и быстрый парсинг.
+- Backward/forward совместимость через номера полей.
+
+## Использование
+
+- gRPC (формат по умолчанию), межсервисный обмен, хранение.
+
+## Версионирование
+
+- Добавлять новые поля можно (старые клиенты их игнорируют).
+- Никогда не менять номера/типы существующих полей.
+- Trade-off: нечитаемо глазами, требует координации схемы между командами.

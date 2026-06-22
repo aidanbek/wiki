@@ -1,4 +1,16 @@
-Uses opaque cursor (encoded state) для fetching next page. Cursor points to position в dataset. Consistent results даже
-при concurrent modifications (new items don't shift pages). Efficient для large datasets (indexed fields). Used в
-Facebook/Twitter APIs. Cursors opaque (base64-encoded), client doesn't interpret. Drawback: can't jump to arbitrary
-page. Best для infinite scroll, real-time feeds.
+Cursor-based Pagination
+
+Использует непрозрачный курсор (закодированное состояние позиции) для получения следующей страницы. Курсор указывает на
+место в наборе данных, а не на номер страницы.
+
+## Преимущества
+
+- Консистентность даже при конкурентных изменениях — новые элементы не сдвигают страницы.
+- Эффективность на больших наборах (курсор по индексированному полю).
+- Применяется в API Facebook/Twitter, лентах.
+
+## Особенности
+
+- Курсор opaque (base64), клиент его не интерпретирует, а просто передаёт обратно.
+- Минус: нельзя прыгнуть на произвольную страницу N.
+- Лучший выбор для infinite scroll и real-time лент.

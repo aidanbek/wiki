@@ -1,4 +1,16 @@
-Automatic redelivery при webhook delivery failure (timeout, non-2xx response). Exponential backoff prevents overwhelming
-consumer (1min, 5min, 30min, 2h). Max retry attempts (typically 3-10) before marking failed. Dead letter queue для
-manual inspection. Idempotency headers (unique event ID) prevent duplicate processing. Webhook providers log delivery
-attempts, expose status dashboards. Circuit breaker can pause delivery to consistently failing endpoints.
+Webhook Retry Logic
+
+Автоматическая повторная доставка при сбое webhook'а (timeout, ответ не 2xx). Цель — не потерять событие и при этом не
+завалить запросами лежащего consumer'а.
+
+## Стратегия повторов
+
+- Exponential backoff — растущие интервалы (1min, 5min, 30min, 2h), чтобы не добивать consumer.
+- Max retry attempts (обычно 3–10), после чего событие помечается failed.
+- Dead letter queue для ручного разбора недоставленного.
+
+## Надёжность
+
+- Idempotency-заголовки (уникальный event ID) защищают от повторной обработки дубликатов.
+- Provider логирует попытки доставки и показывает статус в дашборде.
+- Circuit breaker приостанавливает доставку к стабильно падающему endpoint.

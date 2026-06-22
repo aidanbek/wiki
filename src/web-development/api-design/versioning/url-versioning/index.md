@@ -1,3 +1,15 @@
-Version в URL: /v1/users, /v2/users. Most common, explicit, simple. Browser/tooling friendly. Drawback: proliferates
-endpoints, seems non-RESTful (resource identity changes). Major versions only (v1, v2), not minor (v1.2 - use additive
-changes). Supports parallel versions (gradual migration). Clear deprecation timeline.
+URL Versioning
+
+Версия прямо в пути: `/v1/users`, `/v2/users`. Самый распространённый способ — явный, простой, дружелюбный к браузерам и
+инструментам.
+
+## Плюсы
+
+- Версия видна сразу, легко тестировать (curl, браузер).
+- Поддерживает параллельные версии для постепенной миграции.
+
+## Минусы и правила
+
+- Плодит эндпоинты; формально не очень RESTful (identity ресурса меняется с версией).
+- Только major-версии (v1, v2), не minor (v1.2) — мелкие изменения делать аддитивно.
+- Чёткий deprecation timeline для старых версий.

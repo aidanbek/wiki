@@ -1,5 +1,16 @@
-Injecting malicious SQL через user input. Example: username = "admin' OR '1'='1" bypasses authentication. Consequences:
-data breach, deletion, privilege escalation. Prevention: parameterized queries/prepared statements (safest - SQL and
-data separated), ORMs (automatic escaping), input validation (whitelist allowed characters), least privilege database
-accounts (limit blast radius). Never concatenate user input into SQL strings. Web application firewalls detect common
-patterns.
+SQL Injection
+
+Внедрение вредоносного SQL через пользовательский ввод. Пример: `username = "admin' OR '1'='1"` обходит аутентификацию.
+Последствия — утечка и удаление данных, privilege escalation.
+
+## Защита
+
+- Parameterized queries / prepared statements — самое надёжное: SQL и данные разделены.
+- ORM — автоматическое экранирование.
+- Input validation — whitelist допустимых символов.
+- Least privilege для учёток БД — ограничить blast radius при пробое.
+
+## Правило
+
+- Никогда не склеивать пользовательский ввод в строку SQL.
+- WAF (Web Application Firewall) ловит типовые паттерны как дополнительный слой.

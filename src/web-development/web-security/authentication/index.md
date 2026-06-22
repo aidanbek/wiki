@@ -1,4 +1,21 @@
-Verifying user identity. Methods: username/password (weakest), MFA (something you know + have/are), SSO (Single
-Sign-On), passwordless (magic links, WebAuthn). Session-based: server stores session, cookie contains session ID.
-Token-based: JWT/OAuth tokens, stateless server. Password storage: bcrypt/Argon2 hashing, salted. Account lockout after
-failed attempts, CAPTCHA prevents brute force. Password reset via email token (time-limited, single-use).
+Authentication
+
+Проверка того, кто пользователь. Не путать с [авторизацией](../authorization/index.md): аутентификация отвечает на
+«кто ты», авторизация — «что тебе можно».
+
+## Методы
+
+- Username/password — слабейший сам по себе.
+- MFA — что-то, что знаешь + что имеешь/чем являешься.
+- SSO (Single Sign-On), passwordless (magic links, WebAuthn).
+
+## Сессии vs токены
+
+- Session-based — сервер хранит сессию, в cookie лежит session ID.
+- Token-based — JWT/OAuth токены, сервер stateless.
+
+## Защита
+
+- Хранение паролей: хеширование bcrypt/Argon2 с солью.
+- Account lockout после неудачных попыток, CAPTCHA против brute force.
+- Password reset через email-токен (ограниченный по времени, одноразовый).

@@ -1,5 +1,15 @@
-Pattern для querying data spanning multiple services. API composer queries services, joins results в memory. Use case:
-product details + inventory + reviews from separate microservices. Challenges: performance (sequential calls slow -
-parallel fetching), partial failures (fallback strategies), data consistency (eventual). Alternatives: CQRS (
-materialized views), GraphQL (client-driven composition), BFF. Trade-off: flexibility vs complexity. Caching
-compositions helps performance.
+API Composition
+
+Паттерн для запроса данных, разбросанных по нескольким сервисам. Композитор дёргает сервисы и склеивает результаты в
+памяти. Пример: детали товара + наличие + отзывы из разных микросервисов в одном ответе.
+
+## Сложности
+
+- Производительность: последовательные вызовы медленны — нужен parallel fetching.
+- Partial failures — стратегии fallback, если один из сервисов недоступен.
+- Согласованность данных — eventual consistency.
+
+## Альтернативы
+
+- CQRS (materialized views), GraphQL (client-driven composition), [BFF](../bff/index.md).
+- Trade-off: гибкость vs сложность; кеширование композиций помогает производительности.

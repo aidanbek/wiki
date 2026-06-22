@@ -1,4 +1,16 @@
-Google's enterprise API management platform. Full lifecycle: design, secure, deploy, monitor, monetize APIs. Features:
-analytics, developer portal, API products, monetization plans, threat protection. Hybrid/multi-cloud deployment.
-Advanced traffic management (spike arrest, quota). Target large enterprises, extensive enterprise features. Higher cost
-чем open-source alternatives. Strong analytics, compliance features.
+Apigee
+
+Enterprise-платформа управления API от Google. Покрывает полный жизненный цикл API: design, secure, deploy, monitor,
+monetize. Нацелена на крупные предприятия с богатым набором enterprise-функций.
+
+## Возможности
+
+- Аналитика, developer portal, API products.
+- Monetization plans — тарификация доступа к API.
+- Threat protection, advanced traffic management (spike arrest, quota).
+- Hybrid / multi-cloud деплой.
+
+## Когда выбирают
+
+- Крупные предприятия с требованиями к аналитике и compliance.
+- Минус: выше стоимость, чем у open-source альтернатив ([Kong](../kong/index.md)).

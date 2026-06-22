@@ -1,4 +1,20 @@
-Signature verification: HMAC-SHA256 signature в header, computed from payload + secret. Prevents tampering, validates
-sender identity. HTTPS mandatory для confidentiality. IP whitelisting restricts sources. Timestamp validation prevents
-replay attacks (reject old webhooks). Secret rotation procedures. Rate limiting prevents abuse. Consumer should validate
-payload schema, sanitize data. Mutual TLS для high-security scenarios.
+Webhook Security
+
+Поскольку webhook — это входящий POST на публичный endpoint, нужно убедиться, что запрос действительно от провайдера и
+не подделан.
+
+## Подлинность и целостность
+
+- Signature verification: HMAC-SHA256 в заголовке, вычисленная из payload + secret — защищает от подмены.
+- HTTPS обязателен для конфиденциальности.
+- Mutual TLS для сценариев повышенной безопасности.
+
+## Защита от атак
+
+- Timestamp validation — отклонять старые запросы (защита от replay).
+- IP whitelisting ограничивает источники; rate limiting против злоупотреблений.
+- Secret rotation — процедуры ротации секрета.
+
+## На стороне consumer
+
+- Валидировать схему payload и санитизировать данные.

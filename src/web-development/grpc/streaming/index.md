@@ -1,4 +1,17 @@
-Four modes: unary (request-response), server streaming (one request, stream responses), client streaming (stream
-requests, one response), bidirectional (both stream). Use cases: large data transfers (chunking), real-time updates (
-stock tickers), log tailing, chat. Flow control built-in (backpressure). Challenges: error handling mid-stream, state
-management, testing. Benefits: efficient (no polling), lower latency, resource usage.
+gRPC Streaming
+
+В отличие от обычного request-response, gRPC умеет потоки в обе стороны поверх одного соединения HTTP/2. Это убирает
+поллинг и снижает latency для непрерывных данных.
+
+## Четыре режима
+
+- Unary — request-response (обычный вызов).
+- Server streaming — один запрос, поток ответов.
+- Client streaming — поток запросов, один ответ.
+- Bidirectional — обе стороны стримят одновременно.
+
+## Применение и нюансы
+
+- Use cases: передача больших данных (chunking), real-time обновления (тикеры), log tailing, чат.
+- Встроенный flow control (backpressure).
+- Сложности: обработка ошибок посреди потока, управление состоянием, тестирование.

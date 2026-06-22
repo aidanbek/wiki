@@ -1,5 +1,22 @@
-Restricting API request rate per client/IP/user. Prevents abuse, ensures fair usage, protects backend. Algorithms: token
-bucket (flexible bursts), leaky bucket (smooth rate), fixed window (simple, boundary issues), sliding window (accurate,
-complex). Response: 429 Too Many Requests, Retry-After header. Tiered limits (free/paid plans). Distributed rate
-limiting (Redis counters). Monitoring: alert on limit hits (legitimate user growth vs attack). Documentation: publish
-limits, error messages helpful.
+Rate Limiting
+
+Ограничение частоты запросов на клиента/IP/пользователя. Защищает бэкенд от перегрузки и злоупотреблений, обеспечивает
+честное распределение ресурсов.
+
+## Алгоритмы
+
+- Token bucket — допускает всплески (bursts) в пределах накопленных токенов.
+- Leaky bucket — сглаживает поток до ровной скорости.
+- Fixed window — просто, но проблемы на границах окна.
+- Sliding window — точнее, но сложнее в реализации.
+
+## Поведение и реализация
+
+- Ответ при превышении: `429 Too Many Requests` + заголовок `Retry-After`.
+- Tiered limits — разные лимиты для free/paid планов.
+- Distributed rate limiting через общие счётчики (Redis).
+
+## Эксплуатация
+
+- Мониторинг попаданий в лимит: рост легитимных пользователей vs атака.
+- Публиковать лимиты в документации, давать понятные сообщения об ошибке.

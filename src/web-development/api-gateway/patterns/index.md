@@ -1,4 +1,18 @@
-Gateway patterns: aggregation (fan-out requests, combine responses), orchestration (business logic coordination),
-offloading (SSL termination, compression), caching proxy. Anti-patterns: fat gateway (too much logic - move to
-services), chatty interfaces (multiple calls - design coarser APIs). Backend for Frontend (BFF): separate gateways per
-client type (mobile, web, partner) - optimized payloads. Strangler Fig: gradually migrate monolith за gateway.
+API Gateway Patterns
+
+Типовые паттерны и анти-паттерны построения шлюза. Главная мысль — шлюз маршрутизирует и снимает сквозные задачи, но не
+должен становиться местом для бизнес-логики.
+
+## Паттерны
+
+- Aggregation — fan-out запросов к сервисам и склейка ответов.
+- Orchestration — координация вызовов по бизнес-логике.
+- Offloading — вынос на шлюз SSL termination, сжатия.
+- Caching proxy — кеширование ответов.
+- BFF (Backend for Frontend) — отдельные шлюзы под mobile/web/partner с оптимизированными payload.
+- Strangler Fig — постепенная миграция монолита за шлюзом.
+
+## Анти-паттерны
+
+- Fat gateway — слишком много логики на шлюзе; её место в сервисах.
+- Chatty interfaces — много мелких вызовов; проектировать более крупнозернистые API.

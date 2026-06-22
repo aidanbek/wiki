@@ -1,4 +1,16 @@
-Decentralized API management без central gateway. Service mesh handles routing, security, observability at network
-layer. API mesh extends concept to APIs: federated governance, schema stitching (GraphQL), policy enforcement at edge.
-Vendor examples: Apollo Federation, Apigee API Hub. Benefits: avoid gateway bottleneck, independent team deployments,
-polyglot APIs. Challenges: distributed complexity, governance harder. Emerging pattern for large-scale microservices.
+API Mesh
+
+Децентрализованное управление API без центрального шлюза. Маршрутизацию, безопасность и observability берёт на себя
+service mesh на сетевом уровне, а API mesh расширяет идею на уровень самих API.
+
+## Что добавляет
+
+- Federated governance — управление без единой точки.
+- Schema stitching (GraphQL), policy enforcement на edge.
+- Примеры: Apollo Federation, Apigee API Hub.
+
+## Плюсы и сложности
+
+- Плюсы: нет узкого места центрального шлюза, независимые деплои команд, polyglot API.
+- Сложности: распределённая сложность, governance труднее.
+- Развивающийся паттерн для крупных микросервисных систем.

@@ -1,3 +1,14 @@
-?page=3&per_page=10 abstracts offset calculation. User-friendly URLs, bookmarkable. Same drawbacks as offset-based (
-performance, consistency). Response includes: total pages/items, current page, links (first, last, next, prev). Common в
-web UIs. Modern APIs prefer cursor-based for performance.
+Page-based Pagination
+
+`?page=3&per_page=10` — обёртка над offset, которая прячет вычисление смещения. Дружелюбные, закладываемые в bookmark
+URL, привычные для веб-интерфейсов.
+
+## Что в ответе
+
+- Total pages/items, текущая страница.
+- Навигационные ссылки: first, last, next, prev.
+
+## Минусы
+
+- Те же, что у [offset-based](../offset-based/index.md): деградация производительности и неконсистентность при изменениях.
+- Современные API предпочитают [cursor-based](../cursor-based/index.md) ради производительности.

@@ -1,5 +1,20 @@
-Keep messages small (avoid large payloads), use streaming для bulk data. Deadlines on every call (prevent hung
-requests). Retry policy: exponential backoff, max attempts, idempotent operations only. Error handling: structured
-errors (status codes), error details (Protobuf Any type). Versioning: additive changes only, deprecate gracefully. Load
-balancing: client-side (gRPC feature) или proxy (Envoy). Monitoring: OpenTelemetry integration. Security: mTLS для
-service-to-service. Connection pooling, keepalive settings.
+gRPC Best Practices
+
+Практики надёжного и производительного использования gRPC в продакшене.
+
+## Сообщения и вызовы
+
+- Держать сообщения небольшими; для объёмных данных использовать streaming.
+- Deadlines на каждый вызов — иначе зависший запрос держит ресурсы.
+
+## Надёжность
+
+- Retry policy: exponential backoff, лимит попыток, только для идемпотентных операций.
+- Error handling: структурированные ошибки (status codes), детали через Protobuf `Any`.
+- Versioning: только аддитивные изменения, аккуратный deprecation.
+
+## Эксплуатация
+
+- Load balancing: client-side (фича gRPC) или прокси (Envoy).
+- Connection pooling и keepalive-настройки.
+- Monitoring через OpenTelemetry; security — mTLS для service-to-service.

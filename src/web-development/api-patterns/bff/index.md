@@ -1,4 +1,15 @@
-Backend For Frontend: API gateway tailored to specific client. Separate BFFs для mobile, web, TV, partners. Customizes:
-payload shape (mobile needs smaller responses), aggregation logic, authentication flows. Benefits: client-optimized
-APIs, independent evolution, team ownership (frontend team owns BFF). Trade-offs: code duplication (shared libraries
-help), operational overhead (more services). GraphQL BFFs allow clients to query exactly needed data.
+BFF (Backend For Frontend)
+
+API-шлюз, заточенный под конкретный тип клиента. Отдельные BFF для mobile, web, TV, партнёров — каждый отдаёт ровно то и
+в том виде, что нужно именно этому клиенту.
+
+## Что кастомизирует
+
+- Форму payload (мобильному нужны ответы поменьше).
+- Логику агрегации и flow аутентификации.
+
+## Плюсы и минусы
+
+- Плюсы: client-optimized API, независимая эволюция, ownership фронтенд-командой.
+- Минусы: дублирование кода (помогают общие библиотеки), операционные накладные (больше сервисов).
+- GraphQL-BFF позволяет клиенту запрашивать ровно нужные данные.

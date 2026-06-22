@@ -1,4 +1,17 @@
-Full-duplex communication channel over single TCP connection. Handshake: HTTP upgrade request, switches protocol.
-Binary/text frames. Use cases: chat, collaborative editing, gaming, live dashboards. Socket.io library abstracts
-WebSocket + fallbacks (long polling). Challenges: scaling (sticky sessions или shared state), load balancing (need
-protocol-aware LB), reconnection logic, security (validate origin, auth tokens). Heartbeats detect dead connections.
+WebSockets
+
+Полнодуплексный канал связи поверх одного TCP-соединения: и клиент, и сервер могут слать данные в любой момент.
+Соединение открывается через HTTP upgrade, затем протокол переключается.
+
+## Применение
+
+- Чат, совместное редактирование, игры, live-дашборды.
+- Кадры binary/text.
+- Socket.io абстрагирует WebSocket + fallbacks (long polling).
+
+## Сложности
+
+- Масштабирование: sticky sessions или общее состояние между инстансами.
+- Load balancing — нужен protocol-aware балансировщик.
+- Логика переподключения; heartbeats для детекта мёртвых соединений.
+- Security: проверка origin и auth-токенов.

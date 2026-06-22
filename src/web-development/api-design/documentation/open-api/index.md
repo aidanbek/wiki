@@ -1,4 +1,19 @@
-OpenAPI Specification (formerly Swagger): standard для describing REST APIs. YAML/JSON format. Describes: endpoints,
-methods, parameters, request/response schemas, auth. Machine-readable (code generation, validation, mocking). Tools:
-Swagger UI (interactive docs), Swagger Editor, code generators. API-first design: define contract before implementation.
-Versioning: OpenAPI 2.0 (Swagger) → 3.0 → 3.1 (JSON Schema alignment).
+OpenAPI
+
+Стандарт описания REST API (раньше назывался Swagger). Файл в YAML/JSON описывает эндпоинты, методы, параметры, схемы
+запросов/ответов и авторизацию — в формате, понятном и человеку, и машине.
+
+## Что даёт машиночитаемость
+
+- Code generation — генерация клиентов и серверных стабов.
+- Validation — проверка запросов/ответов по схеме.
+- Mocking — поднять заглушку API из спеки.
+
+## Инструменты и подход
+
+- Swagger UI (интерактивная документация), Swagger Editor, генераторы кода.
+- API-first design: контракт определяется до реализации.
+
+## Версии
+
+- OpenAPI 2.0 (Swagger) → 3.0 → 3.1 (выравнивание с JSON Schema).

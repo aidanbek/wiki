@@ -1,5 +1,15 @@
-Composing unified GraphQL schema from multiple subgraphs (services). Apollo Federation standard: services define types,
-relationships via @key/@external directives. Gateway stitches schemas, routes queries. Benefits: single API endpoint,
-clients query across services, teams own subgraphs independently. Challenges: schema coordination, backward
-compatibility, N+1 queries (DataLoader batching helps). Suited for complex domains, multiple teams. Alternative to
-monolithic GraphQL server.
+GraphQL Federation
+
+Сборка единой GraphQL-схемы из нескольких подграфов (сервисов). Клиент видит один endpoint и может запрашивать данные
+сразу через несколько сервисов, а команды владеют своими подграфами независимо.
+
+## Как работает (Apollo Federation)
+
+- Сервисы определяют типы и связи через директивы `@key` / `@external`.
+- Gateway сшивает схемы и маршрутизирует запросы к нужным подграфам.
+
+## Плюсы и сложности
+
+- Плюсы: единый API endpoint, кросс-сервисные запросы, независимое владение командами.
+- Сложности: координация схем, обратная совместимость, N+1 запросы (помогает батчинг через DataLoader).
+- Подходит для сложных доменов и многих команд; альтернатива монолитному GraphQL-серверу.

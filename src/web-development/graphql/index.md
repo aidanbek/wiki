@@ -1,6 +1,21 @@
-Query language и runtime для APIs. Single endpoint, clients request exactly needed data. Schema-first: types, queries,
-mutations, subscriptions defined в SDL (Schema Definition Language). Resolvers fetch data. Benefits: no over-fetching (
-mobile-friendly), no under-fetching (avoids N+1 via DataLoader), strongly typed, introspection (tooling, docs
-auto-generated). Challenges: caching complexity (varies per query), N+1 problem (batching/DataLoader required), query
-complexity attacks (depth/cost limiting). Use cases: mobile apps, complex domains, BFFs. REST alternative, not
-replacement.
+GraphQL
+
+Язык запросов и runtime для API. Один endpoint, и клиент сам указывает, какие именно поля ему нужны — поэтому нет ни
+over-fetching (лишних данных), ни under-fetching (множества запросов). Альтернатива REST, а не замена.
+
+## Как устроено
+
+- Schema-first: типы, queries, mutations, subscriptions описываются в SDL (Schema Definition Language).
+- Resolvers достают данные под каждое поле.
+
+## Плюсы
+
+- Клиент берёт ровно нужное (mobile-friendly).
+- Строгая типизация и introspection (авто-генерация документации и тулинга).
+
+## Сложности
+
+- Кеширование сложнее (ответ зависит от запроса).
+- N+1 problem — требуется батчинг через DataLoader.
+- Query complexity attacks — нужны depth/cost limiting.
+- Use cases: мобильные приложения, сложные домены, [BFF](../api-patterns/bff/index.md).

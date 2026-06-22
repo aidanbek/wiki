@@ -1,4 +1,19 @@
-JavaScript Object Notation: text-based, human-readable. Native JavaScript support, ubiquitous в web APIs. Types: string,
-number, boolean, null, array, object. Lightweight, simple parsing. Drawbacks: verbose (field names repeated), no
-date/binary types (strings used), no schema enforcement (JSON Schema helps). Alternatives binary formats smaller,
-faster, но JSON's simplicity wins for most use cases. REST APIs standard format.
+JSON
+
+JavaScript Object Notation — текстовый человекочитаемый формат. Нативно поддерживается в JavaScript и стал
+де-факто стандартом для веб-API. Простота побеждает: для большинства задач его достаточно.
+
+## Типы
+
+- string, number, boolean, null, array, object.
+
+## Плюсы
+
+- Человекочитаемый, простой парсинг, повсеместная поддержка.
+
+## Минусы
+
+- Многословный — имена полей повторяются в каждом объекте.
+- Нет типов для дат и бинарных данных (используются строки).
+- Нет встроенной проверки схемы (помогает JSON Schema).
+- Бинарные форматы меньше и быстрее, но простота JSON перевешивает для большинства случаев.

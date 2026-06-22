@@ -1,4 +1,15 @@
-SSE: server pushes updates к client over single HTTP connection. Unidirectional (server→client only). EventSource API (
-browser), text/event-stream content type. Automatic reconnection, event IDs для resuming. Use cases: news feeds, stock
-tickers, notifications. Simpler чем WebSockets, works over HTTP (firewall-friendly). Limitations: no client→server
-messaging, HTTP/1.1 connection limits (6 per domain). Modern alternative: WebSockets.
+Server-Sent Events (SSE)
+
+Сервер пушит обновления клиенту по одному долгому HTTP-соединению. Связь однонаправленная (server→client) — проще
+[WebSockets](../websockets/index.md), когда обратный канал не нужен.
+
+## Как устроено
+
+- Browser API: EventSource; content type `text/event-stream`.
+- Автоматическое переподключение, event IDs для возобновления с места обрыва.
+
+## Применение и ограничения
+
+- Use cases: новостные ленты, тикеры, уведомления.
+- Работает поверх обычного HTTP — дружелюбно к firewall.
+- Ограничения: нет канала client→server; лимит соединений HTTP/1.1 (6 на домен).

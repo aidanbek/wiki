@@ -1,3 +1,14 @@
-Custom header: API-Version: 2 или X-API-Version: 2. URLs clean, version explicit. Easier чем content negotiation.
-Drawbacks: non-standard, requires client library support. Popular в some enterprise APIs. Documentation must emphasize
-header requirement.
+Header Versioning
+
+Версия в кастомном заголовке: `API-Version: 2` или `X-API-Version: 2`. URL остаются чистыми, версия задаётся явно.
+
+## Плюсы
+
+- Чистые URL без версии в пути.
+- Проще, чем [content negotiation](../content-negotiation/index.md).
+
+## Минусы
+
+- Нестандартно, требует поддержки на стороне клиентской библиотеки.
+- Встречается в некоторых enterprise API.
+- Документация должна явно подчёркивать требование заголовка, иначе клиенты о нём забывают.

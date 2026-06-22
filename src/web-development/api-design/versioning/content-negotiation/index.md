@@ -1,3 +1,15 @@
-Version via Accept header: Accept: application/vnd.myapi.v2+json. Clean URLs (no version в path). Standards-compliant (
-HTTP spec). Drawbacks: harder to test (curl), caching complexity (Vary header), not browser-friendly. Less common чем
-URL versioning.
+Content Negotiation Versioning
+
+Версия задаётся через стандартный заголовок `Accept`: `Accept: application/vnd.myapi.v2+json`. Самый «правильный» по
+букве HTTP способ, но и самый неудобный на практике.
+
+## Плюсы
+
+- Чистые URL без версии в пути.
+- Соответствует спецификации HTTP (standards-compliant).
+
+## Минусы
+
+- Тяжелее тестировать (нужно вручную выставлять заголовок в curl).
+- Усложняет кеширование (заголовок `Vary`).
+- Не дружелюбно к браузеру; встречается реже, чем [URL versioning](../url-versioning/index.md).

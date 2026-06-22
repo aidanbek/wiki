@@ -1,4 +1,15 @@
-Client makes HTTP request, server holds open until data available. Response sent, client immediately opens new request.
-Simulates real-time, works через firewalls/proxies. Higher latency чем WebSockets (new connection overhead). Server
-resources (open connections). Fallback когда WebSockets unavailable. Libraries like Socket.io use as transport. Replaced
-by modern alternatives (SSE, WebSockets), но still useful в constrained environments.
+Long Polling
+
+Клиент шлёт HTTP-запрос, а сервер держит его открытым, пока не появятся данные. Получив ответ, клиент тут же открывает
+новый запрос. Так эмулируется realtime поверх обычного HTTP.
+
+## Плюсы
+
+- Работает через firewall'ы и прокси.
+- Fallback, когда WebSockets недоступны (Socket.io использует как транспорт).
+
+## Минусы
+
+- Выше latency, чем у WebSockets (накладные на новое соединение).
+- Расход ресурсов сервера на удерживаемые соединения.
+- Вытеснен современными [SSE](../server-sent-events/index.md)/[WebSockets](../websockets/index.md), но полезен в ограниченных средах.

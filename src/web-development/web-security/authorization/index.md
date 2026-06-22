@@ -1,5 +1,19 @@
-Determining what authenticated user can access. Happens after authentication. Models: RBAC (role-based), ABAC (
-attribute-based), ACLs (access control lists). Centralized authorization service или embedded в application. Checks:
-resource ownership, permission grants, policy evaluation. Horizontal privilege escalation (access other user's data),
-vertical (access admin functions) must be prevented. Every endpoint requires authorization check, not just
-authentication. Fail closed (deny by default).
+Authorization
+
+Определение того, что может делать уже аутентифицированный пользователь. Происходит после
+[аутентификации](../authentication/index.md).
+
+## Модели
+
+- RBAC (по ролям), ABAC (по атрибутам), ACL (списки доступа).
+- Централизованный сервис авторизации или логика внутри приложения.
+
+## Что проверяют
+
+- Владение ресурсом, выданные права, оценка политик.
+
+## Принципы
+
+- Предотвращать privilege escalation: horizontal (доступ к данным другого пользователя) и vertical (доступ к admin-функциям).
+- Каждый endpoint требует проверки авторизации, не только аутентификации.
+- Fail closed — по умолчанию запрещать.
