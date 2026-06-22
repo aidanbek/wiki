@@ -1,4 +1,4 @@
-SQL Injection
+# SQL Injection
 
 Внедрение вредоносного SQL через пользовательский ввод. Пример: `username = "admin' OR '1'='1"` обходит аутентификацию.
 Последствия — утечка и удаление данных, privilege escalation.

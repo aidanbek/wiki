@@ -1,4 +1,4 @@
-Header Versioning
+# Header Versioning
 
 Версия в кастомном заголовке: `API-Version: 2` или `X-API-Version: 2`. URL остаются чистыми, версия задаётся явно.
 

@@ -1,4 +1,4 @@
-Solr
+# Solr
 
 Зрелая поисковая платформа на Apache Lucene. Близка по возможностям к Elasticsearch, исторически популярна в enterprise.
 

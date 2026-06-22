@@ -1,4 +1,4 @@
-Dependency Injection (DI)
+# Dependency Injection (DI)
 
 Передача зависимостей объекту извне вместо создания их внутри.
 

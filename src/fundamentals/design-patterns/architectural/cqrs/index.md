@@ -1,4 +1,4 @@
-CQRS (Command Query Responsibility Segregation)
+# CQRS (Command Query Responsibility Segregation)
 
 Разделение модели на команды (изменяют состояние, ничего не возвращают) и запросы (возвращают данные, ничего не меняют).
 

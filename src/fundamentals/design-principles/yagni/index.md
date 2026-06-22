@@ -1,4 +1,4 @@
-YAGNI (You Aren't Gonna Need It)
+# YAGNI (You Aren't Gonna Need It)
 
 Не реализуй функциональность, пока она реально не понадобится — только то, что требуется сейчас.
 

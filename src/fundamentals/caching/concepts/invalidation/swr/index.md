@@ -1,4 +1,4 @@
-SWR (Stale-While-Revalidate)
+# SWR (Stale-While-Revalidate)
 
 Отдать stale-данные немедленно и обновить их в фоне — оптимизация под UX.
 

@@ -1,4 +1,4 @@
-Allocation Strategies
+# Allocation Strategies
 
 Способы выделения памяти и их компромиссы: скорость vs фрагментация vs гибкость.
 

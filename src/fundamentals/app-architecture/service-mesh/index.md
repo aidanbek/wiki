@@ -1,4 +1,4 @@
-Service Mesh
+# Service Mesh
 
 Инфраструктурный слой для управления service-to-service коммуникацией в микросервисах через sidecar-прокси.
 

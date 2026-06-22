@@ -1,6 +1,36 @@
-Distributed version control system. Core concepts: commits (snapshots), branches (parallel development), merges (
-combining changes), remotes (shared repositories). Workflows: feature branches, gitflow, trunk-based development. Key
-commands: clone, add, commit, push, pull, merge, rebase. Branching strategies: main/master (production), develop (
-integration), feature/* (work in progress). Merge vs rebase: rebase cleaner history, merge preserves context. Pull
-requests для code review. Git hooks для automation (pre-commit linting, pre-push tests). Large files: Git LFS.
-Submodules для dependencies.
+# Git
+
+Распределённая система контроля версий: у каждого разработчика полная копия истории. Хранит снимки (snapshots)
+состояния проекта в виде коммитов, связанных в граф, и позволяет вести параллельную разработку через ветки.
+
+## Базовые понятия
+
+- Commit — снимок состояния + ссылка на родителя; идентифицируется хешем.
+- Branch — подвижный указатель на коммит; дешёвое ветвление под фичу/эксперимент.
+- Merge — объединение веток; rebase — перенос коммитов на новую базу.
+- Remote — общий репозиторий (origin), синхронизация через push/pull/fetch.
+
+## Частые команды
+
+- `clone`, `add`, `commit` — получить репозиторий и зафиксировать изменения.
+- `push`, `pull`, `fetch` — обмен с remote.
+- `merge`, `rebase` — интеграция веток.
+- `log`, `diff`, `status`, `stash` — навигация и временное откладывание изменений.
+
+## Workflow и стратегии
+
+- Feature branches — ветка на задачу, вливается через Pull Request с code review.
+- Gitflow — отдельные ветки develop/release/hotfix; подходит для релизных циклов.
+- Trunk-based — короткоживущие ветки от main, частые мелкие интеграции; удобен для CI/CD.
+
+## Merge vs rebase
+
+- Rebase даёт линейную, чистую историю — но переписывает коммиты, поэтому нельзя на расшаренных ветках.
+- Merge сохраняет реальный контекст ветвления ценой merge-коммитов.
+
+## Подводные камни и инструменты
+
+- Git hooks автоматизируют проверки (pre-commit линт, pre-push тесты).
+- Большие файлы — Git LFS (хранит указатели, а не бинарь в истории).
+- Submodules для вложенных зависимостей — мощно, но усложняют клонирование и обновление.
+- Force-push на общую ветку ломает историю у коллег — избегать на main.

@@ -1,4 +1,4 @@
-Cache-Aside (Lazy Loading)
+# Cache-Aside (Lazy Loading)
 
 Приложение само управляет кэшем — самая популярная и простая стратегия.
 

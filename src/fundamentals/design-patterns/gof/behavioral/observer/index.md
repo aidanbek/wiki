@@ -1,4 +1,4 @@
-Observer
+# Observer
 
 Подписка на изменения объекта — отношение one-to-many, где изменение Subject уведомляет всех зависимых Observers.
 

@@ -1,4 +1,4 @@
-Single Responsibility Principle (SRP)
+# Single Responsibility Principle (SRP)
 
 Класс должен иметь одну причину для изменения — одну ответственность, одну ось изменений.
 

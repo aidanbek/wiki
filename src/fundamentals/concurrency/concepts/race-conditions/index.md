@@ -1,4 +1,4 @@
-Race Condition
+# Race Condition
 
 Поведение программы зависит от относительного timing/interleaving потоков — недетерминированные баги.
 

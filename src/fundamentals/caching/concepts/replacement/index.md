@@ -1,4 +1,4 @@
-Replacement (Eviction)
+# Replacement (Eviction)
 
 Алгоритмы выбора записи на удаление при заполнении кэша — eviction policy.
 

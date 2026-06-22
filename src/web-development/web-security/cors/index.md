@@ -1,4 +1,4 @@
-CORS (Cross-Origin Resource Sharing)
+# CORS (Cross-Origin Resource Sharing)
 
 Браузерный механизм, управляющий кросс-доменными HTTP-запросами. По умолчанию same-origin policy запрещает JavaScript
 читать ответы с другого origin (протокол+домен+порт); CORS-заголовки позволяют сервру явно разрешить такой доступ.

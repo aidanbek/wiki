@@ -1,4 +1,4 @@
-CDN (Content Delivery Network)
+# CDN (Content Delivery Network)
 
 Географически распределённая сеть edge-серверов, кэширующих контент близко к пользователям — изображения, CSS, JS,
 видео.

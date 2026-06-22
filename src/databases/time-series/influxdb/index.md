@@ -1,4 +1,4 @@
-InfluxDB
+# InfluxDB
 
 Purpose-built time-series БД с собственным языком запросов (InfluxQL/Flux) и моделью tags + fields.
 

@@ -1,4 +1,4 @@
-Service Locator
+# Service Locator
 
 Глобальный реестр сервисов с API для получения зависимостей: `var repo = ServiceLocator.Get<IRepository>()`.
 

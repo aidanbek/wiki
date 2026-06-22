@@ -1,4 +1,4 @@
-Serverless (FaaS)
+# Serverless (FaaS)
 
 Бизнес-логика выполняется в stateless-функциях, управляемых облачным провайдером (Function as a Service). Серверами не
 управляешь.

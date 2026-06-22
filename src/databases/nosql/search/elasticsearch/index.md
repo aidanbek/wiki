@@ -1,4 +1,4 @@
-Elasticsearch
+# Elasticsearch
 
 Распределённый поисково-аналитический движок поверх Apache Lucene. Schema-flexible, с RESTful JSON API и near-realtime
 индексацией.

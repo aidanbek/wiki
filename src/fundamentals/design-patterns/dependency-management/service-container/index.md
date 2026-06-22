@@ -1,4 +1,4 @@
-Service Container (IoC Container)
+# Service Container (IoC Container)
 
 Фреймворк, автоматизирующий DI: регистрация зависимостей, разрешение графа и управление их жизненным циклом.
 

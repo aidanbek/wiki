@@ -1,5 +1,23 @@
-Runtime toggles controlling feature availability without deployment. Types: release toggles (incomplete features),
-experiment toggles (A/B testing), ops toggles (circuit breakers), permission toggles (premium features). Gradual
-rollouts: enable для percentage users, specific cohorts. Instant rollback без code changes. Tools: LaunchDarkly,
-Unleash, custom implementations. Technical debt: remove flags after full rollout, flag sprawl complicates code.
-Monitoring flag usage, A/B test results.
+# Feature Flags
+
+Runtime-переключатели, управляющие доступностью функциональности без деплоя. Позволяют отделить выкатку кода от его
+включения: фича уже в проде, но активируется флагом для нужной аудитории.
+
+## Типы тоглов
+
+- Release — скрывают незавершённые фичи до готовности.
+- Experiment — A/B-тесты, разные варианты для разных групп.
+- Ops — аварийные выключатели (circuit breakers) для нагрузки/инцидентов.
+- Permission — доступ к функциям по тарифу/роли.
+
+## Зачем
+
+- Постепенный rollout: включить на % пользователей или конкретную когорту.
+- Мгновенный откат без передеплоя — просто выключить флаг.
+- Тестирование в проде, dark launches.
+
+## Инструменты и подводные камни
+
+- Готовые сервисы: LaunchDarkly, Unleash; либо собственная реализация.
+- Технический долг: после полного rollout флаги нужно удалять — иначе flag sprawl захламляет код ветвлениями.
+- Мониторить использование флагов и результаты A/B-тестов; каждый флаг — это путь исполнения, который надо тестировать.

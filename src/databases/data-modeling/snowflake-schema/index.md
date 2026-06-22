@@ -1,4 +1,4 @@
-Snowflake Schema
+# Snowflake Schema
 
 Нормализованный вариант star schema: dimension-таблицы разбиты на под-измерения (например, product → category →
 department). Форма напоминает снежинку.

@@ -1,4 +1,4 @@
-gRPC Streaming
+# gRPC Streaming
 
 В отличие от обычного request-response, gRPC умеет потоки в обе стороны поверх одного соединения HTTP/2. Это убирает
 поллинг и снижает latency для непрерывных данных.

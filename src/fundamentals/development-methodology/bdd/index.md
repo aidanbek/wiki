@@ -1,4 +1,4 @@
-BDD (Behavior-Driven Development)
+# BDD (Behavior-Driven Development)
 
 Развитие TDD с фокусом на поведение системы глазами пользователя, описанное языком Given-When-Then.
 

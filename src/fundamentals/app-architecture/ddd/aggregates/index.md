@@ -1,4 +1,4 @@
-Aggregates
+# Aggregates
 
 Кластер связанных entities и value objects с чёткой границей и корневой сущностью (Aggregate Root) — consistency
 boundary.

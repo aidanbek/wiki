@@ -1,4 +1,4 @@
-Security Headers
+# Security Headers
 
 HTTP-заголовки ответа, повышающие безопасность на стороне браузера. Дешёвые wins: добавляются на уровне reverse
 proxy/CDN, без правок приложения.

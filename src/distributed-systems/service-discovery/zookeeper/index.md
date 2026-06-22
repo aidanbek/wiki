@@ -1,4 +1,4 @@
-ZooKeeper
+# ZooKeeper
 
 Apache-проект для координации распределённых систем, выросший из экосистемы Hadoop. Старше и тяжелее [[etcd]], но
 проверен временем в enterprise (см. [[service-discovery]]).

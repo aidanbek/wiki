@@ -1,4 +1,4 @@
-MVC (Model-View-Controller)
+# MVC (Model-View-Controller)
 
 Разделение приложения на три слоя с разными обязанностями — классика для UI-приложений.
 

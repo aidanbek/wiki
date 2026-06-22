@@ -1,4 +1,4 @@
-Web Development
+# Web Development
 
 Как системы общаются по сети и как делать это безопасно: протоколы (HTTP), стили API (REST, GraphQL, gRPC), форматы
 данных, realtime-каналы и веб-безопасность.

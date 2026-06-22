@@ -1,4 +1,4 @@
-TimescaleDB
+# TimescaleDB
 
 Расширение PostgreSQL для time-series данных. Даёт оптимизации временных рядов, сохраняя весь SQL и экосистему Postgres.
 

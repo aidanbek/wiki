@@ -1,4 +1,4 @@
-Write-Back (Write-Behind)
+# Write-Back (Write-Behind)
 
 Запись немедленно в кэш, в DB — асинхронно позже (batched/delayed). Быстрые writes ценой eventual consistency.
 

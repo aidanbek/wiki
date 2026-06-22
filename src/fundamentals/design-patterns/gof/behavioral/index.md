@@ -1,4 +1,4 @@
-Behavioral Patterns
+# Behavioral Patterns
 
 Паттерны взаимодействия объектов и распределения ответственности — как объекты общаются и координируются. Фокус на
 алгоритмах и assignment of responsibilities, а не на структурах; часто используют composition/delegation вместо

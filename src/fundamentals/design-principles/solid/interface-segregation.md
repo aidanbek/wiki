@@ -1,4 +1,4 @@
-Interface Segregation Principle (ISP)
+# Interface Segregation Principle (ISP)
 
 Клиенты не должны зависеть от методов, которые не используют — много узких интерфейсов лучше одного толстого.
 

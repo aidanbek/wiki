@@ -1,4 +1,4 @@
-Retry Mechanisms
+# Retry Mechanisms
 
 Автоматические повторы неуспешных операций. Базовые приёмы (exponential backoff, jitter, лимит попыток) описаны в
 разделе resilience/retry-patterns; здесь — специфика повторов в асинхронной обработке.

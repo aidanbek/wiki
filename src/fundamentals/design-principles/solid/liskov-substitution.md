@@ -1,4 +1,4 @@
-Liskov Substitution Principle (LSP)
+# Liskov Substitution Principle (LSP)
 
 Объекты подтипа должны быть заменяемы объектами базового типа без нарушения корректности программы.
 

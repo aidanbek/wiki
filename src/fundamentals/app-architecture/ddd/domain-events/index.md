@@ -1,4 +1,4 @@
-Domain Events
+# Domain Events
 
 Immutable события, описывающие что-то значимое, что произошло в домене — факты в прошедшем времени («OrderPlaced»,
 «PaymentCompleted»).

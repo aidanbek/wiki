@@ -1,4 +1,4 @@
-Blue-Green Deployment
+# Blue-Green Deployment
 
 Два идентичных окружения: Blue (текущее, под нагрузкой) и Green (новое). Новую версию разворачивают и тестируют на
 Green,

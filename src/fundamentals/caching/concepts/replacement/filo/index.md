@@ -1,4 +1,4 @@
-FILO (First In Last Out)
+# FILO (First In Last Out)
 
 Удаляет самую новую запись — stack-семантика, противоположность FIFO.
 

@@ -1,4 +1,4 @@
-Inversion of Control (IoC)
+# Inversion of Control (IoC)
 
 Принцип, при котором поток выполнения и создание объектов контролирует фреймворк/контейнер, а не прикладной код.
 «Don't call us, we'll call you» (Hollywood Principle).

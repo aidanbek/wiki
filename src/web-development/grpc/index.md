@@ -1,4 +1,4 @@
-gRPC
+# gRPC
 
 Высокопроизводительный RPC-фреймворк от Google. Использует [Protobuf](../data-serialization/protobuf/index.md) для
 сериализации и HTTP/2 для транспорта. Сервис описывается в `.proto`, по нему генерируется код.

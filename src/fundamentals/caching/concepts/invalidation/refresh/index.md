@@ -1,4 +1,4 @@
-Refresh (Background Refresh)
+# Refresh (Background Refresh)
 
 Асинхронное обновление данных до истечения TTL — proactive вместо reactive.
 

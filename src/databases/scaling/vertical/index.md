@@ -1,4 +1,4 @@
-Vertical Scaling (Scale Up)
+# Vertical Scaling (Scale Up)
 
 Увеличение ресурсов одного сервера: больше CPU, RAM, быстрее диски (NVMe). Самый простой способ нарастить
 производительность.

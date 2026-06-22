@@ -1,6 +1,22 @@
-Code editors и IDEs для development. Lightweight editors: VS Code (extensible, popular), Sublime Text (fast),
-Vim/Neovim (modal, powerful). Full IDEs: IntelliJ IDEA (Java/Kotlin), PyCharm (Python), WebStorm (JS). Features: syntax
-highlighting, code completion (IntelliSense), debugging, refactoring, version control integration, terminal.
-Extensions/plugins customize behavior. Remote development (SSH, containers) via VS Code Remote. Language servers (LSP
-protocol) standardize editor features across languages. Vim keybindings plugins для muscle memory. Themes, font
-preferences personal.
+# Editors & IDEs
+
+Инструмент написания кода — от лёгких редакторов до полноценных IDE. Выбор это компромисс между скоростью/гибкостью
+редактора и «батарейками в комплекте» у IDE (рефакторинг, отладка, индексация проекта).
+
+## Варианты
+
+- Лёгкие редакторы: VS Code (расширяемый, популярный), Sublime Text (быстрый), Vim/Neovim (модальный, мощный).
+- Полные IDE: IntelliJ IDEA (Java/Kotlin), PyCharm (Python), WebStorm (JS/TS).
+
+## Возможности
+
+- Подсветка синтаксиса, автодополнение (IntelliSense), отладка, рефакторинг.
+- Интеграция с VCS, встроенный терминал.
+- Расширения/плагины настраивают поведение под стек.
+- Remote development через SSH/контейнеры (VS Code Remote).
+
+## Под капотом и предпочтения
+
+- Language Servers (LSP) стандартизируют умные функции (автодополнение, переход к определению) между редакторами.
+- Плагины Vim-биндингов сохраняют мышечную память в любом редакторе.
+- Темы и шрифты — личное; выносится в синхронизируемые настройки/dotfiles.

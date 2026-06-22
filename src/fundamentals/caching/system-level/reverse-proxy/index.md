@@ -1,4 +1,4 @@
-Reverse Proxy
+# Reverse Proxy
 
 Сервер между клиентами и origin, кэширующий ответы — Varnish, Nginx, Squid.
 

@@ -1,4 +1,4 @@
-Concurrency Concepts
+# Concurrency Concepts
 
 Building blocks и проблемы параллельного выполнения — то, без чего нельзя писать и отлаживать корректный concurrent код.
 

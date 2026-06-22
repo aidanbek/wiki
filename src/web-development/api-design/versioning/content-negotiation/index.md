@@ -1,4 +1,4 @@
-Content Negotiation Versioning
+# Content Negotiation Versioning
 
 Версия задаётся через стандартный заголовок `Accept`: `Accept: application/vnd.myapi.v2+json`. Самый «правильный» по
 букве HTTP способ, но и самый неудобный на практике.

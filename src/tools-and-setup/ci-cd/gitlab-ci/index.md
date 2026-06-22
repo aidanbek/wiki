@@ -1,5 +1,22 @@
-GitLab's built-in CI/CD via .gitlab-ci.yml. Pipeline stages: build, test, deploy. Runners execute jobs (shared или
-self-hosted). Features: Docker-in-Docker, artifacts, caching, environments, manual approvals. Variables для secrets,
-conditional jobs (branch, tag, schedule triggers). Merge request pipelines, review apps (ephemeral environments). Auto
-DevOps templates для common stacks. Integrated with GitLab registry, K8s deployments. Simpler setup чем Jenkins (no
-separate server), но GitLab-specific.
+# GitLab CI
+
+Встроенный в GitLab CI/CD, описывается в `.gitlab-ci.yml`. Не требует отдельного сервера — pipeline и репозиторий живут
+в одной системе вместе с registry, окружениями и деплоем.
+
+## Как работает
+
+- Pipeline делится на stages (build → test → deploy); джобы внутри стадии идут параллельно.
+- Runners исполняют джобы — shared (от GitLab) или self-hosted.
+- Variables хранят секреты; условия (`rules`/`only`) запускают джобы по ветке, тегу или расписанию.
+
+## Возможности
+
+- Docker-in-Docker, artifacts, caching между джобами.
+- Merge request pipelines и review apps — эфемерные окружения на каждый MR.
+- Auto DevOps шаблоны под типовые стеки, интеграция с GitLab registry и деплоем в K8s.
+
+## Когда использовать / подводные камни
+
+- Логичный выбор, когда код уже в GitLab — меньше движущихся частей, чем у Jenkins.
+- Конфигурация GitLab-специфична: переезд на другой хостинг = переписывание.
+- Shared runners имеют лимиты минут; тяжёлые сборки лучше на self-hosted.

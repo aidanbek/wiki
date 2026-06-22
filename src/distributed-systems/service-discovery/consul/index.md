@@ -1,4 +1,4 @@
-Consul
+# Consul
 
 Решение HashiCorp, объединяющее service discovery, health checking, KV-стор и service mesh в одном продукте (
 см. [[service-discovery]]).

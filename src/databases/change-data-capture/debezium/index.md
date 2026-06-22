@@ -1,4 +1,4 @@
-Debezium (Log-based CDC)
+# Debezium (Log-based CDC)
 
 Open-source CDC платформа поверх Kafka Connect. Читает transaction logs (PostgreSQL WAL, MySQL binlog, MongoDB oplog) и
 публикует change events в Kafka. Не нагружает БД запросами — читает то, что СУБД и так пишет для репликации.

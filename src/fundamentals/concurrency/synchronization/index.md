@@ -1,4 +1,4 @@
-Synchronization
+# Synchronization
 
 Механизмы координации доступа потоков к shared resources — защита от race conditions и порчи данных.
 

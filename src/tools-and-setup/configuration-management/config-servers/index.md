@@ -1,5 +1,22 @@
-Centralized configuration storage для distributed applications. Spring Cloud Config, Consul, etcd serve configs over
-HTTP/API. Benefits: dynamic updates without restarts (hot reload), version control, audit trail, environment
-inheritance. Clients fetch config on startup или periodically refresh. Use cases: microservices configuration, feature
-flags, operational settings. High availability critical (config server down = deployment blocked). Encryption для
-sensitive values, access control per application/environment.
+# Config Servers
+
+Централизованное хранилище конфигурации для распределённых систем. Сервис (Spring Cloud Config, Consul, etcd) отдаёт
+настройки по HTTP/API, а клиенты подтягивают их при старте или периодически обновляют без редеплоя.
+
+## Зачем
+
+- Hot reload — менять значения без перезапуска сервисов.
+- Версионирование и audit trail изменений конфига.
+- Наследование настроек по окружениям, единый источник истины.
+
+## Как работает
+
+- Клиент при старте запрашивает свой конфиг у сервера (по имени приложения + окружению).
+- Дальше — периодический refresh или push-уведомление об изменении.
+- Чувствительные значения шифруются, доступ ограничен per application/environment.
+
+## Подводные камни
+
+- Высокая доступность критична: сервер конфигов лёг — новые деплои и рестарты заблокированы.
+- Нужен фолбэк/кэш на стороне клиента на случай недоступности сервера.
+- Динамический reload требует, чтобы приложение корректно применяло новые значения на лету.

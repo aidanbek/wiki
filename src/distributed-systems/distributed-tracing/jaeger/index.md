@@ -1,4 +1,4 @@
-Jaeger
+# Jaeger
 
 Open-source бэкенд для distributed tracing, изначально созданный в Uber и принятый в CNCF. Собирает span'ы, хранит их и
 даёт UI для разбора latency и зависимостей между сервисами (см. [[distributed-tracing]]).

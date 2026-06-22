@@ -1,4 +1,4 @@
-Reader-Writer Lock
+# Reader-Writer Lock
 
 Оптимизация для частого чтения и редкой записи: много readers одновременно, writer — эксклюзивно.
 

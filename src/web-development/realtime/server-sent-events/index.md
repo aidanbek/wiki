@@ -1,4 +1,4 @@
-Server-Sent Events (SSE)
+# Server-Sent Events (SSE)
 
 Сервер пушит обновления клиенту по одному долгому HTTP-соединению. Связь однонаправленная (server→client) — проще
 [WebSockets](../websockets/index.md), когда обратный канал не нужен.

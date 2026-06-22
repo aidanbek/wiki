@@ -1,4 +1,4 @@
-Query Result Caching
+# Query Result Caching
 
 Кэширование результатов запросов в application-слое (Redis, Memcached, in-process), чтобы не ходить в БД на повторных
 одинаковых запросах.

@@ -1,4 +1,4 @@
-Garbage Collection
+# Garbage Collection
 
 Автоматическое освобождение недостижимой памяти. Главный компромисс — throughput vs latency.
 

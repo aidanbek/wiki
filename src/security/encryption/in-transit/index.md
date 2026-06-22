@@ -1,4 +1,4 @@
-Encryption in Transit
+# Encryption in Transit
 
 Шифрование данных во время передачи: TLS/SSL для web, VPN-туннели, шифрованные очереди сообщений. Защищает от
 прослушивания сети (eavesdropping) и MITM-атак.

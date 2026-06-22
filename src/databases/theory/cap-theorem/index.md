@@ -1,4 +1,4 @@
-CAP Theorem
+# CAP Theorem
 
 В распределённой системе одновременно гарантировать можно лишь два из трёх свойств: Consistency, Availability,
 Partition tolerance.

@@ -1,5 +1,18 @@
-Open-source automation server, industry veteran. Plugin ecosystem (1000+) extends functionality. Pipelines:
-declarative (structured YAML-like) vs scripted (Groovy code). Jenkinsfile в repository (pipeline as code). Master/agent
-architecture для distributed builds. Blue Ocean UI modernizes experience. Challenges: plugin conflicts, maintenance
-overhead, slow UI. Flexible, но complex setup. Popular в enterprises, legacy systems. Alternatives (GitHub Actions,
-CircleCI) simpler для cloud-native projects.
+# Jenkins
+
+Open-source сервер автоматизации, ветеран индустрии. Self-hosted, максимально гибкий за счёт экосистемы плагинов
+(1000+). Цена гибкости — сложная настройка и эксплуатационные накладные расходы.
+
+## Как работает
+
+- Pipeline описывается в Jenkinsfile в репозитории (pipeline as code).
+- Два стиля: declarative (структурированный, читаемый) и scripted (полноценный Groovy).
+- Master/agent архитектура распределяет сборки по нескольким машинам.
+- Blue Ocean — современный UI поверх классического интерфейса.
+
+## Когда использовать / подводные камни
+
+- Силён там, где нужна нестандартная логика и контроль над инфраструктурой; популярен в enterprise и legacy.
+- Плагины — и сила, и слабость: конфликты версий, дыры в безопасности, поддержка.
+- Медленный UI, ручное обслуживание сервера и агентов.
+- Для cloud-native проектов GitHub Actions / GitLab CI / CircleCI обычно проще и дешевле в эксплуатации.

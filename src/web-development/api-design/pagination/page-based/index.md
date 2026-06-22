@@ -1,4 +1,4 @@
-Page-based Pagination
+# Page-based Pagination
 
 `?page=3&per_page=10` — обёртка над offset, которая прячет вычисление смещения. Дружелюбные, закладываемые в bookmark
 URL, привычные для веб-интерфейсов.

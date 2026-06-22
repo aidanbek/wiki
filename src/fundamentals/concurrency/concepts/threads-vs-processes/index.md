@@ -1,4 +1,4 @@
-Threads vs Processes
+# Threads vs Processes
 
 Process — независимая единица выполнения со своим address space; thread — лёгкая единица внутри процесса, разделяющая
 память с другими threads.

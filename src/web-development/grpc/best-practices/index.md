@@ -1,4 +1,4 @@
-gRPC Best Practices
+# gRPC Best Practices
 
 Практики надёжного и производительного использования gRPC в продакшене.
 

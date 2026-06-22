@@ -1,4 +1,4 @@
-Resource Optimization
+# Resource Optimization
 
 Снижение стоимости работы с ресурсами — за счёт отложенной загрузки и переиспользования.
 

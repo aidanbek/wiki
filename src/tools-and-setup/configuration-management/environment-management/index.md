@@ -1,5 +1,22 @@
-Separating configuration across environments (dev, staging, production). 12-factor app principle: config в environment
-variables, not code. Environment-specific: database URLs, API keys, feature toggles, resource limits. Prevents
-accidental production changes, enables consistent deployments. Tools: dotenv files (local), K8s ConfigMaps/Secrets,
-cloud parameter stores. Challenges: config drift between environments, secret management, documenting required
-variables.
+# Environment Management
+
+Разделение конфигурации между окружениями (dev, staging, production). Ключевой принцип 12-factor: конфиг живёт в
+переменных окружения, а не в коде — тогда один артефакт переносится между стадиями без пересборки.
+
+## Что выносят в конфиг
+
+- URL баз данных и внешних сервисов, API-ключи.
+- Feature toggles, лимиты ресурсов, уровни логирования.
+- Любое значение, отличающееся между dev/staging/prod.
+
+## Инструменты
+
+- `.env`-файлы (dotenv) для локальной разработки.
+- Kubernetes ConfigMaps / Secrets для кластерных деплоев.
+- Cloud parameter stores (AWS SSM/Secrets Manager, GCP Secret Manager) для прод-секретов.
+
+## Подводные камни
+
+- Config drift — настройки окружений расходятся со временем; держать единый источник истины.
+- Управление секретами: не коммитить в репозиторий, шифровать, ротировать.
+- Документировать обязательные переменные — иначе деплой падает на отсутствующем значении.

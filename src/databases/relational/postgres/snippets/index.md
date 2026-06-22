@@ -1,4 +1,4 @@
-PostgreSQL Snippets
+# PostgreSQL Snippets
 
 Полезные практические запросы и команды для PostgreSQL — диагностика, обслуживание, повседневные задачи.
 

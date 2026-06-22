@@ -1,4 +1,4 @@
-Hexagonal Architecture (Ports & Adapters)
+# Hexagonal Architecture (Ports & Adapters)
 
 Организация кода, где бизнес-логика изолирована от внешнего мира через ports (интерфейсы) и adapters (реализации).
 Паттерн Alistair Cockburn.

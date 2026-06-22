@@ -1,4 +1,4 @@
-CouchDB
+# CouchDB
 
 Document-БД с HTTP/REST API «из коробки» и упором на репликацию и offline-first сценарии.
 

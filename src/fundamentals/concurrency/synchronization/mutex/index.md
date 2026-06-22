@@ -1,4 +1,4 @@
-Mutex (Mutual Exclusion)
+# Mutex (Mutual Exclusion)
 
 Блокировка для эксклюзивного доступа: в каждый момент mutex владеет только один поток.
 

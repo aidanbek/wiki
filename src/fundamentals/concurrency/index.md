@@ -1,4 +1,4 @@
-Concurrency
+# Concurrency
 
 Способность системы выполнять несколько задач одновременно или с перекрытием во времени. Даёт responsiveness, throughput
 и утилизацию ресурсов, но добавляет сложность: race conditions, deadlocks, тяжёлую отладку.

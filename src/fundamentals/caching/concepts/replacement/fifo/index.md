@@ -1,4 +1,4 @@
-FIFO (First In First Out)
+# FIFO (First In First Out)
 
 Удаляет самую старую по времени добавления запись — queue-семантика, простейший алгоритм.
 

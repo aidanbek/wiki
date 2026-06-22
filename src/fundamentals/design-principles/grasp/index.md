@@ -1,4 +1,4 @@
-GRASP (General Responsibility Assignment Software Patterns)
+# GRASP (General Responsibility Assignment Software Patterns)
 
 Девять фундаментальных паттернов распределения ответственности — про то, какой объект должен делать что, а не про
 структуры кода.

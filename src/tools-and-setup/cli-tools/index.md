@@ -1,5 +1,26 @@
-Command-line utilities для developer productivity. Categories: system (bash, zsh, fish shells), version control (git),
-package managers (npm, pip, cargo), build tools (make, gradle, webpack), cloud CLIs (aws-cli, gcloud, azure-cli),
-container/orchestration (docker, kubectl), text processing (jq, sed, awk). Scripting automates repetitive tasks.
-Dotfiles для configuration sharing. Modern alternatives improve UX: bat (cat), exa (ls), ripgrep (grep), fzf (fuzzy
-finder). Shell customization (oh-my-zsh, starship prompts).
+# CLI Tools
+
+Утилиты командной строки — основной рычаг продуктивности разработчика. Текстовый интерфейс легко скриптуется и
+композируется через pipe, что превращает рутину в воспроизводимую автоматизацию.
+
+## Категории
+
+- Shell: bash, zsh, fish — среда исполнения и скриптинг.
+- Version control: git.
+- Package managers: npm, pip, cargo.
+- Build tools: make, gradle, webpack.
+- Cloud CLIs: aws-cli, gcloud, azure-cli.
+- Containers/orchestration: docker, kubectl.
+- Text processing: jq, sed, awk, grep.
+
+## Современные альтернативы
+
+- `bat` вместо `cat`, `exa`/`eza` вместо `ls`, `ripgrep` вместо `grep`.
+- `fzf` — fuzzy-поиск по истории, файлам, чему угодно.
+- Промпты и кастомизация shell: oh-my-zsh, starship.
+
+## Подводные камни
+
+- Скрипты автоматизируют повторяющиеся задачи, но обрастают неявными зависимостями от окружения.
+- Dotfiles держать в git-репозитории — переносимость настроек между машинами.
+- Современные утилиты удобны, но в CI/на чужих серверах их может не быть: в скриптах опираться на POSIX-инструменты.

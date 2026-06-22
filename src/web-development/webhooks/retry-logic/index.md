@@ -1,4 +1,4 @@
-Webhook Retry Logic
+# Webhook Retry Logic
 
 Автоматическая повторная доставка при сбое webhook'а (timeout, ответ не 2xx). Цель — не потерять событие и при этом не
 завалить запросами лежащего consumer'а.

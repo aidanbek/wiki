@@ -1,4 +1,4 @@
-Pure Fabrication
+# Pure Fabrication
 
 Искусственный класс, не представляющий доменную концепцию, созданный ради Low Coupling и High Cohesion.
 

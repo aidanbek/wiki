@@ -1,4 +1,4 @@
-SRE Practices
+# SRE Practices
 
 Site Reliability Engineering — подход Google к эксплуатации: относиться к операциям как к software-задаче. Вместо
 ручного тушения пожаров надёжность достигается инженерией и автоматизацией.

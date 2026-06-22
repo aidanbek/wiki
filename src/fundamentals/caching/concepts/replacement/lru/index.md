@@ -1,4 +1,4 @@
-LRU (Least Recently Used)
+# LRU (Least Recently Used)
 
 Удаляет запись, не использовавшуюся дольше всех — ставка на temporal locality.
 

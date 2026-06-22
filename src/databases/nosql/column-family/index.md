@@ -1,4 +1,4 @@
-Column-Family (Wide-Column)
+# Column-Family (Wide-Column)
 
 Wide-column хранилища: строки имеют динамический набор колонок, сгруппированных в column families. Модель «строка →
 (колонка → значение)» c гибкой, разреженной структурой. Прообраз — Google Bigtable.

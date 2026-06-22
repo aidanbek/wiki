@@ -1,4 +1,4 @@
-ABAC (Attribute-Based Access Control)
+# ABAC (Attribute-Based Access Control)
 
 Решение о доступе принимается на лету по атрибутам, а не по заранее назначенным ролям. Гибче [RBAC](../rbac/index.md):
 правило может учитывать кто, к чему, когда и откуда обращается.

@@ -1,4 +1,4 @@
-HIPAA
+# HIPAA
 
 Health Insurance Portability and Accountability Act — закон США о защите медицинских данных (PHI, Protected Health
 Information). Регулирует, как хранить, передавать и кому раскрывать данные пациентов.

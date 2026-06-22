@@ -1,4 +1,4 @@
-Concurrency Patterns
+# Concurrency Patterns
 
 Проверенные решения для организации параллельных вычислений: coordination, communication, resource management.
 

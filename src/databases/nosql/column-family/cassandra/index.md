@@ -1,4 +1,4 @@
-Cassandra
+# Cassandra
 
 Распределённая column-family БД без single point of failure (masterless). Спроектирована под высокую доступность и
 огромный объём записей при линейном масштабировании.

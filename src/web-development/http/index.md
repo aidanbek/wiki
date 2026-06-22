@@ -1,4 +1,4 @@
-HTTP
+# HTTP
 
 HyperText Transfer Protocol — протокол прикладного уровня, на котором стоит весь веб. Модель проста: клиент шлёт
 request, сервер отвечает response.

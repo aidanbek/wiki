@@ -1,5 +1,22 @@
-Separate deployments для different stages: development (unstable, frequent changes), staging/QA (production-like,
-testing), production (live users). Additional: sandbox (experiments), performance testing, DR environment. Isolation
-prevents dev changes affecting prod. Parity important: staging близко к prod (same OS, dependencies, infrastructure) для
-accurate testing. Challenges: cost (multiple environments), data management (prod snapshots в staging, PII scrubbing),
-keeping synchronized. Infrastructure as Code ensures consistency.
+# Environments
+
+Отдельные развёртывания под разные стадии жизненного цикла. Изоляция не даёт изменениям в разработке влиять на живых
+пользователей, а похожесть окружений делает тестирование достоверным.
+
+## Типовые стадии
+
+- Development — нестабильное, частые изменения.
+- Staging/QA — максимально похоже на prod, для приёмочного тестирования.
+- Production — живые пользователи.
+- Дополнительно: sandbox (эксперименты), performance/load, DR (disaster recovery).
+
+## Parity — почему важна похожесть
+
+- Staging близко к prod (та же ОС, зависимости, инфраструктура) — иначе баги всплывают только после релиза.
+- Infrastructure as Code обеспечивает воспроизводимость и согласованность окружений.
+
+## Подводные камни
+
+- Стоимость: несколько окружений = несколько инфраструктур.
+- Данные: снимки prod в staging требуют скрабинга PII перед использованием.
+- Поддержание синхронности — главный источник «у меня работает, а в проде нет».

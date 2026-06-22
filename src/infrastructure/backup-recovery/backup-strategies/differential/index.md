@@ -1,4 +1,4 @@
-Differential Backup
+# Differential Backup
 
 Бэкап всех данных, изменившихся с момента последнего full. Компромисс между incremental и full: копия крупнее, чем у
 incremental, но восстановление проще — нужны только full и самый свежий differential.
