@@ -1,2 +1,19 @@
-Данные как nodes + edges (relationships). Queries traverse relationships эффективно. Use cases: social networks,
-recommendations, fraud detection, knowledge graphs. ACID transactions на graph operations в некоторых БД.
+Graph Databases
+
+Данные как узлы (nodes) и связи (edges) с атрибутами. Оптимизированы под обход связей (traversal), где в реляционных
+БД потребовались бы дорогие рекурсивные JOIN-ы.
+
+## Модель
+
+- Property graph: узлы и рёбра с произвольными свойствами; связи — first-class сущности.
+- Запросы выражают паттерны связей (Cypher, Gremlin) и обходят граф на много «прыжков».
+
+## Use cases
+
+- Соцсети, рекомендации, fraud detection, knowledge graphs, маршрутизация/зависимости.
+- Везде, где ценность в самих связях и их глубоком обходе.
+
+## Свойства / ограничения
+
+- Index-free adjacency (в native-БД) даёт быстрый обход независимо от размера графа.
+- ACID-транзакции на графовых операциях в ряде БД; хуже для массовых агрегаций/аналитики (пример: Neo4j).

@@ -1,6 +1,13 @@
-Unreleased memory no longer accessible but not freed. Gradual memory consumption growth → OOM crashes. Common causes:
-circular references (pre-GC languages), event listeners not removed, caches без eviction, closures capturing large
-objects, native resources (file handles, sockets) not closed. Detection: heap dumps over time, memory profilers (
-Valgrind, Chrome DevTools), monitoring RSS growth. Languages: manual management (C/C++), garbage collected (Java,
-Python) still vulnerable. Prevention: RAII patterns, weak references, careful closure usage, automated testing with
-memory assertions.
+Memory Leaks
+
+Память, которая больше не используется, но не освобождена → постепенный рост потребления и OOM.
+
+## Частые причины
+
+- Циклические ссылки (в языках без трассирующего GC), не снятые event listeners, кэши без eviction.
+- Замыкания, держащие крупные объекты; незакрытые native-ресурсы (file handles, sockets).
+
+## Диагностика и профилактика
+
+- Heap dumps во времени, профайлеры (Valgrind, Chrome DevTools), мониторинг роста RSS.
+- RAII, weak references, аккуратные замыкания, тесты с memory assertions; GC-языки тоже уязвимы (см. garbage-collection).

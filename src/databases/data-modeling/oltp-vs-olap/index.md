@@ -1,3 +1,20 @@
-OLTP (Online Transaction Processing): normalized, row-oriented, transactional, много small writes/reads. OLAP (Online
-Analytical Processing): denormalized, column-oriented, read-heavy, complex aggregations. Разные workloads → разные БД
-оптимизации.
+OLTP vs OLAP
+
+Два принципиально разных класса нагрузки, под которые по-разному проектируют схему и выбирают хранилище.
+
+## OLTP (Online Transaction Processing)
+
+- Много коротких транзакций: точечные INSERT/UPDATE/DELETE и выборки по ключу.
+- Нормализованная, row-oriented схема; индексы под точечный доступ; строгие ACID-гарантии.
+- Примеры: Postgres, MySQL — операционные БД приложений.
+
+## OLAP (Online Analytical Processing)
+
+- Read-heavy: сложные агрегации и сканы по большим объёмам, мало записей (батчи/загрузки).
+- Денормализация (star/snowflake), column-oriented хранение, сжатие, векторизация.
+- Примеры: ClickHouse, BigQuery, Redshift — аналитические хранилища.
+
+## Почему разделяют
+
+- Разные паттерны доступа → разные оптимизации; смешивать на одной БД дорого.
+- Данные переливают из OLTP в OLAP через ETL/CDC; промежуточный вариант — HTAP.

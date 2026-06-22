@@ -1,2 +1,19 @@
-Forward-only migrations (no rollback DDL) vs reversible. Idempotent migrations для retry safety. Backup before
-migration. Feature flags для application-level rollback без schema rollback. Testing в staging environment.
+Rollback Strategies
+
+Как безопасно откатывать изменения схемы и данных, когда миграция пошла не так.
+
+## Подходы
+
+- Reversible migrations: для каждого `up` есть `down` (откат DDL). Удобно, но не всё откатывается без потери данных.
+- Forward-only: откатов DDL нет, проблема чинится новой миграцией вперёд. Проще в распределённых командах.
+- Application-level rollback через feature flags: код переключают без отката схемы.
+
+## Практики безопасности
+
+- Backup/snapshot перед миграцией; идемпотентные миграции для безопасного повтора.
+- Деструктивные шаги (DROP COLUMN) делать отдельно и позже, после подтверждения, что код их не использует.
+
+## Тестирование
+
+- Прогон миграции и отката в staging на копии прод-данных.
+- Совместимость со схемой expand-contract, чтобы откат кода не ломался об новую схему (см. zero-downtime).

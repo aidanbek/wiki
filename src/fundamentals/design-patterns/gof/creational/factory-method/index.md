@@ -1,4 +1,19 @@
-Определяет интерфейс создания объекта, но позволяет подклассам решать какой класс инстанцировать - делегирование
-создания подклассам. Creator объявляет createProduct(), ConcreteCreator переопределяет, возвращая ConcreteProduct.
-DocumentCreator.createDocument() - WordCreator возвращает WordDocument, PDFCreator возвращает PDFDocument. Dependency
-Inversion - Creator зависит от Product интерфейса. Параллельные иерархии Creator-Product.
+Factory Method
+
+Определяет интерфейс создания объекта, но позволяет подклассам решать, какой конкретный класс инстанцировать —
+делегирование создания подклассам.
+
+## Структура
+
+- `Creator` объявляет `createProduct()`, `ConcreteCreator` переопределяет и возвращает `ConcreteProduct`.
+- Параллельные иерархии Creator ↔ Product.
+
+## Когда использовать
+
+- Класс не знает заранее, объекты какого типа создавать.
+- Хочется вынести выбор реализации в подкласс/конфигурацию.
+
+## Trade-offs
+
+- Соблюдает Dependency Inversion: Creator зависит от интерфейса Product.
+- Может плодить подклассы; для семейств объектов — Abstract Factory (см. abstract-factory).

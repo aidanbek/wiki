@@ -1,9 +1,15 @@
 Shortest Path (Кратчайшие пути)
 
-Нахождение пути между вершинами с минимальным суммарным весом - критическая задача в навигации, routing, optimization.
-Dijkstra's Algorithm - greedy approach для non-negative weights: O((V+E)log V) с priority queue, жадно выбирает
-ближайшую непосещённую вершину, relax'ит соседей. Bellman-Ford - обрабатывает negative weights: O(VE), relaxation всех
-рёбер V-1 раз, детектирует negative cycles. Floyd-Warshall - all-pairs shortest paths: O(V³), dynamic programming,
-простая реализация для dense графов. A* - эвристическая оптимизация Dijkstra для конкретной цели, использует heuristic
-для guided search. BFS для unweighted графов (все рёбра вес 1). Выбор зависит от характеристик графа (sparse/dense,
-negative weights, single/all pairs) и requirements (optimal vs approximate, memory constraints).
+Путь между вершинами с минимальным суммарным весом — навигация, routing, оптимизация.
+
+## Алгоритмы
+
+- **Dijkstra** — greedy, non-negative weights, O((V+E)log V) с priority queue.
+- **Bellman-Ford** — допускает negative weights, O(VE), детектирует negative cycles.
+- **Floyd-Warshall** — all-pairs, O(V³), DP, прост для плотных графов.
+- **A\*** — эвристическая оптимизация Dijkstra к конкретной цели.
+- **BFS** — для unweighted (все рёбра вес 1).
+
+## Выбор
+
+- По характеру графа (sparse/dense, negative weights, single/all pairs) и требованиям (optimal vs approximate, память).

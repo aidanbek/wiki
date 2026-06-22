@@ -1,2 +1,20 @@
-Кэширование результатов queries в application layer (Redis, Memcached). Invalidation strategies: TTL, event-based,
-write-through. Cache key = query hash + params. Снижает DB load, но adds complexity (cache coherency, thundering herd).
+Query Result Caching
+
+Кэширование результатов запросов в application-слое (Redis, Memcached, in-process), чтобы не ходить в БД на повторных
+одинаковых запросах.
+
+## Как устроено
+
+- Cache key = хэш запроса + параметры (+ версия/тенант).
+- Стратегии инвалидации: TTL, event-based (по изменению данных), write-through.
+- Снижает нагрузку на БД и latency чтения.
+
+## Подводные камни
+
+- Cache coherency: устаревшие данные после записи; нужна продуманная инвалидация.
+- Thundering herd при массовом истечении ключей — смягчают jitter TTL, locks, SWR.
+- Низкий hit-rate при высокой кардинальности параметров делает кэш бесполезным.
+
+## Когда использовать
+
+- Read-heavy, повторяющиеся запросы, дорогие агрегации, толерантность к слегка устаревшим данным (см. materialized-views для кэша на стороне БД).

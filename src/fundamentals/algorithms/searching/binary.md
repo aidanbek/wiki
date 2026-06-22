@@ -1,9 +1,17 @@
 Binary Search (Бинарный поиск)
 
-Поиск в отсортированном массиве путём последовательного деления диапазона пополам - compare с средним элементом,
-отбрасывать половину. Сложность O(log n) - чрезвычайно эффективно, для миллиона элементов ~20 сравнений. Требует
-отсортированные данные и random access (array, не linked list). Алгоритм: low=0, high=n-1, mid=(low+high)/2, if target<
-mid then high=mid-1 else low=mid+1, repeat пока не найдём или low>high. Критичен корректный расчёт mid для избежания
-integer overflow: mid = low + (high - low) / 2. Вариации: lower_bound/upper_bound для диапазонов, exponential search для
-unbounded arrays, interpolation search для uniform distribution. Основа для более сложных структур - B-trees, binary
-search trees, database indexes.
+Поиск в отсортированном массиве делением диапазона пополам: сравнить со средним элементом, отбросить половину.
+
+## Сложность
+
+- O(log n) — для миллиона элементов ~20 сравнений. Нужны отсортированные данные и random access (array, не linked list).
+
+## Алгоритм
+
+- `low=0`, `high=n-1`; `mid`; если `target < arr[mid]` → `high=mid-1`, иначе `low=mid+1`; повтор, пока не найдём или `low>high`.
+- `mid = low + (high - low) / 2` — чтобы избежать integer overflow.
+
+## Вариации и применение
+
+- `lower_bound`/`upper_bound` для диапазонов, exponential search для unbounded, interpolation search для uniform distribution.
+- Основа B-trees, binary search trees, индексов БД (см. fundamentals/algorithms/data-structures/trees).

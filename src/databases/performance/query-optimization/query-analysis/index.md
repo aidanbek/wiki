@@ -1,2 +1,19 @@
-Выявление проблемных queries через slow query log, pg_stat_statements. Анализ: sequential scans вместо index, N+1
-проблемы, inefficient JOINs. Tools: EXPLAIN, query profilers. Метрики: execution time, rows examined, temp tables usage.
+Query Analysis
+
+Выявление и приоритизация проблемных запросов — что именно тормозит и насколько часто это вызывается.
+
+## Как находить
+
+- Slow query log, `pg_stat_statements` (агрегирует по нормализованному запросу: total/mean time, calls).
+- Профайлеры/APM, метрики БД (rows examined vs returned, temp files).
+
+## Типичные проблемы
+
+- Sequential scan вместо index, отсутствие/неподходящий индекс.
+- N+1 (см. n-plus-one), неэффективные JOIN-ы, функции на индексируемых колонках в WHERE.
+- Временные таблицы/сортировка на диске, большие OFFSET в пагинации.
+
+## Метрики и подход
+
+- Смотреть на total time (частота × длительность), а не только на самый медленный единичный запрос.
+- Проверять гипотезы через EXPLAIN ANALYZE, затем индекс/переписывание запроса (см. execution-plan).

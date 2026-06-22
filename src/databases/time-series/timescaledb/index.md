@@ -1,3 +1,19 @@
-PostgreSQL extension для time-series данных. Автоматический partitioning по времени (hypertables), continuous aggregates
-для pre-computation. Сохраняет SQL совместимость и JOIN с relational данными. Хорош для hybrid workloads (time-series +
-relational).
+TimescaleDB
+
+Расширение PostgreSQL для time-series данных. Даёт оптимизации временных рядов, сохраняя весь SQL и экосистему Postgres.
+
+## Возможности
+
+- Hypertables: автоматическое партиционирование по времени (и опционально по пространству) под капотом обычной таблицы.
+- Continuous aggregates для предвычисленных rollup-ов; политики retention и compression.
+- Полный SQL, индексы, JOIN с реляционными таблицами Postgres.
+
+## Когда использовать
+
+- Hybrid-нагрузки: временные ряды + реляционные данные в одной БД.
+- Команда уже знает Postgres и хочет не плодить отдельную TSDB.
+
+## Trade-offs
+
+- Наследует особенности Postgres (vacuum, один процесс на коннект).
+- На экстремальном write-масштабе специализированные TSDB могут выигрывать (см. influxdb, time-series).

@@ -1,2 +1,19 @@
-Popular document DB. BSON format, rich query language, aggregation pipeline. Replica sets для HA, sharding для scale.
-Secondary indexes. Transactions поддержка (с версии 4.0). Used в modern web/mobile apps.
+MongoDB
+
+Популярная document-БД. Хранит документы в BSON, даёт богатый язык запросов и aggregation pipeline.
+
+## Возможности
+
+- Гибкая схема, индексы (в т.ч. составные, текстовые, geo), aggregation pipeline для трансформаций.
+- Replica sets для HA и автоматического failover; sharding для горизонтального масштаба.
+- Multi-document транзакции с версии 4.0 (ACID в рамках replica set / sharded).
+
+## Когда использовать
+
+- Современные web/mobile приложения, изменчивые схемы, иерархичные документы.
+- Когда удобно читать агрегированный документ «целиком» (embedding).
+
+## Подводные камни
+
+- Денормализация → дублирование и сложность обновлений; транзакции дороже, чем в RDBMS.
+- Schema-less не означает «без проектирования» — нужны индексы и валидация под паттерны запросов.

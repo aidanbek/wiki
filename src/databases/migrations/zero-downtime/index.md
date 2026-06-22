@@ -1,3 +1,21 @@
-Schema changes без остановки application. Techniques: expand-contract pattern (add new, migrate data, switch code,
-remove old), backward-compatible changes first. Online DDL в современных БД. Blue-green deployments для schema sync с
-code.
+Zero-Downtime Migrations
+
+Изменение схемы без остановки приложения. Ключевая идея — каждый шаг обратно совместим, а код и схема меняются
+независимо и постепенно.
+
+## Expand-Contract (parallel change)
+
+1. Expand: добавить новое (колонку/таблицу) обратно совместимо.
+2. Migrate: бэкфилл данных + двойная запись в старое и новое.
+3. Switch: переключить чтение/запись кода на новое.
+4. Contract: удалить старое, когда оно больше не используется.
+
+## Практики
+
+- Только backward-compatible изменения в одном релизе; деструктив — отдельным поздним шагом.
+- Online DDL современных СУБД (Postgres, MySQL 8, gh-ost/pt-osc) чтобы не блокировать таблицу.
+- Добавление NOT NULL/индексов — через nullable + backfill + constraint, либо CONCURRENTLY.
+
+## Координация с деплоем
+
+- Миграция совместима и со старым, и с новым кодом во время раскатки (rolling/blue-green).

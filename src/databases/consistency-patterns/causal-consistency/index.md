@@ -1,3 +1,20 @@
-Preserves causally related operations order. Если A caused B, все видят A перед B. Concurrent operations могут be
-reordered. Weaker чем linearizability, сильнее eventual. Efficient через vector clocks. Полезна для collaborative apps,
-social networks.
+Causal Consistency
+
+Сохраняет порядок причинно-связанных операций: если A повлияло на B (A → B), то все узлы видят A раньше B. Операции без
+причинной связи (concurrent) могут наблюдаться в разном порядке на разных репликах.
+
+## Свойства
+
+- Слабее linearizability/strong, но сильнее eventual: даёт «логичный» порядок без глобальной синхронизации.
+- Causality отслеживается через vector clocks / version vectors / dependency-метаданные.
+- Не требует консенсуса и глобальных часов → меньше latency, выше availability.
+
+## Когда использовать
+
+- Collaborative-приложения, чаты, комментарии, ленты соцсетей — где важен порядок «ответ после вопроса».
+- Сценарии, где eventual consistency недостаточно (странные перестановки видны пользователю), а strong — слишком дорого.
+
+## Ограничения
+
+- Не гарантирует единый глобальный порядок для несвязанных операций.
+- Нужно явно отслеживать зависимости — рост метаданных при большом числе клиентов/реплик.

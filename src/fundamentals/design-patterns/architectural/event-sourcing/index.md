@@ -1,4 +1,18 @@
-Вместо хранения текущего состояния сохраняются все события (immutable facts) изменения состояния. Состояние
-восстанавливается проигрыванием (replay) событий от начала или snapshot'а. OrderCreated, ItemAdded, PaymentProcessed -
-вместо одной записи Order. Полная история (audit trail), time travel, возможность альтернативных проекций, natural fit
-для event-driven систем. Сложность: eventual consistency, версионирование событий, производительность replay.
+Event Sourcing
+
+Вместо хранения текущего состояния сохраняются все события его изменения; состояние восстанавливается проигрыванием
+(replay) событий.
+
+## Идея
+
+- Не одна запись `Order`, а лог: `OrderCreated`, `ItemAdded`, `PaymentProcessed`.
+- Текущее состояние = свёртка событий; для скорости — periodic snapshots.
+
+## Плюсы
+
+- Полная история (audit trail), time travel, возможность построить любые проекции, естественен для event-driven систем.
+
+## Trade-offs
+
+- Сложность: версионирование событий, производительность replay, eventual consistency проекций.
+- События иммутабельны — изменение схемы требует upcasting; часто идёт в паре с CQRS (см. cqrs, event-driven).

@@ -1,3 +1,19 @@
-Reuse DB connections вместо creating/closing для каждого request. Connection setup expensive (auth, handshake). Pool
-размер: balance между connection overhead и concurrency needs. Избегает exhausting DB max_connections. Implementations:
-PgBouncer, HikariCP, built-in в frameworks.
+Connection Pooling
+
+Переиспользование заранее открытых соединений с БД вместо создания/закрытия на каждый запрос. Установка соединения
+дорогая (TCP, TLS, аутентификация, fork backend-процесса в Postgres).
+
+## Зачем
+
+- Амортизирует стоимость установки соединения, снижает latency.
+- Ограничивает число одновременных соединений → защищает БД от исчерпания `max_connections`.
+
+## Настройка пула
+
+- Размер пула — баланс между конкурентностью и нагрузкой на БД (часто меньше, чем кажется: cores * k).
+- Параметры: max/min size, idle timeout, max lifetime, очередь ожидания.
+
+## Реализации и режимы
+
+- PgBouncer (session/transaction/statement pooling), ProxySQL, HikariCP, пулы в фреймворках/ORM.
+- Подводные камни: prepared statements и сессионные настройки ломаются в transaction-pooling; слишком большой пул вредит БД.

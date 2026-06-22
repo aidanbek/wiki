@@ -1,7 +1,14 @@
-Cache Strategies (Общее)
+Cache Strategies
 
-Паттерны взаимодействия кэша с persistent storage при чтении и записи - определяют когда данные попадают в кэш, когда
-обновляются, как синхронизируются с источником. Read strategies: как обрабатывать cache miss. Write strategies: когда и
-как писать изменения в storage. Trade-offs между consistency (синхронность с DB), latency (задержка операций),
-complexity (логика в приложении vs кэш-системе). Выбор зависит от requirements по consistency, performance, fault
-tolerance.
+Паттерны взаимодействия кэша с persistent storage при чтении и записи — когда данные попадают в кэш, когда обновляются,
+как синхронизируются с источником.
+
+## Два среза
+
+- **Read strategies** — как обрабатывать cache miss (cache-aside, read-through).
+- **Write strategies** — когда и как писать изменения (write-through, write-back, write-around).
+
+## Что балансируем
+
+- Consistency (синхронность с DB) ↔ latency операций ↔ complexity (логика в приложении vs в кэш-системе).
+- Выбор зависит от требований к консистентности, производительности и fault tolerance.

@@ -1,2 +1,19 @@
-Column-oriented OLAP БД для analytics. Extremely fast aggregations на billions rows. SQL support, compression,
-vectorized execution. Реальном времени data ingestion. Distributed queries. Used в observability, business analytics.
+ClickHouse
+
+Column-oriented OLAP-СУБД для аналитики. Считает агрегаты по миллиардам строк за доли секунды за счёт колоночного
+хранения, сжатия и векторизованного выполнения.
+
+## Сильные стороны
+
+- Колоночное хранение + сжатие (читаются только нужные колонки) + vectorized execution.
+- SQL-диалект, материализованные представления, движки семейства MergeTree.
+- Real-time ingestion больших потоков, распределённые/шардированные запросы.
+
+## Когда использовать
+
+- Аналитика, observability (логи/метрики/трейсы), продуктовая и бизнес-аналитика, дашборды.
+
+## Ограничения
+
+- Не OLTP: дорогие точечные UPDATE/DELETE, нет полноценных транзакций, eventual-семантика мутаций.
+- Слабые уникальные ограничения/констрейнты; модель «append-mostly» (см. oltp-vs-olap).

@@ -1,3 +1,19 @@
-Denormalized модель для analytics. Центральная fact table с foreign keys к dimension tables. Dimensions: attributes (
-customer, product, time). Simple JOINs, fast aggregations. Redundancy в dimensions acceptable. Standard в data
-warehouses.
+Star Schema
+
+Денормализованная модель для аналитики. В центре — fact-таблица с метриками и foreign keys на dimension-таблицы
+(атрибуты). Схема визуально похожа на звезду. Стандарт в data warehouse.
+
+## Структура
+
+- Fact table: измеримые события (продажи, клики) + ключи на измерения + числовые меры.
+- Dimension tables: контекст (customer, product, date, store) — широкие, денормализованные.
+
+## Плюсы
+
+- Простые запросы: один уровень JOIN от факта к измерениям.
+- Быстрые агрегации и предсказуемые планы; удобно для BI-инструментов.
+
+## Trade-offs
+
+- Избыточность в dimensions допустима ради скорости.
+- Снижение нормализации усложняет апдейты атрибутов (см. snowflake-schema как нормализованную альтернативу).

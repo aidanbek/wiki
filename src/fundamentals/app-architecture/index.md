@@ -1,7 +1,19 @@
-App Architecture (Общее)
+App Architecture
 
-Высокоуровневая организация системы определяющая структуру компонентов, их взаимодействие, принципы композиции и
-границы. Решает фундаментальные вопросы: модульность, масштабируемость, deployment, team organization, технологический
-стек, coupling между частями. Эволюция от monoliths к distributed systems, от synchronous к event-driven, от centralized
-к decentralized. Выбор архитектуры - trade-off между complexity, flexibility, operational overhead, team autonomy. Не
-существует silver bullet - каждый стиль имеет context где он optimal.
+Высокоуровневая организация системы: структура компонентов, их взаимодействие, границы и принципы композиции. Задаёт
+модульность, масштабируемость, способ деплоя и то, как делятся работой команды.
+
+## Что определяет архитектура
+
+- Coupling между частями, границы изменений, deployment-модель, технологический стек, организацию команд.
+- Эволюция: monolith → modular monolith → microservices; sync → event-driven; centralized → decentralized.
+
+## Стили в разделе
+
+- Monolith, Modular Monolith, Microservices, Serverless.
+- Event-Driven, Hexagonal (ports & adapters), Service Mesh, Strangler Fig, DDD.
+
+## Как выбирать
+
+- Trade-off между complexity, flexibility, operational overhead и автономией команд.
+- Silver bullet не существует — стиль подбирается под контекст (размер команды, домен, нагрузка) (см. microservices, monolith).

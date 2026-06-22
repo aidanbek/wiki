@@ -1,6 +1,14 @@
-Identifying где CPU time spent. Sampling profilers interrupt periodically, record call stack (low overhead,
-statistical). Instrumentation profiles every function call (precise, high overhead). Metrics: self time (function only),
-total time (including callees). Flame graphs visualize. Identifies: hot paths (optimization targets), unexpected
-expensive operations. Tools: perf (Linux), Instruments (macOS), py-spy (Python), pprof (Go). Production profiling:
-continuous profiling services (Pyroscope, Parca), minimal overhead. Look for: tight loops, inefficient algorithms,
-excessive allocations.
+CPU Profiling
+
+Поиск, где тратится процессорное время.
+
+## Подходы
+
+- Sampling — периодически снимает call stack (низкий overhead, статистический).
+- Instrumentation — пишет каждый вызов (точно, дорого).
+- Метрики: self time (только функция) и total time (с вызываемыми).
+
+## Инструменты
+
+- perf (Linux), Instruments (macOS), py-spy (Python), pprof (Go); continuous profiling (Pyroscope, Parca).
+- Ищи: tight loops, неэффективные алгоритмы, избыточные аллокации; визуализируй flame-графами (см. flame-grahps).

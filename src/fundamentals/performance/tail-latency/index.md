@@ -1,5 +1,13 @@
-High percentile latencies (p95, p99, p99.9) - outliers affecting user experience. Average latency misleading - hides bad
-cases. Causes: GC pauses, CPU throttling, network retransmits, lock contention, queueing delays, slow dependencies.
-Impact: amplified в fan-out systems (p99 becomes median if 100 backends). Mitigations: timeouts, hedged requests (send
-duplicate to another server after delay), canary requests (test before full fan-out), tail-tolerant algorithms, avoid
-variability (no batching). Monitoring: percentile histograms, not averages. SLOs typically p99-based.
+Tail Latency
+
+Высокие перцентили (p95, p99, p99.9) — выбросы, портящие пользовательский опыт. Среднее обманчиво: прячет худшие случаи.
+
+## Причины
+
+- GC-паузы, CPU throttling, network retransmits, lock contention, queueing, медленные зависимости.
+- Усиливается в fan-out: при 100 backends p99 каждого становится «медианой» запроса.
+
+## Митигации
+
+- Timeouts, hedged requests (дубль на другой сервер после задержки), canary requests, отказ от batching.
+- Мониторь перцентильные гистограммы, а не средние; SLO обычно по p99 (см. percentiles).

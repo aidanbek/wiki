@@ -1,6 +1,10 @@
-Concurrency Concepts (Общее)
+Concurrency Concepts
 
-Фундаментальные концепции для понимания поведения concurrent систем - building blocks и проблемы параллельного
-выполнения. Threads/processes как единицы конкурентности, race conditions как источник bugs, deadlocks как крайняя форма
-блокировки, atomic operations как примитивы для lock-free алгоритмов. Понимание этих концепций критично для writing
-correct concurrent code и debugging.
+Building blocks и проблемы параллельного выполнения — то, без чего нельзя писать и отлаживать корректный concurrent код.
+
+## Что внутри
+
+- **Threads vs Processes** — единицы конкурентности.
+- **Race conditions** — главный источник недетерминированных багов.
+- **Deadlocks** — крайняя форма взаимной блокировки.
+- **Atomic operations** — примитивы для lock-free алгоритмов.

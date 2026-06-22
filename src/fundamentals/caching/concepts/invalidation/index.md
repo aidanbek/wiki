@@ -1,7 +1,14 @@
-Invalidation (Общее)
+Invalidation
 
-Механизмы удаления или обновления устаревших данных из кэша - одна из двух hard problems в Computer Science ("cache
-invalidation and naming things"). Trade-off между freshness и performance: частая invalidation гарантирует актуальность
-но снижает hit rate, редкая максимизирует hit rate но рискует stale данными. Стратегии: time-based (TTL), event-based (
-purge/ban), validation-based (revalidation). Сложность растёт в распределённых системах - нужна координация между
-кэш-узлами.
+Удаление или обновление устаревших данных в кэше — одна из двух «трудных задач» в CS.
+
+## Главный trade-off
+
+- Freshness ↔ performance: частая инвалидация = актуальность, но ниже hit rate; редкая = высокий hit rate, но риск stale.
+
+## Стратегии
+
+- **Time-based** — TTL.
+- **Event-based** — purge (точечно), ban (по паттерну).
+- **Proactive** — refresh, SWR (отдать stale, обновить в фоне).
+- В распределённых системах добавляется координация между кэш-узлами.

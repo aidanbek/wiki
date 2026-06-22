@@ -1,2 +1,20 @@
-Перенос данных при schema changes. ETL scripts, batch processing. Consistency challenges: live writes during migration.
-Strategies: dual-writes (old + new schema), shadow traffic, read-only periods. Validation: checksums, row counts.
+Data Migration
+
+Перенос/преобразование данных при изменении схемы или переезде между хранилищами. Главная сложность — делать это, пока
+приложение продолжает писать в БД.
+
+## Подходы
+
+- ETL/batch-скрипты для одноразового переноса больших объёмов.
+- Dual-writes: приложение пишет одновременно в старую и новую схему на время перехода.
+- Backfill + shadow traffic: фоновое заполнение новых структур + сверка на реальном трафике.
+
+## Консистентность
+
+- Учитывать live writes во время миграции (идемпотентность, повторный прогон по диапазонам).
+- Read-only окна как крайняя мера для критичных переходов.
+
+## Валидация
+
+- Сверка row counts, checksums/хэшей, выборочное сравнение записей.
+- Возможность отката и параллельной работы старого пути до подтверждения корректности (см. rollback-strategies).

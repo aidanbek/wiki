@@ -1,3 +1,19 @@
-Добавление узлов для capacity. Linear scalability (ideally). Requires: stateless application layer, data distribution
-strategy, coordination mechanism. Limits: consistency overhead, cross-node queries. Cloud-friendly: scale out cheap
-commodity hardware.
+Horizontal Scaling (Scale Out)
+
+Добавление новых узлов для роста ёмкости — в противоположность увеличению одного сервера. В идеале даёт линейную
+масштабируемость на дешёвом commodity-железе.
+
+## Что требуется
+
+- Stateless application-слой (состояние выносится в БД/кэш/очереди).
+- Стратегия распределения данных: репликация (чтения), sharding/partitioning (запись).
+- Механизм координации/маршрутизации (балансировщик, service discovery).
+
+## Плюсы
+
+- Практически неограниченный потолок, cloud-friendly, отказоустойчивость (нет единой точки отказа).
+
+## Ограничения
+
+- Распределённость добавляет overhead консистентности (CAP), сложность cross-node запросов и транзакций.
+- Сложнее эксплуатация (см. vertical как более простую альтернативу до определённого масштаба, sharding, replication).

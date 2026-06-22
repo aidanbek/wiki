@@ -1,6 +1,13 @@
-Multiple processes/threads simultaneously wake and compete для same resource after event. Example: cache expires, 1000
-requests all query database simultaneously (cache stampede). Results: resource exhaustion, cascading failures.
-Mitigations: request coalescing (first request locks, others wait), probabilistic early expiration (jitter prevents
-synchronized expiry), rate limiting, mutex/semaphore around expensive operations. Similar: accept() thundering herd (
-fixed by SO_REUSEPORT), connection pool exhaustion. Monitoring: spikes в database connections, latency after cache
-invalidation.
+Thundering Herd
+
+Множество процессов/потоков одновременно просыпаются и конкурируют за один ресурс после события.
+
+## Пример
+
+- Истёк кэш — 1000 запросов разом идут в БД (cache stampede) → исчерпание ресурсов, каскадные сбои.
+
+## Митигации
+
+- Request coalescing (первый запрос блокирует, остальные ждут), probabilistic early expiration (jitter против синхронного истечения).
+- Rate limiting, mutex/semaphore вокруг дорогой операции; для `accept()` — `SO_REUSEPORT`.
+- Мониторь всплески соединений к БД и latency после инвалидации кэша (см. fundamentals/caching/concepts/invalidation).

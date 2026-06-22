@@ -1,6 +1,12 @@
-Synchronization (Общее)
+Synchronization
 
-Механизмы координации доступа потоков к shared resources, предотвращающие race conditions и обеспечивающие
-консистентность данных. Без синхронизации concurrent доступ к памяти приводит к data corruption, lost updates,
-inconsistent state. Балансировка между correctness (защита данных) и performance (минимизация блокировок). Primitives:
-locks, semaphores, monitors, atomic operations - разные уровни гранулярности и гарантий.
+Механизмы координации доступа потоков к shared resources — защита от race conditions и порчи данных.
+
+## Зачем
+
+- Без синхронизации concurrent доступ к памяти даёт data corruption, lost updates, inconsistent state.
+- Баланс между корректностью (защита данных) и performance (минимум блокировок).
+
+## Примитивы
+
+- Locks, semaphores, monitors, atomic operations — разные уровни гранулярности и гарантий.

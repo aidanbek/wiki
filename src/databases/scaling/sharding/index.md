@@ -1,3 +1,19 @@
-Horizontal partitioning на independent databases. Shard key определяет routing (user_id → shard). Проблемы: cross-shard
-queries, transactions сложны. Resharding при росте - major operation. Managed в некоторых БД (MongoDB, Vitess for
-MySQL), manual в других.
+Sharding
+
+Горизонтальное партиционирование данных по нескольким независимым БД/серверам (шардам). Масштабирует и записи, и объём
+— в отличие от реплик, которые масштабируют только чтения.
+
+## Как работает
+
+- Shard key определяет маршрутизацию (например, `user_id % N` или по диапазону/директории).
+- Каждый шард — самостоятельная БД со своими ресурсами.
+
+## Проблемы
+
+- Cross-shard запросы и JOIN-ы дороги; распределённые транзакции сложны (часто избегают).
+- Resharding при росте — крупная операция (consistent hashing/виртуальные шарды смягчают).
+- Hot shards при неудачном ключе; уникальность/автоинкременты — глобально сложнее.
+
+## Реализация
+
+- Managed: MongoDB sharding, Vitess (MySQL), Citus (Postgres); либо ручная маршрутизация в приложении (см. partitioning, horizontal).

@@ -1,10 +1,13 @@
-Concurrency (Общее)
+Concurrency
 
-Способность системы выполнять несколько задач одновременно или с перекрытием по времени - фундаментальная концепция
-современных систем. Concurrency (конкурентность) vs Parallelism (параллелизм): первая про структуру программы (multiple
-threads могут выполняться), вторая про фактическое одновременное выполнение (multiple cores). Решает проблемы
-responsiveness, throughput, resource utilization, но вводит сложность: race conditions, deadlocks, сложность отладки.
-Критично для web servers, UI, распределённых систем, высоконагруженных приложений.
+Способность системы выполнять несколько задач одновременно или с перекрытием во времени. Даёт responsiveness, throughput
+и утилизацию ресурсов, но добавляет сложность: race conditions, deadlocks, тяжёлую отладку.
+
+## Concurrency vs Parallelism
+
+- **Concurrency** — про структуру программы (несколько задач «в работе»), возможна на одном ядре через time-slicing.
+- **Parallelism** — про фактическое одновременное выполнение, требует нескольких ядер.
+- Concurrency про composition и coordination, parallelism про execution; можно иметь concurrency без parallelism.
 
 ## Различия между схожими концепциями
 
@@ -84,10 +87,6 @@ low contention, higher throughput без блокировок. Pessimistic бл�
 Databases: pessimistic locking (SELECT FOR UPDATE), optimistic (version column, CAS). Optimistic может иметь livelock
 если continuous conflicts.
 
-### Links
-
-- https://habr.com/ru/articles/957954/
-
 ### Blocking vs Non-Blocking Algorithms
 
 Blocking - thread может быть suspended пока ждёт (mutex, semaphore). Non-blocking - progress guarantee без suspension (
@@ -117,3 +116,7 @@ read-heavy workloads (caches, configs). Atomic operations для counters, flags
 Thread pool для async task execution, bound parallelism. Producer-consumer для decoupling components, buffering. Избегай
 shared mutable state когда возможно (immutability, message passing). Start simple (mutex), optimize если proven
 bottleneck (RWLock, atomic, lock-free).
+
+## Links
+
+- https://habr.com/ru/articles/957954/

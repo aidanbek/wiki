@@ -1,2 +1,20 @@
-Группировка операций в atomic unit: all succeed or all fail. Обеспечивает data integrity при failures, concurrency. ACID
-properties vs BASE (eventual consistency). BEGIN/COMMIT/ROLLBACK semantics. Distributed transactions сложнее и дороже.
+Transactions
+
+Группировка операций в атомарную единицу работы: либо все успешны, либо все откатываются. Основной механизм
+поддержания целостности данных при сбоях и конкурентном доступе.
+
+## Семантика
+
+- BEGIN → операции → COMMIT (зафиксировать) или ROLLBACK (откатить).
+- Savepoints для частичного отката внутри транзакции.
+- Свойства гарантий — см. ACID.
+
+## ACID vs BASE
+
+- ACID: строгие гарантии (RDBMS).
+- BASE (Basically Available, Soft state, Eventual consistency) — компромисс распределённых систем ради доступности.
+
+## Распределённые транзакции
+
+- Сложнее и дороже: 2PC/3PC, Saga-паттерн вместо единой транзакции.
+- Часто их избегают, проектируя границы согласованности (см. isolation-level, consistency-patterns).

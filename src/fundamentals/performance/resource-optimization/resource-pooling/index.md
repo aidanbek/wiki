@@ -1,5 +1,13 @@
-Pre-allocating and reusing expensive resources: database connections, threads, HTTP clients, buffers. Reduces overhead
-от creation/destruction. Pool размер: balance between resource utilization и concurrency needs. Strategies: lazy
-creation (grow as needed), pre-warming (allocate upfront), max limit (prevent exhaustion), idle timeout (shrink during
-low load). Synchronization required (lock-free queues preferred). Connection pools critical для database performance -
-creating connections expensive (auth, handshake). Thread pools prevent thread explosion, context switch overhead.
+Resource Pooling
+
+Предварительное выделение и переиспользование дорогих ресурсов: соединения с БД, потоки, HTTP-клиенты, буферы.
+
+## Зачем
+
+- Убирает overhead на создание/уничтожение; создание connection дорого (auth, handshake).
+
+## Настройка
+
+- Размер пула — баланс утилизации и потребности в concurrency.
+- Стратегии: lazy creation, pre-warming, max limit (против исчерпания), idle timeout (сжатие при простое).
+- Нужна синхронизация (предпочтительны lock-free очереди); thread pools против thread explosion (см. fundamentals/concurrency/patterns/thread-pool).

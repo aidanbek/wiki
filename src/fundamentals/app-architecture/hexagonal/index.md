@@ -1,8 +1,19 @@
-Hexagonal Architecture (Ports and Adapters)
+Hexagonal Architecture (Ports & Adapters)
 
-Организация кода в layers где бизнес-логика изолирована от external concerns через ports (интерфейсы) и adapters (
-реализации). Core domain в центре, не зависит от UI, DB, frameworks. Ports определяют что нужно core (IRepository,
-IEmailService), adapters реализуют для конкретных технологий (PostgresRepository, SendGridEmailService). Dependency
-Inversion - core определяет интерфейсы, infrastructure реализует. Testability (mock adapters), flexibility (замена DB/UI
-без изменения core), clean separation of concerns. Alistair Cockburn's pattern, похож на Clean Architecture и Onion
-Architecture. Requires больше кода (интерфейсы, адаптеры), но долгосрочная maintainability.
+Организация кода, где бизнес-логика изолирована от внешнего мира через ports (интерфейсы) и adapters (реализации).
+Паттерн Alistair Cockburn.
+
+## Идея
+
+- Core domain в центре, не зависит от UI, БД, фреймворков.
+- Ports описывают, что нужно ядру (`IRepository`, `IEmailService`); adapters реализуют под конкретную технологию (`PostgresRepository`, `SendGridAdapter`).
+- Dependency Inversion: ядро определяет интерфейсы, инфраструктура их реализует.
+
+## Плюсы
+
+- Тестируемость (mock-адаптеры), гибкость (замена БД/UI без изменения ядра), чистое разделение concerns.
+
+## Trade-offs
+
+- Больше кода (интерфейсы, адаптеры) ради долгосрочной maintainability.
+- Родственники: Clean Architecture, Onion Architecture (см. fundamentals/design-patterns/dependency-management/inversion-of-control).

@@ -1,3 +1,20 @@
-Tracking schema evolution. Migration files с timestamps/versions (Flyway, Liquibase). Applied migrations записываются в
-schema_migrations table. Prevents re-applying, enforces order. Branching стратегии: linear vs feature branches (merge
-conflicts possible).
+Schema Versioning
+
+Отслеживание эволюции схемы как упорядоченной последовательности миграций — чтобы любая среда могла детерминированно
+прийти к нужной версии.
+
+## Как устроено
+
+- Миграции — файлы с timestamp/версией (Flyway, Liquibase, Alembic, golang-migrate).
+- Применённые миграции фиксируются в служебной таблице (`schema_migrations`) → нет повторного применения, соблюдается порядок.
+- Checksum файлов ловит изменение уже применённой миграции.
+
+## Стратегии ветвления
+
+- Linear history — проще, но конфликтует при параллельной работе.
+- Feature branches — гибко, но возможны merge-конфликты порядка/версий.
+
+## Практики
+
+- Миграции неизменяемы после мержа: правки — только новой миграцией.
+- Версия схемы в репозитории = единственный источник правды (см. zero-downtime, rollback-strategies).

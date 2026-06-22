@@ -1,8 +1,20 @@
 Aggregates
 
-Кластер связанных entities и value objects с чёткой границей и корневой entity - consistency boundary. Aggregate Root -
-единственная entry point, внешний мир взаимодействует только с ней, не с внутренними entities. Order (root) содержит
-OrderLines - можно изменить Order, нельзя напрямую OrderLine. Транзакция охватывает один aggregate - изменения атомарны
-внутри, eventual consistency между aggregates. Защищает invariants - только root может modify internal state, гарантируя
-правила. Repository работает с Aggregate Roots, не с internal entities. Правильное определение границ критично - слишком
-большие (contention), слишком маленькие (сложность координации).
+Кластер связанных entities и value objects с чёткой границей и корневой сущностью (Aggregate Root) — consistency
+boundary.
+
+## Свойства
+
+- Aggregate Root — единственная точка входа; внешний мир работает только с ней, не с внутренними entities.
+- Пример: `Order` (root) содержит `OrderLine` — менять можно Order, напрямую OrderLine нельзя.
+- Транзакция охватывает один aggregate (атомарность внутри), между aggregates — eventual consistency.
+
+## Зачем
+
+- Защита инвариантов: только root меняет внутреннее состояние, гарантируя бизнес-правила.
+- Repository работает с Aggregate Roots, а не с внутренними сущностями.
+
+## Определение границ
+
+- Слишком большие → contention и блокировки; слишком маленькие → сложная координация и много транзакций.
+- Правило большого пальца: меняй один aggregate за транзакцию (см. fundamentals/app-architecture/ddd/domain-events, entities-value-objects).

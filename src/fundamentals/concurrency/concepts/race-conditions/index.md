@@ -1,7 +1,13 @@
 Race Condition
 
-Ситуация когда поведение программы зависит от relative timing/interleaving выполнения потоков - non-deterministic bugs.
-Классика: count++ не атомарен (read-modify-write), два потока одновременно - lost update. Другой пример:
-check-then-act (проверка if (balance > 0) и снятие денег - между ними может вклиниться другой поток). Проявляются редко,
-сложно воспроизвести, heisenbug эффект (исчезают при debugging). Предотвращение: синхронизация критических секций,
-atomic operations, immutability, message passing вместо shared state.
+Поведение программы зависит от относительного timing/interleaving потоков — недетерминированные баги.
+
+## Примеры
+
+- `count++` не атомарен (read-modify-write): два потока → lost update.
+- check-then-act: между `if (balance > 0)` и снятием денег вклинивается другой поток.
+
+## Особенности и защита
+
+- Проявляются редко, плохо воспроизводятся (heisenbug — исчезают под отладчиком).
+- Защита: синхронизация критических секций, atomic operations, immutability, message passing вместо shared state (см. concurrency/synchronization/mutex, concurrency/concepts/deadlocks).

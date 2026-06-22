@@ -1,3 +1,20 @@
-Фреймворк с фиксированными спринтами (1-4 недели), тремя ролями (Product Owner, Scrum Master, Dev Team), четырьмя
-церемониями (Planning, Daily, Review, Retro). Product Backlog декомпозируется в Sprint Backlog, команда самоорганизуется
-для достижения цели спринта. Прозрачность через burn-down charts, инспекция на ревью, адаптация на ретроспективе.
+Scrum
+
+Agile-фреймворк с фиксированными итерациями (спринтами) и чёткими ролями, событиями и артефактами.
+
+## Роли
+
+- Product Owner (приоритеты и ценность), Scrum Master (процесс), Dev Team (самоорганизация).
+
+## События
+
+- Sprint Planning, Daily Scrum, Sprint Review, Retrospective; спринт 1-4 недели.
+
+## Артефакты
+
+- Product Backlog → Sprint Backlog → Increment; прозрачность через burn-down/доску.
+
+## Trade-offs
+
+- Предсказуемый ритм, регулярная инспекция и адаптация.
+- Накладные расходы на церемонии; плохо подходит для непрерывного потока задач — тогда Kanban (см. kanban, agile).

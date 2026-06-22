@@ -1,6 +1,14 @@
-Measuring performance systematically. Micro-benchmarks: isolated operations (function/algorithm). Macro-benchmarks:
-end-to-end scenarios (realistic load). Methodology: warm-up (JIT compilation, caching), multiple iterations (statistical
-significance), control variables (background processes, frequency scaling), realistic data. Tools: JMH (Java),
-Benchmark.js (JS), pytest-benchmark (Python), wrk/ab (HTTP). Metrics: throughput (ops/sec), latency (p50/p95/p99),
-resource usage (CPU/memory). Pitfalls: dead code elimination, constant folding, cache effects. Compare baseline vs
-optimized, measure regression в CI.
+Benchmarking
+
+Систематическое измерение производительности.
+
+## Виды и методология
+
+- Micro — изолированные операции (функция/алгоритм); Macro — end-to-end под реалистичной нагрузкой.
+- Warm-up (JIT, кэши), много итераций (статзначимость), контроль переменных (фон, frequency scaling), реалистичные данные.
+
+## Инструменты и метрики
+
+- JMH (Java), Benchmark.js (JS), pytest-benchmark (Python), wrk/ab (HTTP).
+- Throughput (ops/sec), latency (p50/p95/p99), CPU/memory.
+- Подводные камни: dead code elimination, constant folding, cache effects; сравнивай baseline vs optimized, лови регрессии в CI (см. percentiles).

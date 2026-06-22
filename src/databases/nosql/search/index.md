@@ -1,2 +1,19 @@
-Full-text search engines на inverted indexes. Tokenization, stemming, relevance scoring. Near-realtime indexing.
-Faceting, filtering, autocomplete. Not primary datastore - complement к БД.
+Search Engines
+
+Движки полнотекстового поиска на основе inverted index (терм → список документов). Дают релевантный поиск, фасеты и
+автодополнение там, где `LIKE '%...%'` в БД не справляется.
+
+## Как работает
+
+- Inverted index + анализ текста: tokenization, нормализация, stemming/lemmatization, stop-words.
+- Релевантность через scoring (TF-IDF, BM25); near-realtime индексация.
+- Faceting, фильтры, highlighting, autocomplete, нечёткий поиск.
+
+## Роль в архитектуре
+
+- Не основное хранилище, а дополнение к primary БД: данные индексируются из неё (часто через CDC/ETL).
+- Денормализованный индекс «под поиск», eventual consistency с источником.
+
+## Подводные камни
+
+- Синхронизация индекса с БД, переиндексация при смене маппинга, ресурсоёмкость (примеры: Elasticsearch, Solr, Sphinx).

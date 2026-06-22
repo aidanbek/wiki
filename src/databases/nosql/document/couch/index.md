@@ -1,2 +1,19 @@
-Document DB с HTTP REST API. Incremental replication, offline-first design. MapReduce для views. Multi-version
-concurrency control. Eventual consistency. Полезен для mobile/edge sync scenarios.
+CouchDB
+
+Document-БД с HTTP/REST API «из коробки» и упором на репликацию и offline-first сценарии.
+
+## Особенности
+
+- Доступ по HTTP REST, документы в JSON; MVCC (версии документов) вместо блокировок.
+- Incremental, multi-master репликация — устойчива к разрывам связи и конфликтам.
+- Views через MapReduce для индексов/агрегаций; eventual consistency.
+
+## Когда использовать
+
+- Mobile/edge синхронизация (CouchDB ↔ PouchDB), offline-first приложения.
+- Распределённые сценарии, где узлы периодически синхронизируются.
+
+## Ограничения
+
+- Конфликты при multi-master нужно разрешать на уровне приложения.
+- Слабее для сложных ad-hoc запросов и высоконагруженной аналитики, чем специализированные БД.

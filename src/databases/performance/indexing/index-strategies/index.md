@@ -1,3 +1,19 @@
-Covering indexes включают все SELECT колонки → избегают table lookup. Partial indexes на subset rows (WHERE condition в
-CREATE INDEX). Function-based indexes на computed values. Monitoring: unused indexes - waste, missing indexes - slow
-queries.
+Index Strategies
+
+Продвинутые приёмы индексирования за пределами «просто создать индекс на колонку».
+
+## Виды специализированных индексов
+
+- Covering index: включает все колонки SELECT (INCLUDE) → результат целиком из индекса, без table lookup.
+- Partial index: только подмножество строк (`WHERE` в `CREATE INDEX`) — меньше и быстрее (например, только активные записи).
+- Function-based/expression index: на вычисленном значении (`lower(email)`, выражения, JSON-поля).
+
+## Мониторинг
+
+- Неиспользуемые индексы — пустая трата записи/места (pg_stat_user_indexes).
+- Недостающие индексы — медленные запросы (slow log, seq scans в EXPLAIN).
+
+## Принципы
+
+- Индексировать под реальные паттерны запросов, а не «на всякий случай».
+- Регулярный аудит: удалять мёртвые, добавлять под новые запросы (см. compose-indexes, query-optimization).

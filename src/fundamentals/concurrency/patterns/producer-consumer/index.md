@@ -1,7 +1,13 @@
 Producer-Consumer
 
-Разделение производителя данных и потребителя через буфер - decoupling, asynchronous processing. Producer генерирует
-items, кладёт в shared queue. Consumer извлекает items, обрабатывает. Bounded buffer с блокировкой на полном/пустом
-состоянии - producer ждёт когда освободится место, consumer ждёт когда появятся данные. Реализация через BlockingQueue,
-semaphores (empty/full counts), condition variables. Используется в pipelines, message queues, event processing, I/O
-buffering.
+Развязка производителя и потребителя данных через буфер — асинхронная обработка, decoupling.
+
+## Как работает
+
+- Producer кладёт items в общую очередь, consumer их извлекает и обрабатывает.
+- Bounded buffer блокирует: producer ждёт места, consumer ждёт данных.
+- Реализация: `BlockingQueue`, semaphores (empty/full counts), condition variables.
+
+## Где применяется
+
+- Pipelines, message queues, event processing, I/O buffering (см. concurrency/synchronization/semaphore).

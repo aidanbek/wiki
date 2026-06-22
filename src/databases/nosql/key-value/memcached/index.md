@@ -1,2 +1,19 @@
-Pure in-memory cache. Simple key-value semantics (string values). Multi-threaded, horizontal scaling через consistent
-hashing. Volatile - no persistence. Faster чем Redis для simple caching, но меньше features.
+Memcached
+
+Чистый in-memory кэш с простой key-value семантикой. Делает одно дело и делает его очень быстро.
+
+## Свойства
+
+- Значения — строки/blob; простые операции get/set/incr.
+- Multi-threaded (хорошо утилизирует много ядер); горизонтальное масштабирование клиентским consistent hashing.
+- Volatile: нет персистентности и репликации — при рестарте данные теряются.
+
+## Когда использовать
+
+- Простое кэширование «горячих» данных/результатов, разгрузка БД.
+- Когда не нужны структуры данных и персистентность Redis.
+
+## Ограничения / vs Redis
+
+- Нет богатых типов, pub/sub, скриптов, персистентности.
+- Часто быстрее Redis на простом кэше за счёт многопоточности, но беднее по функциям (см. redis).

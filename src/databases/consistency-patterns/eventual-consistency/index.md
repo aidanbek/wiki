@@ -1,3 +1,20 @@
-Replicas temporarily diverge, но eventually converge при отсутствии новых updates. Требует conflict resolution. Высокая
-availability, partition tolerance (AP в CAP). Используется в Dynamo-style БД, DNS, CDN. Application должен tolerate
-stale reads.
+Eventual Consistency
+
+Реплики могут временно расходиться, но при отсутствии новых обновлений в конечном итоге сходятся к одинаковому
+состоянию. Классический выбор AP в CAP: доступность и устойчивость к разделению важнее мгновенной согласованности.
+
+## Свойства
+
+- Высокая availability и partition tolerance, низкая latency записи/чтения.
+- Требует механизма разрешения конфликтов: last-write-wins, version vectors, CRDT, application-level merge.
+- Возможны stale reads — приложение должно это допускать.
+
+## Когда использовать
+
+- Dynamo-style БД (Cassandra, DynamoDB), DNS, CDN, кэши, счётчики «лайков».
+- Большой масштаб и геораспределённость, где координация на каждую запись неприемлема.
+
+## Подводные камни
+
+- Read-your-writes/monotonic-reads не гарантированы из коробки — нужны session-гарантии.
+- LWW может терять обновления; конфликты нужно проектировать осознанно (см. causal-consistency как усиление).

@@ -1,2 +1,19 @@
-Простейший NoSQL тип: key → value lookup. O(1) access, high throughput. Minimal query capabilities (no JOINs, WHERE).
-In-memory или persistent. Use cases: session storage, caching, rate limiting.
+Key-Value Stores
+
+Простейший тип NoSQL: доступ к значению по ключу (key → value). Значение для БД непрозрачно (blob), что даёт максимум
+скорости и масштабируемости при минимуме возможностей запросов.
+
+## Свойства
+
+- O(1) доступ по ключу, очень высокий throughput, простая модель шардирования по ключу.
+- Минимум возможностей запросов: нет JOIN, нет произвольного WHERE, нет вторичных индексов (в чистом виде).
+- In-memory (скорость) или persistent (надёжность).
+
+## Use cases
+
+- Сессии, кэш, rate limiting, feature flags, профили/настройки по ID.
+
+## Ограничения
+
+- Запрос только по ключу — модель проектируется «от ключей доступа».
+- Сложные связи и аналитика — не сюда (примеры: Redis, Memcached, DynamoDB).

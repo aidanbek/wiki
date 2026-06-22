@@ -1,6 +1,17 @@
 Template Method
 
-Определяет скелет алгоритма в методе, делегируя шаги подклассам - инвариантные части в base class, вариативные
-overridden. AbstractClass.templateMethod() вызывает primitiveOperation1(), primitiveOperation2() - ConcreteClass
-переопределяет. Hollywood Principle - "не звони нам, мы позвоним". Framework extension points, lifecycle hooks.
-Управление через наследование, жёсткая привязка.
+Определяет скелет алгоритма в методе базового класса, делегируя отдельные шаги подклассам.
+
+## Структура
+
+- `AbstractClass.templateMethod()` задаёт порядок и вызывает `primitiveOperation1/2()`, которые переопределяет `ConcreteClass`.
+- Hollywood Principle: «не звоните нам, мы позвоним вам».
+
+## Когда использовать
+
+- Инвариантная структура алгоритма с вариативными шагами (фреймворки, lifecycle hooks, обработка с pre/post шагами).
+
+## Trade-offs
+
+- Переиспользование общей логики, явные точки расширения.
+- Жёсткая привязка через наследование; для гибкости в runtime — Strategy (композиция) (см. strategy).

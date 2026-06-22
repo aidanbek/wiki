@@ -1,5 +1,13 @@
-Deferring initialization/loading until actually needed. Reduces startup time, memory footprint. Examples: lazy
-properties (computed on first access), lazy imports (Python, dynamic imports JS), pagination (load data incrementally),
-image lazy loading (viewport-triggered). Implementation: proxy/wrapper checks if loaded, loads on demand. Trade-off:
-first access slower, complexity. Frameworks often support (Hibernate lazy associations, React lazy components). Avoid
-premature optimization - profile first. Watch for N+1 problems (lazy loading в loops).
+Lazy Loading
+
+Откладывание инициализации/загрузки до момента, когда она реально нужна — меньше время старта и потребление памяти.
+
+## Примеры
+
+- Lazy properties (вычисление при первом доступе), lazy imports, пагинация, image lazy loading (по viewport).
+- Реализация: proxy/wrapper проверяет, загружено ли, и грузит по требованию.
+
+## Trade-offs
+
+- Первый доступ медленнее, плюс сложность; поддержано во фреймворках (Hibernate lazy associations, React lazy).
+- Осторожно с N+1 (lazy loading в циклах); профилируй, не оптимизируй преждевременно (см. resource-pooling).

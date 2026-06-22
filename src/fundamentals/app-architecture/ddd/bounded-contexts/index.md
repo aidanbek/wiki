@@ -1,8 +1,19 @@
 Bounded Contexts
 
-Явная граница внутри которой domain model имеет specific meaning и consistency - linguistic boundary. Один термин может
-иметь разные значения в разных контекстах: "Customer" в Sales context vs Support context. Каждый bounded context - own
-model, own database, own team potentially. Контексты взаимодействуют через well-defined contracts, translation на
-границе. Предотвращает model pollution (mixing concerns), позволяет team autonomy, естественное разделение для
-microservices. Context mapping показывает relationships между контекстами (shared kernel, customer-supplier,
-conformist). Ключевой strategic pattern для масштабирования DDD и организации.
+Явная граница, внутри которой доменная модель имеет конкретный смысл и согласованность — лингвистическая граница.
+
+## Идея
+
+- Один термин может значить разное в разных контекстах: «Customer» в Sales ≠ «Customer» в Support.
+- Каждый контекст — своя модель, потенциально своя БД и своя команда.
+- Взаимодействие через well-defined contracts и трансляцию на границе (anti-corruption layer).
+
+## Зачем
+
+- Предотвращает model pollution (смешение concerns), даёт автономию командам.
+- Естественное разделение системы — часто совпадает с границами микросервисов.
+
+## Context mapping
+
+- Описывает отношения контекстов: shared kernel, customer-supplier, conformist, ACL.
+- Ключевой strategic pattern DDD для масштабирования (см. fundamentals/app-architecture/ddd, microservices).

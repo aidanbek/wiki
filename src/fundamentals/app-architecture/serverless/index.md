@@ -1,8 +1,18 @@
-Serverless
+Serverless (FaaS)
 
-Архитектура где бизнес-логика выполняется в stateless функциях управляемых облачным провайдером - FaaS (Function as a
-Service). Нет server management, автоматическое масштабирование, pay-per-execution pricing. Функции event-driven (HTTP,
-queue, schedule, DB triggers), короткоживущие, stateless (state в external services). Низкий operational overhead,
-идеальное scaling to zero, cost efficiency для sporadic workloads. Ограничения: cold starts, execution time limits,
-vendor lock-in, сложность local development. AWS Lambda, Azure Functions, Google Cloud Functions. Подходит для event
-processing, API backends, scheduled jobs, но не для long-running/stateful workloads.
+Бизнес-логика выполняется в stateless-функциях, управляемых облачным провайдером (Function as a Service). Серверами не
+управляешь.
+
+## Свойства
+
+- Event-driven триггеры (HTTP, очередь, расписание, события БД); функции короткоживущие и stateless (состояние во внешних сервисах).
+- Автомасштабирование, scaling to zero, оплата за выполнение (pay-per-execution).
+
+## Когда использовать
+
+- Event processing, API backends, scheduled jobs, нерегулярная/спорадическая нагрузка.
+
+## Ограничения
+
+- Cold starts, лимиты времени выполнения и ресурсов, vendor lock-in, сложность локальной разработки и отладки.
+- Не для long-running/stateful нагрузок (см. event-driven).

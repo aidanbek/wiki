@@ -1,5 +1,13 @@
-Удаление записи которая не использовалась дольше всего - предположение о temporal locality (недавно использованное будет
-использовано снова). Реализация через linked list или ordered data structure, обновление позиции при каждом доступе.
-Популярна и эффективна для большинства workloads - интуитивный алгоритм, хорошая hit rate. Overhead на обновление
-порядка при каждом access. Redis, Memcached, OS page cache используют LRU или approximation (eviction sampling вместо
-strict ordering). Слаб для sequential scans (один проход вытесняет весь кэш).
+LRU (Least Recently Used)
+
+Удаляет запись, не использовавшуюся дольше всех — ставка на temporal locality.
+
+## Как работает
+
+- Linked list / ordered структура; позиция обновляется при каждом доступе.
+
+## Trade-offs
+
+- Популярна и эффективна для большинства нагрузок, хорошая hit rate.
+- Overhead на обновление порядка; слаба на sequential scans (один проход вымывает кэш).
+- Redis, Memcached, OS page cache используют LRU или приближение (eviction sampling вместо строгого порядка).

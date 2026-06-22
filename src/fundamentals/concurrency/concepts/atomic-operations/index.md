@@ -1,7 +1,14 @@
 Atomic Operations
 
-Операции выполняющиеся как неделимое целое - либо полностью, либо не происходят, без возможности наблюдения
-промежуточного состояния. Hardware-level atomicity: read/write aligned слов, compare-and-swap (CAS), fetch-and-add.
-Software constructs: Atomic<T> классы (AtomicInteger, AtomicReference). Используются для lock-free алгоритмов, counters,
-flags. CAS особенно важен - compareAndSet(expected, new) обновляет только если текущее значение == expected, возвращает
-success. Basis для non-blocking data structures.
+Операция выполняется как неделимое целое — либо полностью, либо никак, без наблюдаемого промежуточного состояния.
+
+## Как устроено
+
+- Hardware-level: чтение/запись выровненных слов, compare-and-swap (CAS), fetch-and-add.
+- Software: `Atomic<T>` (`AtomicInteger`, `AtomicReference`).
+- CAS — ключевой: `compareAndSet(expected, new)` обновляет, только если текущее значение == `expected`.
+
+## Зачем
+
+- Lock-free counters, flags, основа non-blocking структур данных.
+- Без блокировок при contention, но сложнее в корректном применении: ABA problem, memory ordering (см. concurrency/concepts/race-conditions).
