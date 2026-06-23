@@ -8,6 +8,9 @@
 - [Kafka](kafka/index.md) — распределённый лог событий для высоконагруженного стриминга.
 - [RabbitMQ](rabbitmq/index.md) — гибкий брокер с богатой маршрутизацией (AMQP).
 - [SQS](sqs/index.md) — управляемая очередь в AWS, без обслуживания инфраструктуры.
+- [NATS](nats/index.md) — лёгкий быстрый брокер; JetStream для персистентности.
+- [Pulsar](pulsar/index.md) — очередь + лог с разделением вычислений и хранения.
+- [Redis Streams](redis-streams/index.md) — persistent-лог с consumer groups внутри Redis.
 
 ## Зачем
 

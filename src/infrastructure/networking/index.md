@@ -9,6 +9,11 @@
 - [DNS](dns/index.md) — преобразование доменных имён в IP-адреса.
 - [Load-Balancers](load-balancers/index.md) — распределение трафика между бэкендами.
 - [Firewalls](firewalls/index.md) — фильтрация трафика по правилам безопасности.
+- [HTTP/2](http-2/index.md) — мультиплексирование запросов в одном соединении.
+- [HTTP/3 (QUIC)](http-3/index.md) — HTTP поверх UDP без head-of-line blocking.
+- [Proxy](proxy/index.md) — forward и reverse прокси.
+- [VPN](vpn/index.md) — зашифрованные туннели и удалённый доступ.
+- [NAT](nat/index.md) — трансляция сетевых адресов.
 
 ## Зачем это знать
 

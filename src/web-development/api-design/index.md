@@ -9,6 +9,9 @@
 - [Pagination](pagination/index.md) — как отдавать большие наборы данных порциями.
 - [Rate Limiting](rate-limiting/index.md) — ограничение частоты запросов.
 - [Documentation](documentation/index.md) — машиночитаемое описание контракта (OpenAPI/Swagger).
+- [Idempotency Keys](idempotency/index.md) — безопасное повторение POST-запросов.
+- [Problem Details](problem-details/index.md) — стандартный формат ошибок (RFC 9457).
+- [HATEOAS](hateoas/index.md) — гипермедиа-ссылки как навигация по API.
 
 ## Принципы
 
