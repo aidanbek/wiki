@@ -7,7 +7,7 @@
 
 - BEGIN → операции → COMMIT (зафиксировать) или ROLLBACK (откатить).
 - Savepoints для частичного отката внутри транзакции.
-- Свойства гарантий — см. ACID.
+- Свойства гарантий — см. [ACID](../acid/index.md).
 
 ## ACID vs BASE
 
@@ -17,4 +17,4 @@
 ## Распределённые транзакции
 
 - Сложнее и дороже: 2PC/3PC, Saga-паттерн вместо единой транзакции.
-- Часто их избегают, проектируя границы согласованности (см. isolation-level, consistency-patterns).
+- Часто их избегают, проектируя границы согласованности (см. [isolation-level](../isolation-level/index.md), [consistency-patterns](../../consistency-patterns/index.md)).

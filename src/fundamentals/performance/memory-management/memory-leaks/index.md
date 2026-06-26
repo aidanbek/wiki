@@ -11,4 +11,4 @@
 
 - Heap dumps во времени, профайлеры (Valgrind, Chrome DevTools), мониторинг роста RSS.
 - RAII, weak references, аккуратные замыкания, тесты с memory assertions; GC-языки тоже уязвимы (см.
-  garbage-collection).
+  [garbage-collection](../garbage-collection/index.md)).

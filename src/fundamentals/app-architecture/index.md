@@ -16,5 +16,5 @@
 ## Как выбирать
 
 - Trade-off между complexity, flexibility, operational overhead и автономией команд.
-- Silver bullet не существует — стиль подбирается под контекст (размер команды, домен, нагрузка) (см. microservices,
-  monolith).
+- Silver bullet не существует — стиль подбирается под контекст (размер команды, домен, нагрузка) (см. [microservices](microservices/index.md),
+  [monolith](monolith/index.md)).

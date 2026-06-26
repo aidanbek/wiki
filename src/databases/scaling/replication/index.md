@@ -17,4 +17,4 @@
 
 - Statement-based vs row-based vs logical replication.
 - Failover на реплику при падении лидера (нужен механизм promotion); read-your-writes ломается из-за lag (см.
-  load-balancing, scaling/sharding).
+  [load-balancing](../load-balancing/index.md), [scaling/sharding](../sharding/index.md)).

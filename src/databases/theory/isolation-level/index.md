@@ -17,4 +17,4 @@
 
 - Default часто Read Committed (Postgres) или Repeatable Read (MySQL InnoDB).
 - Serializable самый строгий, но дороже (сериализационные конфликты, retry); реализация — MVCC (snapshot) или locking (
-  см. acid, transactions).
+  см. [acid](../acid/index.md), [transactions](../transactions/index.md)).

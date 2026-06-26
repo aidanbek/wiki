@@ -16,4 +16,4 @@
 
 - При росте: tight coupling, долгий build, сложность координации больших команд, технологический lock-in.
 - Репутация незаслуженно плохая — для малых/средних проектов часто оптимален; дисциплину даёт modular monolith (см.
-  modular-monolith, microservices).
+  [modular-monolith](../modular-monolith/index.md), [microservices](../microservices/index.md)).

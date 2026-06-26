@@ -16,4 +16,4 @@
 ## Условия успеха
 
 - Нужна дисциплина enforcement границ — automated architecture tests (ArchUnit, Deptrac) критичны.
-- Хорошая «база» перед возможным переходом к микросервисам (см. monolith, microservices).
+- Хорошая «база» перед возможным переходом к микросервисам (см. [monolith](../monolith/index.md), [microservices](../microservices/index.md)).

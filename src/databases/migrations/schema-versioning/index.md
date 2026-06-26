@@ -18,4 +18,4 @@
 ## Практики
 
 - Миграции неизменяемы после мержа: правки — только новой миграцией.
-- Версия схемы в репозитории = единственный источник правды (см. zero-downtime, rollback-strategies).
+- Версия схемы в репозитории = единственный источник правды (см. [zero-downtime](../zero-downtime/index.md), [rollback-strategies](../rollback-strategies/index.md)).

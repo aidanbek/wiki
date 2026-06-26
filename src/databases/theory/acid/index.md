@@ -17,4 +17,4 @@
 ## Контекст
 
 - ACID противопоставляют BASE (eventual consistency) распределённых систем.
-- Isolation на практике ослабляют ради производительности (см. isolation-level, transactions, cap-theorem).
+- Isolation на практике ослабляют ради производительности (см. [isolation-level](../isolation-level/index.md), [transactions](../transactions/index.md), [cap-theorem](../cap-theorem/index.md)).

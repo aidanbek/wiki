@@ -11,4 +11,4 @@
 - Размер пула — баланс утилизации и потребности в concurrency.
 - Стратегии: lazy creation, pre-warming, max limit (против исчерпания), idle timeout (сжатие при простое).
 - Нужна синхронизация (предпочтительны lock-free очереди); thread pools против thread explosion (см.
-  fundamentals/concurrency/patterns/thread-pool).
+  [fundamentals/concurrency/patterns/thread-pool](../../../concurrency/patterns/thread-pool/index.md)).

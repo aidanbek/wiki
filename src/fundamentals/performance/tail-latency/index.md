@@ -10,4 +10,4 @@
 ## Митигации
 
 - Timeouts, hedged requests (дубль на другой сервер после задержки), canary requests, отказ от batching.
-- Мониторь перцентильные гистограммы, а не средние; SLO обычно по p99 (см. percentiles).
+- Мониторь перцентильные гистограммы, а не средние; SLO обычно по p99 (см. [percentiles](../percentiles/index.md)).

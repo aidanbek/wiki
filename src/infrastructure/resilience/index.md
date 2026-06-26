@@ -18,4 +18,4 @@
 - Базовый стек вызова: timeout → retry (для транзиентных ошибок) → circuit breaker (когда повторы не помогают) →
   fallback.
 - Bulkhead и rate limiting ограничивают радиус поражения; chaos engineering проверяет, что всё это реально работает.
-- Все повторы безопасны только при идемпотентности (см. async-processing/patterns).
+- Все повторы безопасны только при идемпотентности (см. [async-processing/patterns](../async-processing/patterns/index.md)).

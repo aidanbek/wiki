@@ -17,4 +17,4 @@
 
 - Event notification, event-carried state transfer, event sourcing.
 - Сложности: eventual consistency, трудно трассировать поток, отладка, управление подписками. Силён для интеграции, IoT,
-  real-time analytics (см. fundamentals/design-patterns/architectural/event-sourcing, infrastructure/message-queues).
+  real-time analytics (см. [fundamentals/design-patterns/architectural/event-sourcing](../../design-patterns/architectural/event-sourcing/index.md), [infrastructure/message-queues](../../../infrastructure/message-queues/index.md)).

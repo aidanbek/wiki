@@ -10,4 +10,4 @@
 
 ## Где применяется
 
-- Producer-consumer, resource pools, ограничение concurrency (см. concurrency/synchronization/mutex).
+- Producer-consumer, resource pools, ограничение concurrency (см. [concurrency/synchronization/mutex](../mutex/index.md)).

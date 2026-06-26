@@ -13,4 +13,4 @@
 
 - GC-паузы бьют по latency (критично для real-time); тюнинг: размер heap, соотношение поколений, выбор алгоритма.
 - Современные: Java G1/ZGC, Go (concurrent), .NET (workstation/server); профилирование ловит GC pressure (см.
-  memory-leaks, fundamentals/performance/profiling/memory-profiling).
+  [memory-leaks](../memory-leaks/index.md), [fundamentals/performance/profiling/memory-profiling](../../profiling/memory-profiling/index.md)).

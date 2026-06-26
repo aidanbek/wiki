@@ -15,4 +15,4 @@
 ## Trade-offs
 
 - Decoupling sender/receiver, легко добавлять новые команды; основа CQRS и async-операций.
-- Много мелких классов-команд (см. fundamentals/design-patterns/architectural/cqrs).
+- Много мелких классов-команд (см. [fundamentals/design-patterns/architectural/cqrs](../../../architectural/cqrs/index.md)).

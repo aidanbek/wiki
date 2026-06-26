@@ -18,4 +18,4 @@
 
 - Больше кода (интерфейсы, адаптеры) ради долгосрочной maintainability.
 - Родственники: Clean Architecture, Onion Architecture (см.
-  fundamentals/design-patterns/dependency-management/inversion-of-control).
+  [fundamentals/design-patterns/dependency-management/inversion-of-control](../../design-patterns/dependency-management/inversion-of-control/index.md)).

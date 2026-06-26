@@ -15,5 +15,5 @@
 
 ## Подводные камни
 
-- Cache coherency и thundering herd при массовом истечении ключей (см. materialized-views, query-result,
-  fundamentals/caching).
+- Cache coherency и thundering herd при массовом истечении ключей (см. [materialized-views](materialized-views/index.md), [query-result](query-result/index.md),
+  [fundamentals/caching](../../../fundamentals/caching/index.md)).

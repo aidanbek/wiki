@@ -11,4 +11,4 @@
 
 - Проявляются редко, плохо воспроизводятся (heisenbug — исчезают под отладчиком).
 - Защита: синхронизация критических секций, atomic operations, immutability, message passing вместо shared state (см.
-  concurrency/synchronization/mutex, concurrency/concepts/deadlocks).
+  [concurrency/synchronization/mutex](../../synchronization/mutex/index.md), [concurrency/concepts/deadlocks](../deadlocks/index.md)).

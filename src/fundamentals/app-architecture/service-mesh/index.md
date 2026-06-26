@@ -16,5 +16,5 @@
 ## Trade-offs
 
 - Своя сложность: learning curve, накладные расходы на ресурсы и latency.
-- Оправдан при большом числе сервисов (>10-20) и серьёзных требованиях к надёжности/безопасности (см. microservices,
-  infrastructure/resilience).
+- Оправдан при большом числе сервисов (>10-20) и серьёзных требованиях к надёжности/безопасности (см. [microservices](../microservices/index.md),
+  [infrastructure/resilience](../../../infrastructure/resilience/index.md)).

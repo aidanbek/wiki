@@ -13,4 +13,4 @@
 ## Особенности
 
 - Выбор архитектурного паттерна — раннее и дорогое в изменении решение; задаёт границы системы и стиль разработки.
-- Часто комбинируются (CQRS + Event Sourcing) и пересекаются с app-architecture (см. fundamentals/app-architecture).
+- Часто комбинируются (CQRS + Event Sourcing) и пересекаются с app-architecture (см. [fundamentals/app-architecture](../../app-architecture/index.md)).

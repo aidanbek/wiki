@@ -17,4 +17,4 @@
 
 - Независимое масштабирование read/write, упрощённое кэширование, оптимизированные модели.
 - Сложность и eventual consistency между write и read; часто комбинируется с Event Sourcing, но независим от него (см.
-  event-sourcing, command).
+  [event-sourcing](../event-sourcing/index.md), [command](../../gof/behavioral/command/index.md)).

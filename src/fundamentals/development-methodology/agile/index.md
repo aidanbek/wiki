@@ -15,5 +15,5 @@
 
 ## Контекст
 
-- Umbrella-термин для Scrum, Kanban, XP и др. (см. scrum, kanban).
+- Umbrella-термин для Scrum, Kanban, XP и др. (см. [scrum](../scrum/index.md), [kanban](../kanban/index.md)).
 - Риск «карго-культа»: соблюдение ритуалов без изменения культуры.

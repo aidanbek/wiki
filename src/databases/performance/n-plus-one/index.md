@@ -17,4 +17,4 @@
 ## Профилактика
 
 - Включать логирование запросов в dev, ставить лимиты/детекторы N+1 в тестах.
-- Понимать, когда ORM делает lazy load, и осознанно выбирать eager (см. query-analysis).
+- Понимать, когда ORM делает lazy load, и осознанно выбирать eager (см. [query-analysis](../query-optimization/query-analysis/index.md)).

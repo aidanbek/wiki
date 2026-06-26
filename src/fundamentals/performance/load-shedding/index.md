@@ -11,4 +11,4 @@
 ## Поведение
 
 - Ответ `503` + `Retry-After`; лучше, чем неограниченная очередь (растущая latency, OOM).
-- Требует от клиентов корректных retry (exponential backoff); алерт на rejection rate (см. backpressure).
+- Требует от клиентов корректных retry (exponential backoff); алерт на rejection rate (см. [backpressure](../backpressure/index.md)).

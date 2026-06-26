@@ -10,4 +10,4 @@
 ## Trade-offs
 
 - Первый доступ медленнее, плюс сложность; поддержано во фреймворках (Hibernate lazy associations, React lazy).
-- Осторожно с N+1 (lazy loading в циклах); профилируй, не оптимизируй преждевременно (см. resource-pooling).
+- Осторожно с N+1 (lazy loading в циклах); профилируй, не оптимизируй преждевременно (см. [resource-pooling](../resource-pooling/index.md)).

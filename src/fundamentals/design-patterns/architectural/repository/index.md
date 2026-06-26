@@ -15,4 +15,4 @@
 
 - Чистая граница домена и хранилища.
 - Риск «дырявой» абстракции (протекание деталей ORM), дублирование с возможностями ORM; не превращать в свалку методов (
-  см. fundamentals/app-architecture/ddd, hexagonal).
+  см. [fundamentals/app-architecture/ddd](../../../app-architecture/ddd/index.md), [hexagonal](../../../app-architecture/hexagonal/index.md)).

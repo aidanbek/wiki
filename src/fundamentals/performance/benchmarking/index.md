@@ -13,4 +13,4 @@
 - JMH (Java), Benchmark.js (JS), pytest-benchmark (Python), wrk/ab (HTTP).
 - Throughput (ops/sec), latency (p50/p95/p99), CPU/memory.
 - Подводные камни: dead code elimination, constant folding, cache effects; сравнивай baseline vs optimized, лови
-  регрессии в CI (см. percentiles).
+  регрессии в CI (см. [percentiles](../percentiles/index.md)).

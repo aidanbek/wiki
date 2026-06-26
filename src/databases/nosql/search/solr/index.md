@@ -16,4 +16,4 @@
 ## vs Elasticsearch
 
 - Похожее ядро (Lucene); Solr сильнее в «классическом» текстовом поиске, ES — в логах/аналитике и developer-experience.
-- SolrCloud требует отдельного ZooKeeper-кластера (см. elasticsearch).
+- SolrCloud требует отдельного ZooKeeper-кластера (см. [elasticsearch](../elasticsearch/index.md)).

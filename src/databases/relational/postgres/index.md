@@ -17,4 +17,4 @@ Open-source объектно-реляционная СУБД с акцентом
 ## Подводные камни
 
 - MVCC + dead tuples → нужен autovacuum/vacuum; bloat при интенсивных update.
-- Каждое соединение — отдельный backend-процесс → нужен пул (PgBouncer) при многих коннектах (см. connection-pooling).
+- Каждое соединение — отдельный backend-процесс → нужен пул (PgBouncer) при многих коннектах (см. [connection-pooling](../../performance/connection-pooling/index.md)).

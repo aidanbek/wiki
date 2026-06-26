@@ -16,4 +16,4 @@
 ## Trade-offs
 
 - Соблюдает Dependency Inversion: Creator зависит от интерфейса Product.
-- Может плодить подклассы; для семейств объектов — Abstract Factory (см. abstract-factory).
+- Может плодить подклассы; для семейств объектов — Abstract Factory (см. [abstract-factory](../abstract-factory/index.md)).

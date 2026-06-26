@@ -16,5 +16,5 @@ In-memory key-value store с опциональной персистентнос
 ## Подводные камни
 
 - Данные в памяти — следить за объёмом и eviction-политикой (maxmemory-policy).
-- Персистентность не равна durability БД; cluster имеет ограничения по multi-key операциям (см. memcached как более
+- Персистентность не равна durability БД; cluster имеет ограничения по multi-key операциям (см. [memcached](../memcached/index.md) как более
   простой кэш).

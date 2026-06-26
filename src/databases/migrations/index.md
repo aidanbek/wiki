@@ -14,4 +14,4 @@
 
 - Каждое изменение обратно совместимо со старым кодом во время раскатки.
 - Миграции неизменяемы после применения; деструктив — отдельным поздним шагом.
-- Тестировать в staging на копии прод-данных (см. zero-downtime, schema-versioning).
+- Тестировать в staging на копии прод-данных (см. [zero-downtime](zero-downtime/index.md), [schema-versioning](schema-versioning/index.md)).

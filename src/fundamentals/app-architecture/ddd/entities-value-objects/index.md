@@ -19,4 +19,4 @@
 
 - Value Objects делают модель богаче, выразительнее и type-safe — доменные понятия вместо примитивов (primitive
   obsession).
-- Small, tested once, reused everywhere (см. aggregates, fundamentals/app-architecture/ddd).
+- Small, tested once, reused everywhere (см. [aggregates](../aggregates/index.md), [fundamentals/app-architecture/ddd](../index.md)).

@@ -14,4 +14,4 @@
 ## Зачем
 
 - Ментальная модель для проектных решений об ответственности; предшественник и дополнение GoF-паттернов.
-- Основа осознанного ООП-дизайна (см. design-principles/solid, low-coupling/high-cohesion в подразделах).
+- Основа осознанного ООП-дизайна (см. [design-principles/solid](../solid/index.md), low-coupling/high-cohesion в подразделах).

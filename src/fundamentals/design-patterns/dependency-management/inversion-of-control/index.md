@@ -15,4 +15,4 @@
 ## Зачем
 
 - Слабая связанность, расширяемость, тестируемость; ядро фреймворков (Spring, ASP.NET, фронтенд-фреймворки) (см.
-  dependency-injection).
+  [dependency-injection](../dependency-injection/index.md)).

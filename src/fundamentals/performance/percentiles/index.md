@@ -11,4 +11,4 @@
 ## Подсчёт
 
 - Сортировка и позиция; для стримов — приближения (t-digest, HdrHistogram).
-- Перцентили нельзя усреднять — нужны гистограммы и слияние распределений (Prometheus histograms); см. tail-latency.
+- Перцентили нельзя усреднять — нужны гистограммы и слияние распределений (Prometheus histograms); см. [tail-latency](../tail-latency/index.md).

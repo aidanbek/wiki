@@ -4,4 +4,4 @@
 
 ## Реализации
 
-- Чаще всего через массив (array list) или связный список (см. linked-list/index.md).
+- Чаще всего через массив (array list) или связный список (см. [linked-list](linked-list/index.md)).

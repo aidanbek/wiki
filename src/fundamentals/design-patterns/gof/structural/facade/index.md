@@ -15,4 +15,4 @@
 ## Trade-offs
 
 - Упрощает использование, не запрещая прямой доступ к подсистеме.
-- Может разрастись в God Object, если на него вешать всё (см. mediator, adapter).
+- Может разрастись в God Object, если на него вешать всё (см. [mediator](../../behavioral/mediator/index.md), [adapter](../adapter/index.md)).

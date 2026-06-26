@@ -10,4 +10,4 @@
 ## Где и как мониторить
 
 - Stream processing, message queues, сетевые протоколы.
-- Метрики: queue depth, rejection rate. Принцип — притормозить upstream, а не ронять downstream (см. load-shedding).
+- Метрики: queue depth, rejection rate. Принцип — притормозить upstream, а не ронять downstream (см. [load-shedding](../load-shedding/index.md)).

@@ -17,4 +17,4 @@
 ## Принципы
 
 - Индексировать под реальные паттерны запросов, а не «на всякий случай».
-- Регулярный аудит: удалять мёртвые, добавлять под новые запросы (см. compose-indexes, query-optimization).
+- Регулярный аудит: удалять мёртвые, добавлять под новые запросы (см. [compose-indexes](../compose-indexes/index.md), [query-optimization](../../query-optimization/index.md)).

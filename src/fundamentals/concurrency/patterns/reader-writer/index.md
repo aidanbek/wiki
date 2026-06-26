@@ -12,4 +12,4 @@
 
 - Read-heavy workloads: кэши, конфигурация, lookup-таблицы.
 - Сложнее mutex; overhead оправдан только при высоком read/write ratio; риск writer starvation (см.
-  concurrency/synchronization/mutex).
+  [concurrency/synchronization/mutex](../../synchronization/mutex/index.md)).

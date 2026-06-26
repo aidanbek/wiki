@@ -11,5 +11,5 @@
 ## Revalidation
 
 - Conditional requests (`If-None-Match` с ETag) → `304 Not Modified`, если контент не изменился.
-- Агрессивное кэширование ускоряет, но рискует отдать stale; настройка критична (см. system-level/cdn,
-  system-level/reverse-proxy).
+- Агрессивное кэширование ускоряет, но рискует отдать stale; настройка критична (см. [system-level/cdn](../cdn/index.md),
+  [system-level/reverse-proxy](../reverse-proxy/index.md)).

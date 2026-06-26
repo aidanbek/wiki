@@ -15,4 +15,4 @@
 ## Trade-offs
 
 - Снижает связанность между участниками.
-- Mediator может разрастись в God Object — вся сложность переезжает в него (см. facade, observer).
+- Mediator может разрастись в God Object — вся сложность переезжает в него (см. [facade](../../structural/facade/index.md), [observer](../observer/index.md)).

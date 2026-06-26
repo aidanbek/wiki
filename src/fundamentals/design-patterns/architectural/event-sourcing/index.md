@@ -15,4 +15,4 @@
 ## Trade-offs
 
 - Сложность: версионирование событий, производительность replay, eventual consistency проекций.
-- События иммутабельны — изменение схемы требует upcasting; часто идёт в паре с CQRS (см. cqrs, event-driven).
+- События иммутабельны — изменение схемы требует upcasting; часто идёт в паре с CQRS (см. [cqrs](../cqrs/index.md), [event-driven](../../../app-architecture/event-driven/index.md)).

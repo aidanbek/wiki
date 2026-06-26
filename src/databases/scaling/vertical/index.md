@@ -16,4 +16,4 @@
 ## Когда использовать
 
 - До исчерпания возможностей вертикали — простой и быстрый выигрыш.
-- Дальше — переход к horizontal scaling (read-replicas, sharding) (см. horizontal).
+- Дальше — переход к horizontal scaling (read-replicas, sharding) (см. [horizontal](../horizontal/index.md)).

@@ -16,4 +16,4 @@
 ## Связь с IoC
 
 - DI — конкретная техника реализации Inversion of Control; обычно автоматизируется DI-контейнером (см.
-  inversion-of-control, service-container).
+  [inversion-of-control](../inversion-of-control/index.md), [service-container](../service-container/index.md)).

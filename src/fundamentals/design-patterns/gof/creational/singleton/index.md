@@ -15,4 +15,4 @@
 
 - Глобальное состояние, скрытые зависимости (не видны в сигнатуре), сложность тестирования (нельзя подменить).
 - Предпочтительнее DI-контейнер, управляющий единственностью через lifetime, а не ручной Singleton (см.
-  service-container, dependency-injection).
+  [service-container](../../../dependency-management/service-container/index.md), [dependency-injection](../../../dependency-management/dependency-injection/index.md)).

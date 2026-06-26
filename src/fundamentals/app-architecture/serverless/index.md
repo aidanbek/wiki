@@ -16,4 +16,4 @@
 ## Ограничения
 
 - Cold starts, лимиты времени выполнения и ресурсов, vendor lock-in, сложность локальной разработки и отладки.
-- Не для long-running/stateful нагрузок (см. event-driven).
+- Не для long-running/stateful нагрузок (см. [event-driven](../event-driven/index.md)).

@@ -15,5 +15,5 @@
 ## Примеры и нюансы
 
 - Autofac, Unity, Ninject (.NET), Spring (Java), Laravel Container (PHP), InversifyJS (TS).
-- Злоупотребление = Service Locator с теми же минусами; предпочтительна явная регистрация (см. dependency-injection,
-  service-locator).
+- Злоупотребление = Service Locator с теми же минусами; предпочтительна явная регистрация (см. [dependency-injection](../dependency-injection/index.md),
+  [service-locator](../service-locator/index.md)).

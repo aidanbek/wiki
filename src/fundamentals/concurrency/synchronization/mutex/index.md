@@ -11,4 +11,4 @@
 ## Подводные камни
 
 - По сути binary semaphore (locked/unlocked).
-- Риск deadlock при неправильном порядке захвата нескольких mutex'ов (см. concurrency/concepts/deadlocks).
+- Риск deadlock при неправильном порядке захвата нескольких mutex'ов (см. [concurrency/concepts/deadlocks](../../concepts/deadlocks/index.md)).

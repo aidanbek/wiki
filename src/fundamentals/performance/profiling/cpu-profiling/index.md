@@ -11,4 +11,4 @@
 ## Инструменты
 
 - perf (Linux), Instruments (macOS), py-spy (Python), pprof (Go); continuous profiling (Pyroscope, Parca).
-- Ищи: tight loops, неэффективные алгоритмы, избыточные аллокации; визуализируй flame-графами (см. flame-grahps).
+- Ищи: tight loops, неэффективные алгоритмы, избыточные аллокации; визуализируй flame-графами (см. [flame-grahps](../flame-grahps/index.md)).

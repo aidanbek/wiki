@@ -18,4 +18,4 @@
 
 ## Прочее
 
-- Анализ запроса: `EXPLAIN (ANALYZE, BUFFERS) <query>;` (см. execution-plan, query-analysis).
+- Анализ запроса: `EXPLAIN (ANALYZE, BUFFERS) <query>;` (см. [execution-plan](../../../performance/query-optimization/execution-plan/index.md), [query-analysis](../../../performance/query-optimization/query-analysis/index.md)).

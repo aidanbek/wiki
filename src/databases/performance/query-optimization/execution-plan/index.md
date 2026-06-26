@@ -16,4 +16,4 @@
 ## На что смотреть
 
 - Большое расхождение estimate vs actual rows → устаревшая статистика (ANALYZE/autovacuum).
-- Неожиданный Seq Scan, дорогие сорты, спиллы на диск, высокие loops в Nested Loop (см. query-analysis).
+- Неожиданный Seq Scan, дорогие сорты, спиллы на диск, высокие loops в Nested Loop (см. [query-analysis](../query-analysis/index.md)).

@@ -16,4 +16,4 @@
 ## Реализация
 
 - Proxy-based: HAProxy, ProxySQL, PgBouncer/Pgpool, Vitess.
-- DNS-based балансировка (грубее, кэширование DNS мешает быстрому failover) (см. replication, connection-pooling).
+- DNS-based балансировка (грубее, кэширование DNS мешает быстрому failover) (см. [replication](../replication/index.md), [connection-pooling](../../performance/connection-pooling/index.md)).

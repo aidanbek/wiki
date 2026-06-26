@@ -18,4 +18,4 @@ Partition tolerance.
 ## Нюансы
 
 - На практике это spectrum, не бинарный выбор; вне partition можно иметь и C, и A.
-- Дополнение — PACELC (latency vs consistency и в нормальном режиме) (см. consistency-model, consistency-patterns).
+- Дополнение — PACELC (latency vs consistency и в нормальном режиме) (см. [consistency-model](../consistency-model/index.md), [consistency-patterns](../../consistency-patterns/index.md)).

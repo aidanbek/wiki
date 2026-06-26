@@ -16,5 +16,5 @@
 
 ## Реализация
 
-- Managed: MongoDB sharding, Vitess (MySQL), Citus (Postgres); либо ручная маршрутизация в приложении (см. partitioning,
-  horizontal).
+- Managed: MongoDB sharding, Vitess (MySQL), Citus (Postgres); либо ручная маршрутизация в приложении (см. [partitioning](../partitioning/index.md),
+  [horizontal](../horizontal/index.md)).

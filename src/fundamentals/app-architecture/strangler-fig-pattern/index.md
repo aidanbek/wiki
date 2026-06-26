@@ -17,4 +17,4 @@
 ## Условия
 
 - Нужна продуманная декомпозиция и логика маршрутизации; синхронизация данных на переходный период.
-- Применяется для перевода monolith → microservices и technology migration (см. microservices, databases/migrations).
+- Применяется для перевода monolith → microservices и technology migration (см. [microservices](../microservices/index.md), [databases/migrations](../../../databases/migrations/index.md)).

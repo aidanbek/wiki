@@ -16,4 +16,4 @@
 ## Trade-offs
 
 - Наследует особенности Postgres (vacuum, один процесс на коннект).
-- На экстремальном write-масштабе специализированные TSDB могут выигрывать (см. influxdb, time-series).
+- На экстремальном write-масштабе специализированные TSDB могут выигрывать (см. [influxdb](../influxdb/index.md), [time-series](../index.md)).

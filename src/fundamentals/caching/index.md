@@ -11,4 +11,4 @@
 ## Два ключевых вопроса
 
 - **Что кэшировать** — по популярности и стоимости получения.
-- **Как долго хранить** — TTL и invalidation (см. caching/concepts/invalidation, caching/concepts/cache-strategies).
+- **Как долго хранить** — TTL и invalidation (см. [caching/concepts/invalidation](concepts/invalidation/index.md), [caching/concepts/cache-strategies](concepts/cache-strategies/index.md)).

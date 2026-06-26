@@ -15,4 +15,4 @@
 ## Когда допустим
 
 - Legacy-код или статические контексты, где полноценный DI невозможен (предпочтительнее DI/container) (см.
-  dependency-injection, service-container).
+  [dependency-injection](../dependency-injection/index.md), [service-container](../service-container/index.md)).

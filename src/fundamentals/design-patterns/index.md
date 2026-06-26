@@ -10,6 +10,6 @@
 
 ## Как применять
 
-- Паттерн — инструмент с trade-offs, а не самоцель; неуместный паттерн добавляет сложность (см. design-principles, kiss,
-  yagni).
+- Паттерн — инструмент с trade-offs, а не самоцель; неуместный паттерн добавляет сложность (см. [design-principles](../design-principles/index.md), [kiss](../design-principles/kiss/index.md),
+  [yagni](../design-principles/yagni/index.md)).
 - Сначала простое решение, паттерн — когда проблема реально проявилась.

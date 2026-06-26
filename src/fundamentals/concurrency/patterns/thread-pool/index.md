@@ -11,4 +11,4 @@
 ## Настройка
 
 - Размер пула критичен: мало → недозагрузка CPU, много → overhead на context switching.
-- Web-серверы, async I/O, параллельные алгоритмы (см. fundamentals/performance/backpressure).
+- Web-серверы, async I/O, параллельные алгоритмы (см. [fundamentals/performance/backpressure](../../../performance/backpressure/index.md)).

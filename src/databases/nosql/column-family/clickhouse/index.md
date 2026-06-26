@@ -16,4 +16,4 @@ Column-oriented OLAP-СУБД для аналитики. Считает агре
 ## Ограничения
 
 - Не OLTP: дорогие точечные UPDATE/DELETE, нет полноценных транзакций, eventual-семантика мутаций.
-- Слабые уникальные ограничения/констрейнты; модель «append-mostly» (см. oltp-vs-olap).
+- Слабые уникальные ограничения/констрейнты; модель «append-mostly» (см. [oltp-vs-olap](../../../data-modeling/oltp-vs-olap/index.md)).

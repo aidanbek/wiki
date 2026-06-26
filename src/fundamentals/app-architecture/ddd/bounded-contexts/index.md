@@ -16,4 +16,4 @@
 ## Context mapping
 
 - Описывает отношения контекстов: shared kernel, customer-supplier, conformist, ACL.
-- Ключевой strategic pattern DDD для масштабирования (см. fundamentals/app-architecture/ddd, microservices).
+- Ключевой strategic pattern DDD для масштабирования (см. [fundamentals/app-architecture/ddd](../index.md), [microservices](../../microservices/index.md)).

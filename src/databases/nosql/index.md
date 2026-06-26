@@ -14,5 +14,5 @@
 ## Как выбирать
 
 - По модели данных и паттернам запросов, а не «потому что NoSQL».
-- Часто как дополнение к основной реляционной БД (кэш, поиск, аналитика), а не замена (см. cap-theorem,
-  eventual-consistency).
+- Часто как дополнение к основной реляционной БД (кэш, поиск, аналитика), а не замена (см. [cap-theorem](../theory/cap-theorem/index.md),
+  [eventual-consistency](../consistency-patterns/eventual-consistency/index.md)).

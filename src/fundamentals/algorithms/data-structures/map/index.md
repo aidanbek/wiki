@@ -7,4 +7,4 @@
 
 ## Реализации
 
-- Hash table — O(1) в среднем; сбалансированное дерево — O(log n), но ключи упорядочены (см. hash-tables/index.md).
+- Hash table — O(1) в среднем; сбалансированное дерево — O(log n), но ключи упорядочены (см. [hash-tables](hash-tables/index.md)).

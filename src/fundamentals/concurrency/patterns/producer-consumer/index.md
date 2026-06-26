@@ -10,4 +10,4 @@
 
 ## Где применяется
 
-- Pipelines, message queues, event processing, I/O buffering (см. concurrency/synchronization/semaphore).
+- Pipelines, message queues, event processing, I/O buffering (см. [concurrency/synchronization/semaphore](../../synchronization/semaphore/index.md)).
