@@ -8,6 +8,7 @@
     - [Vector Databases](ai-engineering/vector-databases/index.md)
   - [Books](books/index.md)
     - [Template — карточка книги](books/template.md)
+    - [Путеводитель по базам данных](books/putevoditel-po-bd/index.md)
     - [Staff Engineer: Leadership Beyond the Management Track](books/staff-engineer/index.md)
   - [Cloud Platforms](cloud/index.md)
     - [FinOps](cloud/finops/index.md)
